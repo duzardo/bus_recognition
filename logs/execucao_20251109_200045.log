@@ -1,0 +1,1233 @@
+2025-11-09 20:00:45,364 - INFO - ================================================================================
+2025-11-09 20:00:45,364 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 20:00:45,364 - INFO - ================================================================================
+2025-11-09 20:00:45,364 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 20:00:45,365 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 20:00:45,365 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 20:00:45,365 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_200045.log
+2025-11-09 20:00:45,365 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 20:00:45,370 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 20:00:45,371 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 20:00:48,636 - INFO - 
+================================================================================
+2025-11-09 20:00:48,637 - INFO - ✅ MODELO JÁ TREINADO ENCONTRADO!
+2025-11-09 20:00:48,637 - INFO - ================================================================================
+2025-11-09 20:00:48,637 - INFO - 📂 Carregando modelo de: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg\weights\best.pt
+2025-11-09 20:00:48,637 - INFO - ⏩ Pulando etapa de treinamento (economizando tempo!)
+2025-11-09 20:00:48,637 - INFO - 💡 Para retreinar, delete a pasta: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg
+2025-11-09 20:00:48,689 - INFO - 
+🔍 Avaliando desempenho no conjunto de teste...
+2025-11-09 20:01:20,843 - INFO - 
+📊 Resultados finais:
+2025-11-09 20:01:20,843 - INFO -    ➡️ mAP50-95 (acurácia média): 0.8011
+2025-11-09 20:01:20,844 - INFO -    ➡️ mAP50 (IoU=0.50): 0.9933
+2025-11-09 20:01:20,844 - INFO -    ➡️ mAP75 (IoU=0.75): 0.9530
+2025-11-09 20:01:20,844 - INFO -    ➡️ Precisão média: 0.9854
+2025-11-09 20:01:20,844 - INFO -    ➡️ Revocação média: 0.9866
+2025-11-09 20:01:20,845 - INFO - 
+================================================================================
+2025-11-09 20:01:20,845 - INFO - 🧩 Etapa OCR com Tesseract
+2025-11-09 20:01:20,845 - INFO - ================================================================================
+2025-11-09 20:01:20,845 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 20:01:20,845 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 20:01:20,846 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 20:01:20,846 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 20:01:20,852 - INFO - ✅ Tesseract encontrado em: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 20:01:20,866 - INFO - 🔍 Iniciando OCR em letreiros detectados...
+2025-11-09 20:01:20,867 - INFO - 📝 Configuração Tesseract: PSM 7 (linha única de texto)
+
+2025-11-09 20:01:21,184 - INFO - 🖼️ Imagem: 25018_craso_campina_do_siqueira_local_jpg.rf.98ae677ba9fd7edb5fcd8dca6045c828.jpg
+2025-11-09 20:01:21,185 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:21,185 - INFO -    🔍 OCR: MAP AO PAS
+2025-11-09 20:01:21,185 - INFO -    🤝 Mais próximo: CAPAO RASO (60.0%)
+
+2025-11-09 20:01:21,427 - INFO - 🖼️ Imagem: 25104_onibus_brasil_jpg.rf.3b1f887e3de2b4fff5f4580439873d3c.jpg
+2025-11-09 20:01:21,427 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:21,428 - INFO -    🔍 OCR: INTERBAIRROSH
+2025-11-09 20:01:21,428 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:01:22,124 - INFO - 🖼️ Imagem: 25132_onibus_brasil_jpg.rf.86a1c4727412bed13313fc2d5d081cfd.jpg
+2025-11-09 20:01:22,125 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:22,125 - INFO -    🔍 OCR: AE
+2025-11-09 20:01:22,125 - INFO -    🤝 Mais próximo: AEROPORTO (100.0%)
+
+2025-11-09 20:01:22,357 - INFO - 🖼️ Imagem: 25138_onibus_brasil_jpg.rf.fd9da43161c0d47ec7c42d03ae0f2ffc.jpg
+2025-11-09 20:01:22,357 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:22,357 - INFO -    🔍 OCR: {NTERBAIRROS |
+2025-11-09 20:01:22,358 - INFO -    🤝 Mais próximo: INTERBAIRROS (91.7%)
+
+2025-11-09 20:01:22,802 - INFO - 🖼️ Imagem: 25305_jardim_centauro_local_jpg.rf.e74cbdf046815c224e2ccdc4ac467f77.jpg
+2025-11-09 20:01:22,802 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:22,803 - INFO -    🔍 OCR: 8B. CENTAURO,
+2025-11-09 20:01:22,803 - INFO -    🤝 Mais próximo: JD. CENTAURO (83.3%)
+
+2025-11-09 20:01:23,018 - INFO - 🖼️ Imagem: 25323_gramados_local_jpg.rf.a463b9ed6d4a075e8c6f45d6b06a8476.jpg
+2025-11-09 20:01:23,019 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:23,019 - INFO -    🔍 OCR: GRAHABDGS
+2025-11-09 20:01:23,019 - INFO -    🤝 Mais próximo: AHU (66.7%)
+
+2025-11-09 20:01:23,684 - INFO - 🖼️ Imagem: 25413_futurama_local_jpg.rf.6714cba59b07eafdc53b8be88c48d2b8.jpg
+2025-11-09 20:01:23,685 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:23,685 - INFO -    🔍 OCR: FUTUR AAY
+2025-11-09 20:01:23,685 - INFO -    🤝 Mais próximo: FUTURAMA (75.0%)
+
+2025-11-09 20:01:24,148 - INFO - 🖼️ Imagem: 25531_santa_candida_capao_raso_local_jpg.rf.3a6b96f62840cad47cd65b12176fd2a9.jpg
+2025-11-09 20:01:24,149 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:24,149 - INFO -    🔍 OCR: CAPAU. RABY
+2025-11-09 20:01:24,149 - INFO -    🤝 Mais próximo: CAPAO RASO (63.6%)
+
+2025-11-09 20:01:24,560 - INFO - 🖼️ Imagem: 25714_pinheirinho_cabral_local_jpg.rf.b69b5743f09afe0fa7982111d1efa138.jpg
+2025-11-09 20:01:24,560 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:24,560 - INFO -    🔍 OCR: MN TER 2
+2025-11-09 20:01:24,560 - INFO -    🤝 Mais próximo: INTER 2 (75.0%)
+
+2025-11-09 20:01:24,751 - INFO - 🖼️ Imagem: 25714_pinheirinho_cabral_local_jpg.rf.b69b5743f09afe0fa7982111d1efa138.jpg
+2025-11-09 20:01:24,752 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:24,752 - INFO -    🔍 OCR: SE.
+2025-11-09 20:01:24,752 - INFO -    🤝 Mais próximo: JOSE CULPI (66.7%)
+
+2025-11-09 20:01:25,008 - INFO - 🖼️ Imagem: 25716_interbairros_vi_local_jpg.rf.9d90b110f771243572a9023cd91e484d.jpg
+2025-11-09 20:01:25,009 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:25,009 - INFO -    🔍 OCR: FIE
+2025-11-09 20:01:25,009 - INFO -    🤝 Mais próximo: DONA FINA (66.7%)
+
+2025-11-09 20:01:25,423 - INFO - 🖼️ Imagem: 26107_urbano_jpg.rf.c17118cde045a7c5436f74e478cf0074.jpg
+2025-11-09 20:01:25,424 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:25,424 - INFO -    🔍 OCR: P: SANTA,
+2025-11-09 20:01:25,424 - INFO -    🤝 Mais próximo: CTBA SANTA FE (66.7%)
+
+2025-11-09 20:01:25,915 - INFO - 🖼️ Imagem: 26122_centenario_campo_comprido_local_jpg.rf.6126c3c11f2f49249d68fb56f91f537f.jpg
+2025-11-09 20:01:25,916 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:25,916 - INFO -    🔍 OCR: CAPO CHNPEINA
+2025-11-09 20:01:25,916 - INFO -    🤝 Mais próximo: BOSCH (60.0%)
+
+2025-11-09 20:01:26,144 - INFO - 🖼️ Imagem: 26316_ligeirao_norte_sul_local_jpg.rf.91c9ea07ea3a600c4745c36424515b65.jpg
+2025-11-09 20:01:26,145 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:26,145 - INFO -    🔍 OCR: NORTE/SUE
+2025-11-09 20:01:26,145 - INFO -    🤝 Mais próximo: NORTE SUL (77.8%)
+
+2025-11-09 20:01:26,387 - INFO - 🖼️ Imagem: 26321_interbairros_iv_local_jpg.rf.d49f3c87dbcbb4ec817da8605ed97688.jpg
+2025-11-09 20:01:26,387 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:26,388 - INFO -    🔍 OCR: INTERBAIRROS 10
+2025-11-09 20:01:26,388 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:01:26,638 - INFO - 🖼️ Imagem: 26409_jardim_graziela_local_jpg.rf.ca0b2efa0146dbd061cfe33071497052.jpg
+2025-11-09 20:01:26,639 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:26,639 - INFO -    🔍 OCR: GRAZIELA
+2025-11-09 20:01:26,639 - INFO -    🤝 Mais próximo: JD GRAZIELA (100.0%)
+
+2025-11-09 20:01:27,029 - INFO - 🖼️ Imagem: 26424_linha_turismo_local_jpg.rf.f72f7b1a1d1d57803c7b63c0a1dfffce.jpg
+2025-11-09 20:01:27,029 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:27,029 - INFO -    🔍 OCR: URS?
+2025-11-09 20:01:27,029 - INFO -    🤝 Mais próximo: CURITIBA (50.0%)
+
+2025-11-09 20:01:27,250 - INFO - 🖼️ Imagem: 26507_solar_pinheirinho_local_jpg.rf.284f594a638fa97096d9fc50d290e369.jpg
+2025-11-09 20:01:27,250 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:27,251 - INFO -    🔍 OCR: ET 2 2
+2025-11-09 20:01:27,251 - INFO -    🤝 Mais próximo: CENT R BARBOSA (50.0%)
+
+2025-11-09 20:01:27,480 - INFO - 🖼️ Imagem: 26510_parque_atuba_local_jpg.rf.d02c75f73542f1503b08ec194566e80e.jpg
+2025-11-09 20:01:27,480 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:27,480 - INFO -    🔍 OCR: /PRROUE ATUBA
+2025-11-09 20:01:27,480 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:01:27,921 - INFO - 🖼️ Imagem: 26801_itaperuc_jpg.rf.9df2f08ad3a161cdec9b99d4b5a0d4b5.jpg
+2025-11-09 20:01:27,921 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:27,921 - INFO -    🔍 OCR: PAPERUC!,
+2025-11-09 20:01:27,921 - INFO -    🤝 Mais próximo: HAUER (60.0%)
+
+2025-11-09 20:01:28,532 - INFO - 🖼️ Imagem: 27004_cabral_tamandare_local_jpg.rf.513e7c47830142a98eda73ac18c17f83.jpg
+2025-11-09 20:01:28,532 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:28,532 - INFO -    🔍 OCR: \CABRAL
+2025-11-09 20:01:28,532 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:01:29,182 - INFO - 🖼️ Imagem: 27117_ligeirao_norte_sul_local_jpg.rf.60fe17c1d1d5900e08493cf9fe80a95d.jpg
+2025-11-09 20:01:29,182 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:29,182 - INFO -    🔍 OCR: WORTE/SUL
+2025-11-09 20:01:29,183 - INFO -    🤝 Mais próximo: NORTE SUL (77.8%)
+
+2025-11-09 20:01:29,870 - INFO - 🖼️ Imagem: 27312_trabalhador_local_jpg.rf.12e98677a44587e405553e53d749fd05.jpg
+2025-11-09 20:01:29,871 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:29,871 - INFO -    🔍 OCR: TRABALHADOR:
+2025-11-09 20:01:29,871 - INFO -    🤝 Mais próximo: TRABALHADOR (100.0%)
+
+2025-11-09 20:01:30,548 - INFO - 🖼️ Imagem: 27512_barreirinha_sao_jose_local_jpg.rf.0d32e1b98465bb0d841a502d11a0f587.jpg
+2025-11-09 20:01:30,549 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:30,549 - INFO -    🔍 OCR: AO IER
+2025-11-09 20:01:30,549 - INFO -    🤝 Mais próximo: SAO BERNARDO (83.3%)
+
+2025-11-09 20:01:31,345 - INFO - 🖼️ Imagem: 27604_centenario_campo_comprido_local_jpg.rf.20146288146f2e42b0a347674a9a5921.jpg
+2025-11-09 20:01:31,345 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:31,345 - INFO -    🔍 OCR: CAI LIAT!
+2025-11-09 20:01:31,345 - INFO -    🤝 Mais próximo: CAIUA (60.0%)
+
+2025-11-09 20:01:31,581 - INFO - 🖼️ Imagem: 27607_gramados_local_jpg.rf.4b29139911ff741ec5ec256436a166a7.jpg
+2025-11-09 20:01:31,581 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:31,581 - INFO -    🔍 OCR: GRAMADOS
+2025-11-09 20:01:31,582 - INFO -    🤝 Mais próximo: GRAMADOS (100.0%)
+
+2025-11-09 20:01:32,143 - INFO - 🖼️ Imagem: 27720_maracana_capao_da_imbuia_local_jpg.rf.2edf314e4bd5aeb976a4976607d8afa9.jpg
+2025-11-09 20:01:32,143 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:32,143 - INFO -    🔍 OCR: MAHACAN?,
+2025-11-09 20:01:32,143 - INFO -    🤝 Mais próximo: MARACANA (75.0%)
+
+2025-11-09 20:01:32,613 - INFO - 🖼️ Imagem: 27805_campina_do_siqueira_batel_local_jpg.rf.0f69890e028ef55360d4fc50c6776f54.jpg
+2025-11-09 20:01:32,613 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:32,614 - INFO -    🔍 OCR: BATEL
+2025-11-09 20:01:32,614 - INFO -    🤝 Mais próximo: BATEL (100.0%)
+
+2025-11-09 20:01:32,861 - INFO - 🖼️ Imagem: 27813_interbairros_ii_jpg.rf.4b0ea86470f1c3791f129d839db97d70.jpg
+2025-11-09 20:01:32,861 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:32,862 - INFO -    🔍 OCR: BUTERA
+2025-11-09 20:01:32,862 - INFO -    🤝 Mais próximo: FUTURAMA (66.7%)
+
+2025-11-09 20:01:33,144 - INFO - 🖼️ Imagem: 27902_boqueirao_local_jpg.rf.e0ea5e21f05251e88bccd36a5102877b.jpg
+2025-11-09 20:01:33,144 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:33,145 - INFO -    🔍 OCR: ROOLLFIRAO
+2025-11-09 20:01:33,145 - INFO -    🤝 Mais próximo: BOQUEIRAO (55.6%)
+
+2025-11-09 20:01:33,568 - INFO - 🖼️ Imagem: 27913_fanny_local_jpg.rf.1cf4d5f2e8fd69ce804ebf3149ff5de5.jpg
+2025-11-09 20:01:33,568 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:33,568 - INFO -    🔍 OCR: EE
+2025-11-09 20:01:33,569 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:01:33,810 - INFO - 🖼️ Imagem: 27914_sitio_cercado_local_jpg.rf.c7cea3784494aa85aa125d677166c301.jpg
+2025-11-09 20:01:33,810 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:33,810 - INFO -    🔍 OCR: MW CERENYY
+2025-11-09 20:01:33,810 - INFO -    🤝 Mais próximo: MERCES (50.0%)
+
+2025-11-09 20:01:34,029 - INFO - 🖼️ Imagem: 27915_inter_2_jpg.rf.d97aa8f448a3abaad5113038cc5fcff0.jpg
+2025-11-09 20:01:34,029 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:34,029 - INFO -    🔍 OCR: = EA: Z.
+2025-11-09 20:01:34,029 - INFO -    🤝 Mais próximo: BARREIRINHA SAO JOSE (37.5%)
+
+2025-11-09 20:01:34,251 - INFO - 🖼️ Imagem: 28103_rio_branco_pca_jpg.rf.0fe6f2fe09fdf13ebef513d3a1f9ef1b.jpg
+2025-11-09 20:01:34,251 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:34,252 - INFO -    🔍 OCR: — | RRAWCO
+2025-11-09 20:01:34,252 - INFO -    🤝 Mais próximo: ERASTO (50.0%)
+
+2025-11-09 20:01:34,651 - INFO - 🖼️ Imagem: 28106_atuba_pinheirinho_local_jpg.rf.119f502d0e3d373b99c1485aed9d663d.jpg
+2025-11-09 20:01:34,652 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:34,652 - INFO -    🔍 OCR: _ATUBA
+2025-11-09 20:01:34,652 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:01:34,874 - INFO - 🖼️ Imagem: 28108_maracana_santa_candida_local_jpg.rf.4c967023fb5615b8a5e86f19f6b035fc.jpg
+2025-11-09 20:01:34,874 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:34,874 - INFO -    🔍 OCR: MARACANA
+2025-11-09 20:01:34,875 - INFO -    🤝 Mais próximo: MARACANA (100.0%)
+
+2025-11-09 20:01:35,077 - INFO - 🖼️ Imagem: 28110_onibus_brasil_jpg.rf.826785483935010662cd21939a6da4b1.jpg
+2025-11-09 20:01:35,077 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:35,077 - INFO -    🔍 OCR: EESEES |
+2025-11-09 20:01:35,077 - INFO -    🤝 Mais próximo: MERCES (50.0%)
+
+2025-11-09 20:01:35,429 - INFO - 🖼️ Imagem: 28210_tamandare_cabral_local_jpg.rf.41382c61b8fc5e8d68286a78b3af8328.jpg
+2025-11-09 20:01:35,429 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:35,430 - INFO -    🔍 OCR: ™
+2025-11-09 20:01:35,430 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:01:35,991 - INFO - 🖼️ Imagem: 28226_bairro_novo_local_jpg.rf.3a89495f14f717a056f716b72eac4a8a.jpg
+2025-11-09 20:01:35,992 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:35,992 - INFO -    🔍 OCR: BAIRRO |
+2025-11-09 20:01:35,992 - INFO -    🤝 Mais próximo: BAIRRO ALTO (87.5%)
+
+2025-11-09 20:01:36,200 - INFO - 🖼️ Imagem: 28230_jardim_italia_local_jpg.rf.21c169f82d6a7f9ea1b74126f3b70b7e.jpg
+2025-11-09 20:01:36,200 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:36,200 - INFO -    🔍 OCR: SARDIA TA,
+2025-11-09 20:01:36,201 - INFO -    🤝 Mais próximo: JARDIM ITALIA (60.0%)
+
+2025-11-09 20:01:36,633 - INFO - 🖼️ Imagem: 28314_boqueirao_centro_civico_local_jpg.rf.7d773d86097d1d037a5138777fa8c487.jpg
+2025-11-09 20:01:36,633 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:36,634 - INFO -    🔍 OCR: BOOUEIRAG
+2025-11-09 20:01:36,634 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (77.8%)
+
+2025-11-09 20:01:36,855 - INFO - 🖼️ Imagem: 28327_guaraituba_rui_barbosa_jpg.rf.6a6b5fa83de20c77f1d43dfac5bbf730.jpg
+2025-11-09 20:01:36,856 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:36,856 - INFO -    🔍 OCR: GUARAITUBA
+2025-11-09 20:01:36,856 - INFO -    🤝 Mais próximo: GUARAITUBA (100.0%)
+
+2025-11-09 20:01:37,091 - INFO - 🖼️ Imagem: 28332_pinheirinho_local_jpg.rf.6be2e4b3b05b5baeaabfae0668a9439e.jpg
+2025-11-09 20:01:37,091 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:37,092 - INFO -    🔍 OCR: PINHEIRO
+2025-11-09 20:01:37,092 - INFO -    🤝 Mais próximo: PINHEIROS (100.0%)
+
+2025-11-09 20:01:37,307 - INFO - 🖼️ Imagem: 28425_urbano_jpg.rf.6d8764fc8659b86edc0e1001dbc182b3.jpg
+2025-11-09 20:01:37,307 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:37,307 - INFO -    🔍 OCR: { FAZENDA
+2025-11-09 20:01:37,307 - INFO -    🤝 Mais próximo: FAZENDA (100.0%)
+
+2025-11-09 20:01:37,499 - INFO - 🖼️ Imagem: 28513_urbano_jpg.rf.72efcca35c7239748757f7112c3c0e66.jpg
+2025-11-09 20:01:37,500 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:37,500 - INFO -    🔍 OCR: ED
+2025-11-09 20:01:37,500 - INFO -    🤝 Mais próximo: SAO BENEDITO (100.0%)
+
+2025-11-09 20:01:37,896 - INFO - 🖼️ Imagem: 28533_urbano_jpg.rf.752daf1d8fcd2853dfdab44dd6d0e3f6.jpg
+2025-11-09 20:01:37,896 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:37,897 - INFO -    🔍 OCR: PINHEL RIT THO
+2025-11-09 20:01:37,897 - INFO -    🤝 Mais próximo: PINHEIRINHO (64.3%)
+
+2025-11-09 20:01:38,093 - INFO - 🖼️ Imagem: 28601_urbano_jpg.rf.9cbcc72b39568612ed738bb50906a1ae.jpg
+2025-11-09 20:01:38,094 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:38,094 - INFO -    🔍 OCR: ATU
+2025-11-09 20:01:38,094 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:01:38,324 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:01:38,324 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:38,324 - INFO -    🔍 OCR: SOMGATE CARTRO.
+2025-11-09 20:01:38,325 - INFO -    🤝 Mais próximo: CENTRO (66.7%)
+
+2025-11-09 20:01:38,496 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:01:38,496 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:38,496 - INFO -    🔍 OCR: ME
+2025-11-09 20:01:38,496 - INFO -    🤝 Mais próximo: JD MERCES (100.0%)
+
+2025-11-09 20:01:38,726 - INFO - 🖼️ Imagem: 28633_circular_sul_local_jpg.rf.47602143486500ce11e9e85c59f274a1.jpg
+2025-11-09 20:01:38,726 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:38,726 - INFO -    🔍 OCR: CRCULAR SUL
+2025-11-09 20:01:38,726 - INFO -    🤝 Mais próximo: CIRCULAR SUL (91.7%)
+
+2025-11-09 20:01:38,961 - INFO - 🖼️ Imagem: 28713_tamandare_cabral_local_jpg.rf.aa39c744c19598dfa24af9309fdc521d.jpg
+2025-11-09 20:01:38,962 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:38,962 - INFO -    🔍 OCR: AEE WEVE
+2025-11-09 20:01:38,962 - INFO -    🤝 Mais próximo: MATEUS LEME (45.5%)
+
+2025-11-09 20:01:39,191 - INFO - 🖼️ Imagem: 28720_atuba_pinheirinho_local_jpg.rf.7c29d043b0f9d6e7cfd39b371aaa220a.jpg
+2025-11-09 20:01:39,191 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:39,192 - INFO -    🔍 OCR: ATR
+2025-11-09 20:01:39,192 - INFO -    🤝 Mais próximo: QUATRO BARRAS (100.0%)
+
+2025-11-09 20:01:39,407 - INFO - 🖼️ Imagem: 28724_jd_paraiso_pca_jpg.rf.9a5a080d86185a817253de9d2b834f5e.jpg
+2025-11-09 20:01:39,408 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:39,408 - INFO -    🔍 OCR: , JEE.
+2025-11-09 20:01:39,408 - INFO -    🤝 Mais próximo: AFONSO PENA (33.3%)
+
+2025-11-09 20:01:39,619 - INFO - 🖼️ Imagem: 28726_camargo_local_jpg.rf.52f20c3951e8707ce950fd6a98edb1ca.jpg
+2025-11-09 20:01:39,620 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:39,620 - INFO -    🔍 OCR: PIA
+2025-11-09 20:01:39,620 - INFO -    🤝 Mais próximo: ARAGUAIA (66.7%)
+
+2025-11-09 20:01:39,879 - INFO - 🖼️ Imagem: 7309_parigot_de_souza_local_jpg.rf.477259b2632883e31fdf4423f8d3efab.jpg
+2025-11-09 20:01:39,879 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:39,880 - INFO -    🔍 OCR: |PARIGOT OE SOUZA
+2025-11-09 20:01:39,880 - INFO -    🤝 Mais próximo: PARIGOT DE SOUZA (93.8%)
+
+2025-11-09 20:01:40,099 - INFO - 🖼️ Imagem: IMG1005_INTERBAIRROS2_jpg.rf.5d90e13a1e6ea0cdc5b400996d2c320a.jpg
+2025-11-09 20:01:40,100 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:40,100 - INFO -    🔍 OCR: MTERGARROS. A
+2025-11-09 20:01:40,100 - INFO -    🤝 Mais próximo: INTERBAIRROS I (61.5%)
+
+2025-11-09 20:01:40,322 - INFO - 🖼️ Imagem: IMG1015_GUADALUPE_jpg.rf.77f1a9c86ec31c35008388d581df2c57.jpg
+2025-11-09 20:01:40,323 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:40,323 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:01:40,323 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:01:40,536 - INFO - 🖼️ Imagem: IMG1018_INTER2_jpg.rf.5351e097f92165c3e6efbc5634265af0.jpg
+2025-11-09 20:01:40,536 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:40,536 - INFO -    🔍 OCR: WTER 2
+2025-11-09 20:01:40,537 - INFO -    🤝 Mais próximo: INTER 2 (83.3%)
+
+2025-11-09 20:01:41,463 - INFO - 🖼️ Imagem: IMG1037_COLOMBOCIC_jpg.rf.17cee218f2e96ea5020e88accd469163.jpg
+2025-11-09 20:01:41,464 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:41,464 - INFO -    🔍 OCR: LOE EE
+2025-11-09 20:01:41,464 - INFO -    🤝 Mais próximo: PARIGOT DE SOUZA (50.0%)
+
+2025-11-09 20:01:41,701 - INFO - 🖼️ Imagem: IMG1038_COLINAVERDE_jpg.rf.1601da376488943445c7153c4b8cb236.jpg
+2025-11-09 20:01:41,701 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:41,702 - INFO -    🔍 OCR: COLINA VERDE
+2025-11-09 20:01:41,702 - INFO -    🤝 Mais próximo: COLINA VERDE (100.0%)
+
+2025-11-09 20:01:42,075 - INFO - 🖼️ Imagem: IMG1044_INTER2_jpg.rf.75f6fb06a95669447b0adff44c26e7c8.jpg
+2025-11-09 20:01:42,075 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:42,076 - INFO -    🔍 OCR: INT RRO
+2025-11-09 20:01:42,076 - INFO -    🤝 Mais próximo: INTER2 (66.7%)
+
+2025-11-09 20:01:42,304 - INFO - 🖼️ Imagem: IMG108_GUARAITUBAPRACARUIBARBOSA_jpg.rf.800d8364a428e5ea8ed6c9e5ac86506b.jpg
+2025-11-09 20:01:42,304 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:42,304 - INFO -    🔍 OCR: TTOMRECANG- ORR
+2025-11-09 20:01:42,305 - INFO -    🤝 Mais próximo: PRACA (60.0%)
+
+2025-11-09 20:01:42,534 - INFO - 🖼️ Imagem: IMG116_DALAGASSA_jpg.rf.1a482ffd6e080b7f8411e150ff23b817.jpg
+2025-11-09 20:01:42,535 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:42,535 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:01:42,535 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:01:42,774 - INFO - 🖼️ Imagem: IMG119_URBANO_jpg.rf.9fb9268272e517ad52d238add8eb927b.jpg
+2025-11-09 20:01:42,774 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:42,774 - INFO -    🔍 OCR: 0, BRERAS/ATHER
+2025-11-09 20:01:42,774 - INFO -    🤝 Mais próximo: ERASTO (66.7%)
+
+2025-11-09 20:01:43,002 - INFO - 🖼️ Imagem: IMG11_PINHEIRINHOCABRAL_jpg.rf.3089154209cac54eb3f7471609aeea35.jpg
+2025-11-09 20:01:43,002 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:43,002 - INFO -    🔍 OCR: CABR AL
+2025-11-09 20:01:43,003 - INFO -    🤝 Mais próximo: CABRAL (85.7%)
+
+2025-11-09 20:01:43,239 - INFO - 🖼️ Imagem: IMG122_URBANO_jpg.rf.74a6bac8375b1009e8c25ef3dafd9598.jpg
+2025-11-09 20:01:43,240 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:43,240 - INFO -    🔍 OCR: VILA ZUMBL
+2025-11-09 20:01:43,240 - INFO -    🤝 Mais próximo: VILA ZUMBI (90.0%)
+
+2025-11-09 20:01:43,666 - INFO - 🖼️ Imagem: IMG132_URBANO_jpg.rf.079a0aec23872ef3eb20def0aec467d8.jpg
+2025-11-09 20:01:43,666 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:43,667 - INFO -    🔍 OCR: ‘PONPE®
+2025-11-09 20:01:43,667 - INFO -    🤝 Mais próximo: AFONSO PENA (42.9%)
+
+2025-11-09 20:01:44,261 - INFO - 🖼️ Imagem: IMG147_ATUBASANTACANDIDA_jpg.rf.ae7b65d2ea9629cb2ed3952dbf73bd86.jpg
+2025-11-09 20:01:44,262 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:44,262 - INFO -    🔍 OCR: ENV 08
+2025-11-09 20:01:44,262 - INFO -    🤝 Mais próximo: CENT R BARBOSA (50.0%)
+
+2025-11-09 20:01:44,470 - INFO - 🖼️ Imagem: IMG152_ATUBAPINHEIRINHO_jpg.rf.471e72d9c6c585e66b79edd4a0164b42.jpg
+2025-11-09 20:01:44,471 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:44,471 - INFO -    🔍 OCR: ME LE
+2025-11-09 20:01:44,471 - INFO -    🤝 Mais próximo: JD MERCES (60.0%)
+
+2025-11-09 20:01:45,053 - INFO - 🖼️ Imagem: IMG176_PINHAIS_jpg.rf.d7849d2a27987dcff36d49531a0aa112.jpg
+2025-11-09 20:01:45,053 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:45,053 - INFO -    🔍 OCR: 0
+2025-11-09 20:01:45,053 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:01:45,273 - INFO - 🖼️ Imagem: IMG182_CENTENARIO_jpg.rf.42fbbdd34c8ce95b74411608faa8de59.jpg
+2025-11-09 20:01:45,273 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:45,274 - INFO -    🔍 OCR: PENTENARIO
+2025-11-09 20:01:45,274 - INFO -    🤝 Mais próximo: CENTENARIO (90.0%)
+
+2025-11-09 20:01:45,888 - INFO - 🖼️ Imagem: IMG193_JARDIMIPELOCAL_jpg.rf.e8bef4851e435b1b4546ba4ab93da496.jpg
+2025-11-09 20:01:45,889 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:45,889 - INFO -    🔍 OCR: ARROW PE
+2025-11-09 20:01:45,889 - INFO -    🤝 Mais próximo: ACROPOLE (50.0%)
+
+2025-11-09 20:01:46,129 - INFO - 🖼️ Imagem: IMG198_BAIRROALTO_jpg.rf.624a1dcb1c46da882409878575b7f9f7.jpg
+2025-11-09 20:01:46,130 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:46,130 - INFO -    🔍 OCR: BAIRRO ALTO
+2025-11-09 20:01:46,130 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:01:46,338 - INFO - 🖼️ Imagem: IMG19_PINHEIRINHOCABRAL_jpg.rf.af53c64015511248c83c4a8842f10508.jpg
+2025-11-09 20:01:46,338 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:46,339 - INFO -    🔍 OCR: BR
+2025-11-09 20:01:46,339 - INFO -    🤝 Mais próximo: ABRANCHES (100.0%)
+
+2025-11-09 20:01:46,721 - INFO - 🖼️ Imagem: IMG202_INTERBAIRROSIVLOCAL_jpg.rf.edf8df3e1071453abac76223bb0941e4.jpg
+2025-11-09 20:01:46,721 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:46,721 - INFO -    🔍 OCR: JNTERBRIRPOS WU.
+2025-11-09 20:01:46,722 - INFO -    🤝 Mais próximo: INTERBAIRROS (75.0%)
+
+2025-11-09 20:01:47,263 - INFO - 🖼️ Imagem: IMG210_INTER2_jpg.rf.d0ec201872ce34cde8fd7f70e1a4d919.jpg
+2025-11-09 20:01:47,263 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:47,263 - INFO -    🔍 OCR: UN THEIRS) "2S
+2025-11-09 20:01:47,263 - INFO -    🤝 Mais próximo: PINHEIROS (44.4%)
+
+2025-11-09 20:01:47,895 - INFO - 🖼️ Imagem: IMG22_SITIOCERCADO_jpg.rf.2ff14b058c029560ef01789fb476724b.jpg
+2025-11-09 20:01:47,896 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:47,896 - INFO -    🔍 OCR: SIIG CERCADG
+2025-11-09 20:01:47,896 - INFO -    🤝 Mais próximo: SITIO CERCADO (76.9%)
+
+2025-11-09 20:01:48,339 - INFO - 🖼️ Imagem: IMG232_PORTOBELOLOCAL_jpg.rf.fcdaaa30f7b9dcb56300f17d1110d6e8.jpg
+2025-11-09 20:01:48,340 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:48,340 - INFO -    🔍 OCR: PORTO BEL
+2025-11-09 20:01:48,340 - INFO -    🤝 Mais próximo: PORTO BELO (100.0%)
+
+2025-11-09 20:01:48,581 - INFO - 🖼️ Imagem: IMG234_INTERBAIRROS_jpg.rf.6abda0ea88c15bb07954c020391db08a.jpg
+2025-11-09 20:01:48,582 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:48,582 - INFO -    🔍 OCR: INTERBAIRROS W
+2025-11-09 20:01:48,582 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:01:48,807 - INFO - 🖼️ Imagem: IMG236_ROCAGRANDE_jpg.rf.e1259d99829a82d3e383dac2155c5bf0.jpg
+2025-11-09 20:01:48,807 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:48,807 - INFO -    🔍 OCR: ROCA GRANDE
+2025-11-09 20:01:48,808 - INFO -    🤝 Mais próximo: ROCA GRANDE (100.0%)
+
+2025-11-09 20:01:49,066 - INFO - 🖼️ Imagem: IMG237_COLOMBOCICLOCAL_jpg.rf.4015b7190f5132c1c829cc93676144e4.jpg
+2025-11-09 20:01:49,066 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:49,067 - INFO -    🔍 OCR: COLOMEOLCIS
+2025-11-09 20:01:49,067 - INFO -    🤝 Mais próximo: COLOMBO CIC (72.7%)
+
+2025-11-09 20:01:49,302 - INFO - 🖼️ Imagem: IMG241_LIGEIRAOLOCAL_jpg.rf.431a3a67b06587654808058041a3dcfb.jpg
+2025-11-09 20:01:49,302 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:49,302 - INFO -    🔍 OCR: LIGEIRA
+2025-11-09 20:01:49,303 - INFO -    🤝 Mais próximo: LIGEIRAO (100.0%)
+
+2025-11-09 20:01:49,531 - INFO - 🖼️ Imagem: IMG243_PARQUEATUBALOCAL_jpg.rf.8e752c6a7fdf8c2fefdb354876394485.jpg
+2025-11-09 20:01:49,532 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:49,532 - INFO -    🔍 OCR: PARQUE ALE
+2025-11-09 20:01:49,532 - INFO -    🤝 Mais próximo: PARQUE (100.0%)
+
+2025-11-09 20:01:49,942 - INFO - 🖼️ Imagem: IMG263_JDCHAPARRAL_jpg.rf.9d05a25809e7688492ed59659fb18e8e.jpg
+2025-11-09 20:01:49,942 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:49,942 - INFO -    🔍 OCR: <5. CHBPARRAL
+2025-11-09 20:01:49,942 - INFO -    🤝 Mais próximo: JD CHAPARRAL (75.0%)
+
+2025-11-09 20:01:50,155 - INFO - 🖼️ Imagem: IMG264_TURISMO_jpg.rf.2441f2725cb1f1136fc5fa59c7352d83.jpg
+2025-11-09 20:01:50,156 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:50,156 - INFO -    🔍 OCR: SONIC U
+2025-11-09 20:01:50,156 - INFO -    🤝 Mais próximo: CIC (66.7%)
+
+2025-11-09 20:01:50,343 - INFO - 🖼️ Imagem: IMG268_VILASUICA_jpg.rf.af2128fcacee727cb681e539508c6545.jpg
+2025-11-09 20:01:50,344 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:50,344 - INFO -    🔍 OCR: 2
+2025-11-09 20:01:50,344 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:01:50,741 - INFO - 🖼️ Imagem: IMG271_INTERBAIRROSII_jpg.rf.10eee7d9f37452e5e32149cfc17c30e2.jpg
+2025-11-09 20:01:50,742 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:50,742 - INFO -    🔍 OCR: I!
+2025-11-09 20:01:50,742 - INFO -    🤝 Mais próximo: AGRICOLA (50.0%)
+
+2025-11-09 20:01:50,983 - INFO - 🖼️ Imagem: IMG272_INTERBAIRROS_jpg.rf.c8c2f49afb103bfdc6c829175e5df1cc.jpg
+2025-11-09 20:01:50,983 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:50,983 - INFO -    🔍 OCR: _TERBPIRROS |
+2025-11-09 20:01:50,984 - INFO -    🤝 Mais próximo: INTERBAIRROS I (76.9%)
+
+2025-11-09 20:01:51,512 - INFO - 🖼️ Imagem: IMG285_ATUBASANTACANDIDALOCAL_jpg.rf.1327fa24800f49bdaba95ddadac548fc.jpg
+2025-11-09 20:01:51,512 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:51,512 - INFO -    🔍 OCR: ATIRRSTAREADOA
+2025-11-09 20:01:51,513 - INFO -    🤝 Mais próximo: SAGRADO (57.1%)
+
+2025-11-09 20:01:52,283 - INFO - 🖼️ Imagem: IMG290_NORTESULLOCAL_jpg.rf.d51a01f69a8208fcd888138131e2cb6f.jpg
+2025-11-09 20:01:52,284 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:52,284 - INFO -    🔍 OCR: NORTE/SUL
+2025-11-09 20:01:52,284 - INFO -    🤝 Mais próximo: NORTE SUL (88.9%)
+
+2025-11-09 20:01:52,713 - INFO - 🖼️ Imagem: IMG298_CABRAL_jpg.rf.b22ddc6db0a26b70343aa6bc6be7fe53.jpg
+2025-11-09 20:01:52,713 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:52,714 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:01:52,714 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:01:53,618 - INFO - 🖼️ Imagem: IMG305_CABRAL_jpg.rf.071584a5a747477169bcfe0875db4bbf.jpg
+2025-11-09 20:01:53,618 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:53,618 - INFO -    🔍 OCR: CANAL
+2025-11-09 20:01:53,618 - INFO -    🤝 Mais próximo: CANAL BELEM (100.0%)
+
+2025-11-09 20:01:54,036 - INFO - 🖼️ Imagem: IMG31_HOSPITALANGELINACARONATUBA_jpg.rf.16f595a35a5b4e7e61fd99f2ad3039bc.jpg
+2025-11-09 20:01:54,037 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:54,037 - INFO -    🔍 OCR: HL CARGH/ATURA,
+2025-11-09 20:01:54,037 - INFO -    🤝 Mais próximo: ATUBA (80.0%)
+
+2025-11-09 20:01:54,246 - INFO - 🖼️ Imagem: IMG326_ESPECIAL_jpg.rf.3f5b1ebcac9f20a3e3053a7ff40b577a.jpg
+2025-11-09 20:01:54,247 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:54,247 - INFO -    🔍 OCR: ESPECIAL
+2025-11-09 20:01:54,247 - INFO -    🤝 Mais próximo: ESPECIAL (100.0%)
+
+2025-11-09 20:01:54,451 - INFO - 🖼️ Imagem: IMG331_URBANO_jpg.rf.d23fd78c4f771bf4097a5eb93097e82c.jpg
+2025-11-09 20:01:54,452 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:54,452 - INFO -    🔍 OCR: CURITIBA
+2025-11-09 20:01:54,452 - INFO -    🤝 Mais próximo: CURITIBA (100.0%)
+
+2025-11-09 20:01:54,659 - INFO - 🖼️ Imagem: IMG33_DONAFINA_jpg.rf.ffcf3cfa85f926a04acda72ddfdbefe4.jpg
+2025-11-09 20:01:54,660 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:54,660 - INFO -    🔍 OCR: DONA FINA
+2025-11-09 20:01:54,660 - INFO -    🤝 Mais próximo: DONA FINA (100.0%)
+
+2025-11-09 20:01:55,049 - INFO - 🖼️ Imagem: IMG352_INTER2_jpg.rf.48cd9822b2b6c6cb4829ed44ad43776d.jpg
+2025-11-09 20:01:55,049 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:55,049 - INFO -    🔍 OCR: WIKE 2
+2025-11-09 20:01:55,049 - INFO -    🤝 Mais próximo: INTER 2 (42.9%)
+
+2025-11-09 20:01:55,278 - INFO - 🖼️ Imagem: IMG359_INTERBAIRROSVI_jpg.rf.f1b90a92111c94ec6ef7160c99b56e8d.jpg
+2025-11-09 20:01:55,278 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:55,278 - INFO -    🔍 OCR: NY
+2025-11-09 20:01:55,278 - INFO -    🤝 Mais próximo: FANNY (100.0%)
+
+2025-11-09 20:01:55,902 - INFO - 🖼️ Imagem: IMG379_RIONEGRO_jpg.rf.ae1319f295c47999f79af7908bbfde8f.jpg
+2025-11-09 20:01:55,902 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:55,902 - INFO -    🔍 OCR: RIO NEGRO
+2025-11-09 20:01:55,902 - INFO -    🤝 Mais próximo: RIO NEGRO (100.0%)
+
+2025-11-09 20:01:56,104 - INFO - 🖼️ Imagem: IMG382_GRAMADOS_jpg.rf.6feda49e6feaf7c92bb6b6959cf3bb13.jpg
+2025-11-09 20:01:56,104 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:56,104 - INFO -    🔍 OCR: GRAEADOS,
+2025-11-09 20:01:56,105 - INFO -    🤝 Mais próximo: GRAMADOS (87.5%)
+
+2025-11-09 20:01:56,347 - INFO - 🖼️ Imagem: IMG391_LONDRINA_jpg.rf.5270c3e170e0fe5a2c12aef449354aa5.jpg
+2025-11-09 20:01:56,347 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:56,347 - INFO -    🔍 OCR: OH DRAMA
+2025-11-09 20:01:56,348 - INFO -    🤝 Mais próximo: PRACA (60.0%)
+
+2025-11-09 20:01:56,592 - INFO - 🖼️ Imagem: IMG396_BOQUEIRAO_jpg.rf.357fade1db050d970d80ed2221f6c837.jpg
+2025-11-09 20:01:56,592 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:56,592 - INFO -    🔍 OCR: BOQUEIRAO
+2025-11-09 20:01:56,592 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (100.0%)
+
+2025-11-09 20:01:57,289 - INFO - 🖼️ Imagem: IMG41_VILAESPERANCA_jpg.rf.b323f71c1a7df45bf7aa608f16f0ee4c.jpg
+2025-11-09 20:01:57,289 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:57,289 - INFO -    🔍 OCR: UILA ESPERSHCA
+2025-11-09 20:01:57,290 - INFO -    🤝 Mais próximo: VILA ESPERANCA (78.6%)
+
+2025-11-09 20:01:57,521 - INFO - 🖼️ Imagem: IMG433_CAMPOCOMPRIDO_jpg.rf.aecd77c70560b67f6dccd683591cbd25.jpg
+2025-11-09 20:01:57,522 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:57,522 - INFO -    🔍 OCR: CARRO CONPRIDO
+2025-11-09 20:01:57,522 - INFO -    🤝 Mais próximo: CAMPO COMPRIDO (78.6%)
+
+2025-11-09 20:01:57,949 - INFO - 🖼️ Imagem: IMG43_PINHEIRINHOATUBA_jpg.rf.10ae685f3240f94b21f2eb6ea4d9aeef.jpg
+2025-11-09 20:01:57,949 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:57,949 - INFO -    🔍 OCR: JATUBA-PIMHEIRINHC
+2025-11-09 20:01:57,949 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:01:58,628 - INFO - 🖼️ Imagem: IMG462_PINHEIRINHO_jpg.rf.4a80e5362d731bc82cbcf31138d98dfd.jpg
+2025-11-09 20:01:58,628 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:58,629 - INFO -    🔍 OCR: /PINHEIRINHO-
+2025-11-09 20:01:58,629 - INFO -    🤝 Mais próximo: PINHEIRINHO (100.0%)
+
+2025-11-09 20:01:58,843 - INFO - 🖼️ Imagem: IMG466_PINHEIRINHO_jpg.rf.7bb6f320fbb43afd72a043f6c93557ca.jpg
+2025-11-09 20:01:58,844 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:58,844 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:01:58,844 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:01:59,065 - INFO - 🖼️ Imagem: IMG468_SANTARITA_jpg.rf.62bd404684e48e125bf637124dab4a17.jpg
+2025-11-09 20:01:59,065 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:59,065 - INFO -    🔍 OCR: “SANTA RITA.
+2025-11-09 20:01:59,065 - INFO -    🤝 Mais próximo: SANTA RITA (100.0%)
+
+2025-11-09 20:01:59,567 - INFO - 🖼️ Imagem: IMG46_PINHEIRINHOATUBA_jpg.rf.0fe08f394ed289bca3b3d588560e3746.jpg
+2025-11-09 20:01:59,568 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:01:59,568 - INFO -    🔍 OCR: ATUBA/PINHEIRIMHC
+2025-11-09 20:01:59,569 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:02:00,500 - INFO - 🖼️ Imagem: IMG497_RIOBONITO_jpg.rf.e845859023c9d8687db9e85bca60d18c.jpg
+2025-11-09 20:02:00,500 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:00,501 - INFO -    🔍 OCR: BID 2
+2025-11-09 20:02:00,501 - INFO -    🤝 Mais próximo: AREIA BRANCA (40.0%)
+
+2025-11-09 20:02:01,405 - INFO - 🖼️ Imagem: IMG509_CENTROC-VICO_jpg.rf.43f3bc12621375a6c1300c1238af418f.jpg
+2025-11-09 20:02:01,405 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:01,405 - INFO -    🔍 OCR: CENTRO CIVIC,
+2025-11-09 20:02:01,406 - INFO -    🤝 Mais próximo: CENTRO (100.0%)
+
+2025-11-09 20:02:01,636 - INFO - 🖼️ Imagem: IMG521_CAP-ORASO_jpg.rf.e05244faac5784ec0a385bbdcc5c9c0c.jpg
+2025-11-09 20:02:01,636 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:01,636 - INFO -    🔍 OCR: CAPAO RASO!
+2025-11-09 20:02:01,636 - INFO -    🤝 Mais próximo: CAPAO RASO (100.0%)
+
+2025-11-09 20:02:01,873 - INFO - 🖼️ Imagem: IMG526_BOQUEIR-O_jpg.rf.d3db585af755c43194d7d0b3977f9927.jpg
+2025-11-09 20:02:01,873 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:01,874 - INFO -    🔍 OCR: BOOQUEIREC.
+2025-11-09 20:02:01,874 - INFO -    🤝 Mais próximo: BOQUEIRAO (66.7%)
+
+2025-11-09 20:02:02,249 - INFO - 🖼️ Imagem: IMG528_PIRINEUS_jpg.rf.7cbb2df4ebf871c5eef8c08b932e941d.jpg
+2025-11-09 20:02:02,249 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:02,249 - INFO -    🔍 OCR: |) RINE US
+2025-11-09 20:02:02,249 - INFO -    🤝 Mais próximo: PIRINEUS (62.5%)
+
+2025-11-09 20:02:02,526 - INFO - 🖼️ Imagem: IMG528_PIRINEUS_jpg.rf.7cbb2df4ebf871c5eef8c08b932e941d.jpg
+2025-11-09 20:02:02,526 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:02,527 - INFO -    🔍 OCR: SDT
+2025-11-09 20:02:02,527 - INFO -    🤝 Mais próximo: SATURNO (66.7%)
+
+2025-11-09 20:02:02,770 - INFO - 🖼️ Imagem: IMG531_CAP-ORASO_jpg.rf.caa493cafaf571022b68acfcf4dce311.jpg
+2025-11-09 20:02:02,770 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:02,770 - INFO -    🔍 OCR: TE SAI
+2025-11-09 20:02:02,771 - INFO -    🤝 Mais próximo: INTERBAIRROS (66.7%)
+
+2025-11-09 20:02:03,004 - INFO - 🖼️ Imagem: IMG538_CABRAL_jpg.rf.7fde16bf726960efe69f25465d5775b1.jpg
+2025-11-09 20:02:03,005 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:03,005 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:02:03,005 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:02:03,651 - INFO - 🖼️ Imagem: IMG557_TRABALHADOR_jpg.rf.2747a651d3a7bbf31f3f39a83011a5b5.jpg
+2025-11-09 20:02:03,651 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:03,652 - INFO -    🔍 OCR: TRABALMADOR
+2025-11-09 20:02:03,652 - INFO -    🤝 Mais próximo: TRABALHADOR (90.9%)
+
+2025-11-09 20:02:04,323 - INFO - 🖼️ Imagem: IMG587_VILAAUTODROMO_jpg.rf.ec0e44a28bf012fb7055e9494c70b267.jpg
+2025-11-09 20:02:04,323 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:04,324 - INFO -    🔍 OCR: ALA AUTODRONG.
+2025-11-09 20:02:04,324 - INFO -    🤝 Mais próximo: VILA AUTODROMO (64.3%)
+
+2025-11-09 20:02:04,766 - INFO - 🖼️ Imagem: IMG591_BARREIRINHA_jpg.rf.5885b4ac2eb478ea911858f1d6163fee.jpg
+2025-11-09 20:02:04,766 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:04,766 - INFO -    🔍 OCR: BARRE IANA
+2025-11-09 20:02:04,767 - INFO -    🤝 Mais próximo: BARREIRINHA (63.6%)
+
+2025-11-09 20:02:05,012 - INFO - 🖼️ Imagem: IMG606_ANITAGARIBALDI_jpg.rf.ba1497fddc2c2f9131270fa33ce69152.jpg
+2025-11-09 20:02:05,013 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:05,013 - INFO -    🔍 OCR: ANITA SARIBALE:
+2025-11-09 20:02:05,013 - INFO -    🤝 Mais próximo: ANITA GARIBALDI (80.0%)
+
+2025-11-09 20:02:05,405 - INFO - 🖼️ Imagem: IMG612_FAZENDADIRETO_jpg.rf.0f9ce8347c32fd0ca357f400a6d7367b.jpg
+2025-11-09 20:02:05,405 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:05,405 - INFO -    🔍 OCR: ‘ARENES
+2025-11-09 20:02:05,405 - INFO -    🤝 Mais próximo: SANTA INES (57.1%)
+
+2025-11-09 20:02:05,809 - INFO - 🖼️ Imagem: IMG61_CENTENARIOHAUER_jpg.rf.e73b0ad4d9d75c3120411c3357f7e0fa.jpg
+2025-11-09 20:02:05,809 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:05,809 - INFO -    🔍 OCR: SAUL &
+2025-11-09 20:02:05,809 - INFO -    🤝 Mais próximo: SATURNO (42.9%)
+
+2025-11-09 20:02:06,005 - INFO - 🖼️ Imagem: IMG622_FAZENDA_jpg.rf.6cbf170f080a85b78a6d4016b74fa7c6.jpg
+2025-11-09 20:02:06,005 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:06,006 - INFO -    🔍 OCR: AE,
+2025-11-09 20:02:06,006 - INFO -    🤝 Mais próximo: AEROPORTO (66.7%)
+
+2025-11-09 20:02:06,217 - INFO - 🖼️ Imagem: IMG624_PINHAIS_jpg.rf.c293e2006d7b13b05aae7f61b50d2ad5.jpg
+2025-11-09 20:02:06,218 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:06,218 - INFO -    🔍 OCR: PINK ALS:
+2025-11-09 20:02:06,218 - INFO -    🤝 Mais próximo: PINHAIS (55.6%)
+
+2025-11-09 20:02:06,438 - INFO - 🖼️ Imagem: IMG627_CABRAL_jpg.rf.8a510a5a45c4d408adf4a91610f46490.jpg
+2025-11-09 20:02:06,438 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:06,439 - INFO -    🔍 OCR: CR ERAL
+2025-11-09 20:02:06,439 - INFO -    🤝 Mais próximo: C. GRANDE DO SUL (57.1%)
+
+2025-11-09 20:02:06,696 - INFO - 🖼️ Imagem: IMG632_INTERBAIRROSII_jpg.rf.0a941ce9e66de1738a5a6374bbcd4e60.jpg
+2025-11-09 20:02:06,696 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:06,696 - INFO -    🔍 OCR: SERPEGRR
+2025-11-09 20:02:06,697 - INFO -    🤝 Mais próximo: INTERBAIRROS (50.0%)
+
+2025-11-09 20:02:07,316 - INFO - 🖼️ Imagem: IMG634_CAPAORASO_jpg.rf.1315c6555d3e89bb857099ede301c28b.jpg
+2025-11-09 20:02:07,316 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:07,316 - INFO -    🔍 OCR: RAE.
+2025-11-09 20:02:07,317 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:02:07,609 - INFO - 🖼️ Imagem: IMG63_CABRALTAMANDARE_jpg.rf.f2af7e1e355630c8fae8b554ac64eb6a.jpg
+2025-11-09 20:02:07,609 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:07,609 - INFO -    🔍 OCR: TAMENDAR:
+2025-11-09 20:02:07,610 - INFO -    🤝 Mais próximo: TAMANDARE (77.8%)
+
+2025-11-09 20:02:07,860 - INFO - 🖼️ Imagem: IMG655_SAOJOSE_jpg.rf.f4f1610c847303df2d9c9d5217615434.jpg
+2025-11-09 20:02:07,861 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:07,861 - INFO -    🔍 OCR: SAO JOSE
+2025-11-09 20:02:07,861 - INFO -    🤝 Mais próximo: BARREIRINHA SAO JOSE (100.0%)
+
+2025-11-09 20:02:08,041 - INFO - 🖼️ Imagem: IMG657_CENTROSAOJOSE_jpg.rf.8fd3efedd7dcb9b70845c15cebfe1135.jpg
+2025-11-09 20:02:08,041 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:08,041 - INFO -    🔍 OCR: RE
+2025-11-09 20:02:08,042 - INFO -    🤝 Mais próximo: AREIA BRANCA (100.0%)
+
+2025-11-09 20:02:08,446 - INFO - 🖼️ Imagem: IMG658_CAIUAFAZCENTRO_jpg.rf.ea0e8b5268dff6ee355e5e954d509041.jpg
+2025-11-09 20:02:08,447 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:08,447 - INFO -    🔍 OCR: EE OE
+2025-11-09 20:02:08,447 - INFO -    🤝 Mais próximo: AEROPORTO (40.0%)
+
+2025-11-09 20:02:08,737 - INFO - 🖼️ Imagem: IMG659_CRISTOREI_jpg.rf.ac89988d28781078e005cc9cd8092e73.jpg
+2025-11-09 20:02:08,738 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:08,738 - INFO -    🔍 OCR: CRISTO REL
+2025-11-09 20:02:08,738 - INFO -    🤝 Mais próximo: CRISTO REI (90.0%)
+
+2025-11-09 20:02:09,030 - INFO - 🖼️ Imagem: IMG662_JANAINA_jpg.rf.5343803e62ca40f6313c8594aa0dd6b0.jpg
+2025-11-09 20:02:09,030 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:09,031 - INFO -    🔍 OCR: . JANAINA
+2025-11-09 20:02:09,031 - INFO -    🤝 Mais próximo: JANAINA (100.0%)
+
+2025-11-09 20:02:09,275 - INFO - 🖼️ Imagem: IMG663_JDLUDOVICA_jpg.rf.e74dddaa5c60002b0259e235615bc345.jpg
+2025-11-09 20:02:09,275 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:09,275 - INFO -    🔍 OCR: JD. LUDOVICA
+2025-11-09 20:02:09,275 - INFO -    🤝 Mais próximo: JD LUDOVICA (91.7%)
+
+2025-11-09 20:02:09,716 - INFO - 🖼️ Imagem: IMG670_DONAFINA_jpg.rf.3ddf7e4aa450c3a4a6acd5af10f3726b.jpg
+2025-11-09 20:02:09,717 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:09,717 - INFO -    🔍 OCR: DOAN
+2025-11-09 20:02:09,717 - INFO -    🤝 Mais próximo: SANTA JOANA (75.0%)
+
+2025-11-09 20:02:09,977 - INFO - 🖼️ Imagem: IMG674_RIOBONITOCIC_jpg.rf.a4fc1f8da394a3c7ad67ace7d8bde2b8.jpg
+2025-11-09 20:02:09,978 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:09,978 - INFO -    🔍 OCR: RIO BONITO CIC
+2025-11-09 20:02:09,978 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:02:10,219 - INFO - 🖼️ Imagem: IMG676_UBERABA_jpg.rf.092857fa7aec1c6d8af09e26c042c806.jpg
+2025-11-09 20:02:10,219 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:10,219 - INFO -    🔍 OCR: A
+2025-11-09 20:02:10,220 - INFO -    🤝 Mais próximo: ABRANCHES (100.0%)
+
+2025-11-09 20:02:10,454 - INFO - 🖼️ Imagem: IMG680_CIC_jpg.rf.7562747667901b13ca8c88eff4b6cc43.jpg
+2025-11-09 20:02:10,454 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:10,455 - INFO -    🔍 OCR: CAE
+2025-11-09 20:02:10,455 - INFO -    🤝 Mais próximo: ABRANCHES (66.7%)
+
+2025-11-09 20:02:10,710 - INFO - 🖼️ Imagem: IMG690_VILAVERDE_jpg.rf.cdb976db66e9b5d6ac140786b7a35c37.jpg
+2025-11-09 20:02:10,710 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:10,711 - INFO -    🔍 OCR: IGMIS 3
+2025-11-09 20:02:10,711 - INFO -    🤝 Mais próximo: INTERBAIRROS I (42.9%)
+
+2025-11-09 20:02:11,329 - INFO - 🖼️ Imagem: IMG717_BAIRROALTO_jpg.rf.d26e841e74dab50dd2d36ada543a7524.jpg
+2025-11-09 20:02:11,329 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:11,329 - INFO -    🔍 OCR: BAIRRO ALTON
+2025-11-09 20:02:11,329 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:02:11,565 - INFO - 🖼️ Imagem: IMG730_INTER2_jpg.rf.780ec42b90877f92e1901ed368b9abe8.jpg
+2025-11-09 20:02:11,565 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:11,566 - INFO -    🔍 OCR: INTER 2
+2025-11-09 20:02:11,566 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:02:11,780 - INFO - 🖼️ Imagem: IMG732_MGUADALUPE_jpg.rf.dd1adae749afc1f9f6c96fc13815a787.jpg
+2025-11-09 20:02:11,781 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:11,781 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:02:11,781 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:02:12,165 - INFO - 🖼️ Imagem: IMG750_PINHEIRINHO_jpg.rf.dceda3711035837dae6ee6964df3e953.jpg
+2025-11-09 20:02:12,166 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:12,166 - INFO -    🔍 OCR: RC
+2025-11-09 20:02:12,166 - INFO -    🤝 Mais próximo: ARCOPOLO (100.0%)
+
+2025-11-09 20:02:12,383 - INFO - 🖼️ Imagem: IMG751_BOQUEIRAO_jpg.rf.79449f9a1d1bc8016b499007cbed4dd3.jpg
+2025-11-09 20:02:12,384 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:12,384 - INFO -    🔍 OCR: BOQUEIRAO:
+2025-11-09 20:02:12,384 - INFO -    🤝 Mais próximo: BOQUEIRAO (100.0%)
+
+2025-11-09 20:02:12,600 - INFO - 🖼️ Imagem: IMG759_TURISMO_jpg.rf.33577e0c9ec36f0c87fe56231727f5df.jpg
+2025-11-09 20:02:12,601 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:12,601 - INFO -    🔍 OCR: TURISMO
+2025-11-09 20:02:12,601 - INFO -    🤝 Mais próximo: LINER TURISMO (100.0%)
+
+2025-11-09 20:02:12,822 - INFO - 🖼️ Imagem: IMG763_REFORCOSABARA_jpg.rf.c6741698c1ef0b97c71b315865e519df.jpg
+2025-11-09 20:02:12,823 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:12,823 - INFO -    🔍 OCR: EFORCD SABAAY
+2025-11-09 20:02:12,823 - INFO -    🤝 Mais próximo: REFORCO SABARA (76.9%)
+
+2025-11-09 20:02:13,142 - INFO - 🖼️ Imagem: IMG767_MERCURIO_jpg.rf.1b8a02ff60431d8e56476d9ce50ab68b.jpg
+2025-11-09 20:02:13,142 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:13,142 - INFO -    🔍 OCR: ETE
+2025-11-09 20:02:13,142 - INFO -    🤝 Mais próximo: BATEL (66.7%)
+
+2025-11-09 20:02:13,637 - INFO - 🖼️ Imagem: IMG774_ESPECIAL_jpg.rf.b550796b68ab9478ef0c0dad3f41d697.jpg
+2025-11-09 20:02:13,637 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:13,638 - INFO -    🔍 OCR: ESPECIAL
+2025-11-09 20:02:13,638 - INFO -    🤝 Mais próximo: ESPECIAL (100.0%)
+
+2025-11-09 20:02:14,147 - INFO - 🖼️ Imagem: IMG776_TURISMO_jpg.rf.ec07efb5a5414caff76600c5c61ab7f5.jpg
+2025-11-09 20:02:14,147 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:14,148 - INFO -    🔍 OCR: QURISNO.
+2025-11-09 20:02:14,148 - INFO -    🤝 Mais próximo: TURISMO (71.4%)
+
+2025-11-09 20:02:14,563 - INFO - 🖼️ Imagem: IMG782_INTERBAIRROSIII_jpg.rf.db4de4ab232fcb045d7e026dff3b25b7.jpg
+2025-11-09 20:02:14,564 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:14,564 - INFO -    🔍 OCR: EE
+2025-11-09 20:02:14,564 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:02:14,778 - INFO - 🖼️ Imagem: IMG789_PASSAUNA_jpg.rf.25f3eb676141a80f06520a1c344d2262.jpg
+2025-11-09 20:02:14,778 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:14,779 - INFO -    🔍 OCR: PASSAUNA
+2025-11-09 20:02:14,779 - INFO -    🤝 Mais próximo: PASSAUNA (100.0%)
+
+2025-11-09 20:02:15,326 - INFO - 🖼️ Imagem: IMG798_TIRANDENTES_jpg.rf.92bbed31c30d9286caac8174bd7d3a79.jpg
+2025-11-09 20:02:15,327 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:15,327 - INFO -    🔍 OCR: =,
+2025-11-09 20:02:15,328 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:02:15,697 - INFO - 🖼️ Imagem: IMG799_BARREIRINHA_jpg.rf.aae21d89d7d484cd27ec0eb9f27f5a4c.jpg
+2025-11-09 20:02:15,698 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:15,698 - INFO -    🔍 OCR: ESE.
+2025-11-09 20:02:15,698 - INFO -    🤝 Mais próximo: ACESSO (50.0%)
+
+2025-11-09 20:02:15,936 - INFO - 🖼️ Imagem: IMG800_CAPAORASO_jpg.rf.2d44853916ca538a54ff61033498262e.jpg
+2025-11-09 20:02:15,936 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:15,936 - INFO -    🔍 OCR: CAPAO RASC
+2025-11-09 20:02:15,937 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:02:16,194 - INFO - 🖼️ Imagem: IMG808_JDMERCES_jpg.rf.096dfccc8d8f031b92136a9c5f6028f0.jpg
+2025-11-09 20:02:16,195 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:16,195 - INFO -    🔍 OCR: JD. MERCES
+2025-11-09 20:02:16,195 - INFO -    🤝 Mais próximo: MERCES (100.0%)
+
+2025-11-09 20:02:16,431 - INFO - 🖼️ Imagem: IMG809_BAIRROALTO_jpg.rf.9b9c2ee71f836f9a96f4b2d8e7fff1db.jpg
+2025-11-09 20:02:16,431 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:16,431 - INFO -    🔍 OCR: RAIDDA AIWM:
+2025-11-09 20:02:16,432 - INFO -    🤝 Mais próximo: GARAGEM (42.9%)
+
+2025-11-09 20:02:16,905 - INFO - 🖼️ Imagem: IMG818_DAGLASSA_jpg.rf.b0ba48376af666cc80b43472abc3ec67.jpg
+2025-11-09 20:02:16,905 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:16,906 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:02:16,906 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:02:17,188 - INFO - 🖼️ Imagem: IMG820_SANTACANDIDA_jpg.rf.e92ae21ecbf7cca33ad9b17e825f20e2.jpg
+2025-11-09 20:02:17,188 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:17,188 - INFO -    🔍 OCR: ‘SANTA CANDIDA
+2025-11-09 20:02:17,188 - INFO -    🤝 Mais próximo: SANTA CANDIDA (100.0%)
+
+2025-11-09 20:02:17,457 - INFO - 🖼️ Imagem: IMG832_COLOMBOCIC_jpg.rf.63d042bfa57fa1c846192001b126a9f6.jpg
+2025-11-09 20:02:17,457 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:17,458 - INFO -    🔍 OCR: COLOMBO/CIC.
+2025-11-09 20:02:17,458 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:02:17,985 - INFO - 🖼️ Imagem: IMG836_FAGUNDESVARELA_jpg.rf.f058a1e96f40c7578c92915b8ef6deeb.jpg
+2025-11-09 20:02:17,985 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:17,985 - INFO -    🔍 OCR: | FROUNDES. VARELA
+2025-11-09 20:02:17,985 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (73.3%)
+
+2025-11-09 20:02:18,218 - INFO - 🖼️ Imagem: IMG838_ATUBASTACANDIDA_jpg.rf.607089983e83e04a6cac277d8c439251.jpg
+2025-11-09 20:02:18,218 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:18,218 - INFO -    🔍 OCR: MIEN STROROR
+2025-11-09 20:02:18,218 - INFO -    🤝 Mais próximo: CENTRO (50.0%)
+
+2025-11-09 20:02:18,455 - INFO - 🖼️ Imagem: IMG846_CAMPOALEGRE_jpg.rf.3a94982aca018f280ba5a07449d81e3f.jpg
+2025-11-09 20:02:18,455 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:18,455 - INFO -    🔍 OCR: ANATA! FORE
+2025-11-09 20:02:18,455 - INFO -    🤝 Mais próximo: SAO JOSE (50.0%)
+
+2025-11-09 20:02:18,715 - INFO - 🖼️ Imagem: IMG849_CAMPOMAGRO_jpg.rf.621fd710a5a26f193dc1384232c1489f.jpg
+2025-11-09 20:02:18,716 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:18,716 - INFO -    🔍 OCR: CAMPO NAGRO
+2025-11-09 20:02:18,716 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:02:18,930 - INFO - 🖼️ Imagem: IMG855_GUADALUPE_jpg.rf.b1ed08c237d2c66671db05909342d4a4.jpg
+2025-11-09 20:02:18,930 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:18,930 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:02:18,931 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:02:19,351 - INFO - 🖼️ Imagem: IMG862_SANTAFELICIDADE_jpg.rf.374d819a85a2d22443aa73c6be20d95e.jpg
+2025-11-09 20:02:19,351 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:19,352 - INFO -    🔍 OCR: SATFRELCOANE
+2025-11-09 20:02:19,352 - INFO -    🤝 Mais próximo: SATURNO (57.1%)
+
+2025-11-09 20:02:19,594 - INFO - 🖼️ Imagem: IMG867_CAPAORASO_jpg.rf.cbcb5f6c2dbe75b68c1f7cdd0cb19260.jpg
+2025-11-09 20:02:19,594 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:19,594 - INFO -    🔍 OCR: CRPAD RBSO.
+2025-11-09 20:02:19,595 - INFO -    🤝 Mais próximo: CAPAO RASO (70.0%)
+
+2025-11-09 20:02:19,821 - INFO - 🖼️ Imagem: IMG86_URBANO_jpg.rf.b4001078bb4aa949af8bcfede968827a.jpg
+2025-11-09 20:02:19,821 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:19,822 - INFO -    🔍 OCR: CRISTO PEL
+2025-11-09 20:02:19,822 - INFO -    🤝 Mais próximo: CRISTO REI (80.0%)
+
+2025-11-09 20:02:20,417 - INFO - 🖼️ Imagem: IMG905_JDPIONEIRO_jpg.rf.eb1c4d15ba770782cfb6f9568534339a.jpg
+2025-11-09 20:02:20,417 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:20,418 - INFO -    🔍 OCR: EEE! AI
+2025-11-09 20:02:20,418 - INFO -    🤝 Mais próximo: FAZENDA RIO GRANDE (42.9%)
+
+2025-11-09 20:02:20,643 - INFO - 🖼️ Imagem: IMG909_INTER2_jpg.rf.f15e7c4cfdd9db1040098dffb300df2e.jpg
+2025-11-09 20:02:20,643 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:20,643 - INFO -    🔍 OCR: I © —
+2025-11-09 20:02:20,644 - INFO -    🤝 Mais próximo: ANGELICA PORTAO (40.0%)
+
+2025-11-09 20:02:21,700 - INFO - 🖼️ Imagem: IMG942_RIVIERA_jpg.rf.69e8af52b979c5e8719272d00aec07c3.jpg
+2025-11-09 20:02:21,701 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:21,701 - INFO -    🔍 OCR: RIVIER *.
+2025-11-09 20:02:21,701 - INFO -    🤝 Mais próximo: RIVIERA (85.7%)
+
+2025-11-09 20:02:21,961 - INFO - 🖼️ Imagem: IMG946_FAGUNDESVARELA_jpg.rf.705cdec9e166f9bbdddec88865a2a19e.jpg
+2025-11-09 20:02:21,961 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:21,961 - INFO -    🔍 OCR: | FAGUNDES: YARELH
+2025-11-09 20:02:21,961 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (80.0%)
+
+2025-11-09 20:02:22,365 - INFO - 🖼️ Imagem: IMG958_LINHADIRETACABRAL_jpg.rf.a5ac9bd57b1d37ff3e9b71b8d79f1e56.jpg
+2025-11-09 20:02:22,365 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:22,365 - INFO -    🔍 OCR: LAMAN, OIRETA
+2025-11-09 20:02:22,365 - INFO -    🤝 Mais próximo: TAMANDARE (46.2%)
+
+2025-11-09 20:02:22,605 - INFO - 🖼️ Imagem: IMG959_SAOBRAZ_jpg.rf.de3c3ee31a40afd2d918b1fe7c5899fb.jpg
+2025-11-09 20:02:22,605 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:22,606 - INFO -    🔍 OCR: SAO. BRA?
+2025-11-09 20:02:22,606 - INFO -    🤝 Mais próximo: SAO BRAZ (77.8%)
+
+2025-11-09 20:02:22,833 - INFO - 🖼️ Imagem: IMG95_SANTACANDIDACAPAORASO_jpg.rf.f0f08edf4c9a6a04da72768eaa546404.jpg
+2025-11-09 20:02:22,834 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:22,834 - INFO -    🔍 OCR: ‘FTA. CAIOR,
+2025-11-09 20:02:22,834 - INFO -    🤝 Mais próximo: CAIUA (60.0%)
+
+2025-11-09 20:02:23,057 - INFO - 🖼️ Imagem: IMG960_CAMPOMAGRO_jpg.rf.efe4223eda71d8dc4ed2d4caa31a788f.jpg
+2025-11-09 20:02:23,058 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:23,058 - INFO -    🔍 OCR: CAMPO NAGRO
+2025-11-09 20:02:23,058 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:02:23,287 - INFO - 🖼️ Imagem: IMG964_CAPAORASO_jpg.rf.51b648025985dac70c150469dcab2439.jpg
+2025-11-09 20:02:23,287 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:23,287 - INFO -    🔍 OCR: ICAPAO RAS
+2025-11-09 20:02:23,287 - INFO -    🤝 Mais próximo: CAPAO RASO (80.0%)
+
+2025-11-09 20:02:23,752 - INFO - 🖼️ Imagem: IMG96_RIOBONITO_jpg.rf.67a492bd12769bf19627d72c3190a77b.jpg
+2025-11-09 20:02:23,753 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:23,753 - INFO -    🔍 OCR: BRO EONID
+2025-11-09 20:02:23,753 - INFO -    🤝 Mais próximo: RONDON (66.7%)
+
+2025-11-09 20:02:24,007 - INFO - 🖼️ Imagem: IMG974_TAMANDARE_jpg.rf.c2e4856ae0110db8377bf5bdce001821.jpg
+2025-11-09 20:02:24,008 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:24,008 - INFO -    🔍 OCR: TANANDARE
+2025-11-09 20:02:24,008 - INFO -    🤝 Mais próximo: TAMANDARE (88.9%)
+
+2025-11-09 20:02:24,437 - INFO - 🖼️ Imagem: IMG98_INTERBAIRROSIV_jpg.rf.223c7ce4e9f6c3b758a9ffcf771b29eb.jpg
+2025-11-09 20:02:24,438 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:24,438 - INFO -    🔍 OCR: JRTERBRIRRGS H
+2025-11-09 20:02:24,438 - INFO -    🤝 Mais próximo: INTERBAIRROS (66.7%)
+
+2025-11-09 20:02:24,650 - INFO - 🖼️ Imagem: IMG998_CICCABRAL_jpg.rf.bfc950816985c96195e2f420d72f7b4c.jpg
+2025-11-09 20:02:24,651 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:24,651 - INFO -    🔍 OCR: SS
+2025-11-09 20:02:24,651 - INFO -    🤝 Mais próximo: ACESSO (100.0%)
+
+2025-11-09 20:02:24,864 - INFO - 🖼️ Imagem: IMG999_NORTESUL_jpg.rf.fa010ea5fc1b999eede3ee2b500f112b.jpg
+2025-11-09 20:02:24,865 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:02:24,865 - INFO -    🔍 OCR: | 1
+2025-11-09 20:02:24,865 - INFO -    🤝 Mais próximo: TOMAZ EDISON 1 (66.7%)
+
+2025-11-09 20:02:24,865 - INFO - 
+📊 ESTATÍSTICAS DE PROCESSAMENTO:
+2025-11-09 20:02:24,865 - INFO -    📷 Total de imagens processadas: 280
+2025-11-09 20:02:24,866 - INFO -    ✅ Imagens com detecções: 280 (100.0%)
+2025-11-09 20:02:24,866 - INFO -    🎯 Total de letreiros detectados: 288
+2025-11-09 20:02:24,866 - INFO -    📝 Letreiros com OCR bem-sucedido: 182 (63.2%)
+2025-11-09 20:02:24,866 - INFO -    ❌ OCR retornou vazio: 106 (36.8%)
+2025-11-09 20:02:24,866 - WARNING - 
+⚠️ ATENÇÃO: 106 letreiros tiveram OCR vazio!
+2025-11-09 20:02:24,867 - WARNING -    Possíveis causas:
+2025-11-09 20:02:24,867 - WARNING -    1. Letreiros muito pequenos após recorte
+2025-11-09 20:02:24,867 - WARNING -    2. Baixa qualidade da imagem
+2025-11-09 20:02:24,867 - WARNING -    3. Texto ilegível ou com ângulo ruim
+2025-11-09 20:02:24,867 - WARNING -    4. Configuração do Tesseract inadequada
+2025-11-09 20:02:24,868 - WARNING -    💡 Verifique exemplos em: E:\tcc\dataset_yolo\temp_crops
+2025-11-09 20:02:24,868 - INFO - 
+📊 MÉTRICAS OCR (Tesseract):
+2025-11-09 20:02:24,868 - INFO -    ➡️ Total de letreiros analisados: 182
+2025-11-09 20:02:24,868 - INFO -    ✅ Acertos exatos: 0 (0.00%)
+2025-11-09 20:02:24,868 - INFO -    🔸 Acertos aproximados (>=80% similaridade): 89
+2025-11-09 20:02:24,868 - INFO -    📈 Acurácia total (exatos + aproximados): 48.90%
+2025-11-09 20:02:24,869 - INFO - 
+================================================================================
+2025-11-09 20:02:24,869 - INFO - 📁 Análise de Erros de Detecção e OCR
+2025-11-09 20:02:24,869 - INFO - ================================================================================
+2025-11-09 20:02:24,871 - INFO - 🔍 Analisando erros de detecção e OCR...
+2025-11-09 20:03:28,156 - INFO - ✅ Análise concluída. 568 erros detectados.
+2025-11-09 20:03:28,157 - INFO -    📁 Detecções erradas: E:\tcc\misdetected
+2025-11-09 20:03:28,157 - INFO -    📁 OCRs errados: E:\tcc\misocr
+2025-11-09 20:03:28,157 - INFO -    📄 Logs CSV salvos
+2025-11-09 20:03:28,157 - INFO - 
+================================================================================
+2025-11-09 20:03:28,157 - INFO - 🧩 Etapa OCR com EasyOCR (Comparação)
+2025-11-09 20:03:28,158 - INFO - ================================================================================
+2025-11-09 20:03:28,158 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 20:03:28,158 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 20:03:28,158 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 20:03:28,158 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 20:03:28,716 - INFO - 📥 Inicializando EasyOCR (português e inglês)...
+2025-11-09 20:03:30,894 - INFO - 🔍 Iniciando OCR com EasyOCR em letreiros detectados...
+2025-11-09 20:03:30,894 - INFO - 📝 Configuração: Português + Inglês com GPU
+
+2025-11-09 20:03:30,976 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,012 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,091 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,221 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,260 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,324 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,388 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,449 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,481 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,520 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,562 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,599 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,667 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,699 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,733 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,861 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,899 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:31,968 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,004 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,048 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,085 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,123 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,162 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,237 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,308 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,341 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,373 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,406 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,444 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,551 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,586 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,619 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,651 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,683 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,722 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,759 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,837 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:32,956 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,002 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,039 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,143 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,272 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,389 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,531 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,570 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,634 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,736 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,754 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,794 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,834 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,866 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,898 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,930 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:33,963 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,025 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,059 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,089 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,122 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,140 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,185 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,312 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,347 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,386 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,417 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,451 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,486 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,526 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,613 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,635 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,718 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,789 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,827 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,863 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,898 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,938 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:34,973 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,006 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,038 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,073 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,107 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,176 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,282 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,313 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,384 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,419 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,454 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,502 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,550 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,582 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,622 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,744 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,777 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,813 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,847 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,877 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,917 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,948 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:35,982 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,020 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,081 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,241 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,309 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,340 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,370 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,401 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,462 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,502 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,544 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,581 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,600 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,632 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,663 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,698 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,730 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,768 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,802 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,837 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,874 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,909 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:36,950 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,013 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,078 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,117 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,149 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,180 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,212 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,243 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,282 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,314 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,357 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,389 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,420 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,453 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,488 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,524 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,556 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,623 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,685 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,774 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,802 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,830 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,860 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,890 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:37,984 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,042 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,072 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,104 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,165 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,230 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,260 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,300 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,388 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,449 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,480 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,567 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,598 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,628 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,661 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,698 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,715 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,777 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,809 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,839 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,928 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:38,993 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,023 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,055 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,090 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,121 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,152 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,188 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,249 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,278 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,311 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,340 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,402 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,433 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,515 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,630 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,702 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,739 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,773 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,809 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,842 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,907 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,940 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:39,977 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,016 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,064 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,103 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,137 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,174 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,210 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,404 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,456 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,500 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,543 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,588 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,628 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,661 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,697 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,731 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,775 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,846 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,890 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,923 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,957 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:40,990 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,050 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,083 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,123 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,191 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,222 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,254 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,285 - WARNING - ⚠️ Erro no EasyOCR para E:\tcc\dataset_yolo\temp_crops\letreiro_crop_easy.jpg: too many values to unpack (expected 2)
+2025-11-09 20:03:41,314 - INFO - 
+📊 ESTATÍSTICAS DE PROCESSAMENTO:
+2025-11-09 20:03:41,314 - INFO -    📷 Total de imagens processadas: 280
+2025-11-09 20:03:41,314 - INFO -    ✅ Imagens com detecções: 280 (100.0%)
+2025-11-09 20:03:41,315 - INFO -    🎯 Total de letreiros detectados: 288
+2025-11-09 20:03:41,315 - INFO -    📝 Letreiros com OCR bem-sucedido: 0 (0.0%)
+2025-11-09 20:03:41,315 - INFO -    ❌ OCR retornou vazio: 288 (100.0%)
+2025-11-09 20:03:41,315 - WARNING - 
+⚠️ ATENÇÃO: 288 letreiros tiveram EasyOCR vazio!
+2025-11-09 20:03:41,315 - WARNING -    Possíveis causas:
+2025-11-09 20:03:41,316 - WARNING -    1. Letreiros muito pequenos
+2025-11-09 20:03:41,316 - WARNING -    2. Idioma/fonte não suportada adequadamente
+2025-11-09 20:03:41,316 - WARNING -    3. Baixa confiança do modelo
+2025-11-09 20:03:41,316 - WARNING -    💡 Verifique amostras em: E:\tcc\dataset_yolo\temp_crops
+2025-11-09 20:03:41,316 - INFO - ⚠️ Nenhum letreiro detectado para análise OCR.
+2025-11-09 20:03:41,317 - INFO - 
+================================================================================
+2025-11-09 20:03:41,317 - INFO - ✅ PROCESSO COMPLETO FINALIZADO!
+2025-11-09 20:03:41,317 - INFO - ================================================================================
+2025-11-09 20:03:41,317 - INFO - 📁 Resultados salvos em: E:\tcc
+2025-11-09 20:03:41,317 - INFO -    - Modelo treinado: E:\tcc\onibus_tcc_treino_letreiros
+2025-11-09 20:03:41,318 - INFO -    - Erros de detecção: E:\tcc\misdetected
+2025-11-09 20:03:41,318 - INFO -    - Erros de OCR: E:\tcc\misocr
+2025-11-09 20:03:41,318 - INFO -    - Resultados OCR: E:\tcc\resultados_ocr
+2025-11-09 20:03:41,318 - INFO -    - Imagens com erro de leitura: E:\tcc\imagens_erro_leitura
+2025-11-09 20:03:41,318 - INFO -    - Log completo: E:\tcc\logs\execucao_20251109_200045.log

@@ -1,0 +1,20 @@
+# Core Dependencies
+ultralytics>=8.0.0
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=9.0.0
+PyYAML>=6.0
+tqdm>=4.65.0
+
+# OCR Engines
+pytesseract>=0.3.10
+easyocr>=1.7.0
+
+# Optional - OpenOCR
+# Instale manualmente: git clone https://github.com/Topdu/OpenOCR
+# pip install -r OpenOCR/requirements.txt
+
+# GPU Support (opcional)
+# torch>=2.0.0
+# torchvision>=0.15.0
+# Para CUDA: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118

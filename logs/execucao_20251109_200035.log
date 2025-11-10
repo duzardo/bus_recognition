@@ -1,0 +1,12 @@
+2025-11-09 20:00:35,795 - INFO - ================================================================================
+2025-11-09 20:00:35,795 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 20:00:35,796 - INFO - ================================================================================
+2025-11-09 20:00:35,796 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 20:00:35,796 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 20:00:35,796 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 20:00:35,796 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_200035.log
+2025-11-09 20:00:35,797 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 20:00:35,800 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 20:00:35,800 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml

@@ -1,0 +1,2067 @@
+2025-11-09 20:10:55,628 - INFO - ================================================================================
+2025-11-09 20:10:55,628 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 20:10:55,629 - INFO - ================================================================================
+2025-11-09 20:10:55,629 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 20:10:55,629 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 20:10:55,629 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 20:10:55,629 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_201055.log
+2025-11-09 20:10:55,630 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 20:10:55,633 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 20:10:55,633 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 20:10:58,107 - INFO - 
+================================================================================
+2025-11-09 20:10:58,108 - INFO - ✅ MODELO JÁ TREINADO ENCONTRADO!
+2025-11-09 20:10:58,108 - INFO - ================================================================================
+2025-11-09 20:10:58,108 - INFO - 📂 Carregando modelo de: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg\weights\best.pt
+2025-11-09 20:10:58,108 - INFO - ⏩ Pulando etapa de treinamento (economizando tempo!)
+2025-11-09 20:10:58,108 - INFO - 💡 Para retreinar, delete a pasta: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg
+2025-11-09 20:10:58,147 - INFO - 
+🔍 Avaliando desempenho no conjunto de teste...
+2025-11-09 20:11:24,812 - INFO - 
+📊 Resultados finais:
+2025-11-09 20:11:24,812 - INFO -    ➡️ mAP50-95 (acurácia média): 0.8011
+2025-11-09 20:11:24,812 - INFO -    ➡️ mAP50 (IoU=0.50): 0.9933
+2025-11-09 20:11:24,813 - INFO -    ➡️ mAP75 (IoU=0.75): 0.9530
+2025-11-09 20:11:24,813 - INFO -    ➡️ Precisão média: 0.9854
+2025-11-09 20:11:24,813 - INFO -    ➡️ Revocação média: 0.9866
+2025-11-09 20:11:24,813 - INFO - 
+================================================================================
+2025-11-09 20:11:24,813 - INFO - 🧩 Etapa OCR com Tesseract
+2025-11-09 20:11:24,814 - INFO - ================================================================================
+2025-11-09 20:11:24,814 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 20:11:24,814 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 20:11:24,814 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 20:11:24,814 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 20:11:24,819 - INFO - ✅ Tesseract encontrado em: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 20:11:24,830 - INFO - 🔍 Iniciando OCR em letreiros detectados...
+2025-11-09 20:11:24,831 - INFO - 📝 Configuração Tesseract: PSM 7 (linha única de texto)
+
+2025-11-09 20:11:25,113 - INFO - 🖼️ Imagem: 25018_craso_campina_do_siqueira_local_jpg.rf.98ae677ba9fd7edb5fcd8dca6045c828.jpg
+2025-11-09 20:11:25,113 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:25,113 - INFO -    🔍 OCR: MAP AO PAS
+2025-11-09 20:11:25,114 - INFO -    🤝 Mais próximo: CAPAO RASO (60.0%)
+
+2025-11-09 20:11:25,328 - INFO - 🖼️ Imagem: 25104_onibus_brasil_jpg.rf.3b1f887e3de2b4fff5f4580439873d3c.jpg
+2025-11-09 20:11:25,329 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:25,329 - INFO -    🔍 OCR: INTERBAIRROSH
+2025-11-09 20:11:25,329 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:11:25,951 - INFO - 🖼️ Imagem: 25132_onibus_brasil_jpg.rf.86a1c4727412bed13313fc2d5d081cfd.jpg
+2025-11-09 20:11:25,951 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:25,952 - INFO -    🔍 OCR: AE
+2025-11-09 20:11:25,952 - INFO -    🤝 Mais próximo: AEROPORTO (100.0%)
+
+2025-11-09 20:11:26,172 - INFO - 🖼️ Imagem: 25138_onibus_brasil_jpg.rf.fd9da43161c0d47ec7c42d03ae0f2ffc.jpg
+2025-11-09 20:11:26,172 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:26,173 - INFO -    🔍 OCR: {NTERBAIRROS |
+2025-11-09 20:11:26,173 - INFO -    🤝 Mais próximo: INTERBAIRROS (91.7%)
+
+2025-11-09 20:11:26,573 - INFO - 🖼️ Imagem: 25305_jardim_centauro_local_jpg.rf.e74cbdf046815c224e2ccdc4ac467f77.jpg
+2025-11-09 20:11:26,574 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:26,574 - INFO -    🔍 OCR: 8B. CENTAURO,
+2025-11-09 20:11:26,574 - INFO -    🤝 Mais próximo: JD. CENTAURO (83.3%)
+
+2025-11-09 20:11:26,785 - INFO - 🖼️ Imagem: 25323_gramados_local_jpg.rf.a463b9ed6d4a075e8c6f45d6b06a8476.jpg
+2025-11-09 20:11:26,785 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:26,785 - INFO -    🔍 OCR: GRAHABDGS
+2025-11-09 20:11:26,785 - INFO -    🤝 Mais próximo: AHU (66.7%)
+
+2025-11-09 20:11:27,362 - INFO - 🖼️ Imagem: 25413_futurama_local_jpg.rf.6714cba59b07eafdc53b8be88c48d2b8.jpg
+2025-11-09 20:11:27,362 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:27,362 - INFO -    🔍 OCR: FUTUR AAY
+2025-11-09 20:11:27,363 - INFO -    🤝 Mais próximo: FUTURAMA (75.0%)
+
+2025-11-09 20:11:27,749 - INFO - 🖼️ Imagem: 25531_santa_candida_capao_raso_local_jpg.rf.3a6b96f62840cad47cd65b12176fd2a9.jpg
+2025-11-09 20:11:27,749 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:27,749 - INFO -    🔍 OCR: CAPAU. RABY
+2025-11-09 20:11:27,749 - INFO -    🤝 Mais próximo: CAPAO RASO (63.6%)
+
+2025-11-09 20:11:28,118 - INFO - 🖼️ Imagem: 25714_pinheirinho_cabral_local_jpg.rf.b69b5743f09afe0fa7982111d1efa138.jpg
+2025-11-09 20:11:28,119 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:28,119 - INFO -    🔍 OCR: MN TER 2
+2025-11-09 20:11:28,119 - INFO -    🤝 Mais próximo: INTER 2 (75.0%)
+
+2025-11-09 20:11:28,288 - INFO - 🖼️ Imagem: 25714_pinheirinho_cabral_local_jpg.rf.b69b5743f09afe0fa7982111d1efa138.jpg
+2025-11-09 20:11:28,288 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:28,288 - INFO -    🔍 OCR: SE.
+2025-11-09 20:11:28,288 - INFO -    🤝 Mais próximo: JOSE CULPI (66.7%)
+
+2025-11-09 20:11:28,529 - INFO - 🖼️ Imagem: 25716_interbairros_vi_local_jpg.rf.9d90b110f771243572a9023cd91e484d.jpg
+2025-11-09 20:11:28,530 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:28,530 - INFO -    🔍 OCR: FIE
+2025-11-09 20:11:28,530 - INFO -    🤝 Mais próximo: DONA FINA (66.7%)
+
+2025-11-09 20:11:28,899 - INFO - 🖼️ Imagem: 26107_urbano_jpg.rf.c17118cde045a7c5436f74e478cf0074.jpg
+2025-11-09 20:11:28,900 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:28,900 - INFO -    🔍 OCR: P: SANTA,
+2025-11-09 20:11:28,900 - INFO -    🤝 Mais próximo: CTBA SANTA FE (66.7%)
+
+2025-11-09 20:11:29,289 - INFO - 🖼️ Imagem: 26122_centenario_campo_comprido_local_jpg.rf.6126c3c11f2f49249d68fb56f91f537f.jpg
+2025-11-09 20:11:29,289 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:29,289 - INFO -    🔍 OCR: CAPO CHNPEINA
+2025-11-09 20:11:29,289 - INFO -    🤝 Mais próximo: BOSCH (60.0%)
+
+2025-11-09 20:11:29,492 - INFO - 🖼️ Imagem: 26316_ligeirao_norte_sul_local_jpg.rf.91c9ea07ea3a600c4745c36424515b65.jpg
+2025-11-09 20:11:29,492 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:29,492 - INFO -    🔍 OCR: NORTE/SUE
+2025-11-09 20:11:29,493 - INFO -    🤝 Mais próximo: NORTE SUL (77.8%)
+
+2025-11-09 20:11:29,726 - INFO - 🖼️ Imagem: 26321_interbairros_iv_local_jpg.rf.d49f3c87dbcbb4ec817da8605ed97688.jpg
+2025-11-09 20:11:29,726 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:29,726 - INFO -    🔍 OCR: INTERBAIRROS 10
+2025-11-09 20:11:29,726 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:11:29,923 - INFO - 🖼️ Imagem: 26409_jardim_graziela_local_jpg.rf.ca0b2efa0146dbd061cfe33071497052.jpg
+2025-11-09 20:11:29,923 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:29,923 - INFO -    🔍 OCR: GRAZIELA
+2025-11-09 20:11:29,923 - INFO -    🤝 Mais próximo: JD GRAZIELA (100.0%)
+
+2025-11-09 20:11:30,262 - INFO - 🖼️ Imagem: 26424_linha_turismo_local_jpg.rf.f72f7b1a1d1d57803c7b63c0a1dfffce.jpg
+2025-11-09 20:11:30,263 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:30,263 - INFO -    🔍 OCR: URS?
+2025-11-09 20:11:30,263 - INFO -    🤝 Mais próximo: CURITIBA (50.0%)
+
+2025-11-09 20:11:30,464 - INFO - 🖼️ Imagem: 26507_solar_pinheirinho_local_jpg.rf.284f594a638fa97096d9fc50d290e369.jpg
+2025-11-09 20:11:30,464 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:30,464 - INFO -    🔍 OCR: ET 2 2
+2025-11-09 20:11:30,465 - INFO -    🤝 Mais próximo: CENT R BARBOSA (50.0%)
+
+2025-11-09 20:11:30,681 - INFO - 🖼️ Imagem: 26510_parque_atuba_local_jpg.rf.d02c75f73542f1503b08ec194566e80e.jpg
+2025-11-09 20:11:30,681 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:30,682 - INFO -    🔍 OCR: /PRROUE ATUBA
+2025-11-09 20:11:30,682 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:11:31,082 - INFO - 🖼️ Imagem: 26801_itaperuc_jpg.rf.9df2f08ad3a161cdec9b99d4b5a0d4b5.jpg
+2025-11-09 20:11:31,082 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:31,082 - INFO -    🔍 OCR: PAPERUC!,
+2025-11-09 20:11:31,083 - INFO -    🤝 Mais próximo: HAUER (60.0%)
+
+2025-11-09 20:11:31,594 - INFO - 🖼️ Imagem: 27004_cabral_tamandare_local_jpg.rf.513e7c47830142a98eda73ac18c17f83.jpg
+2025-11-09 20:11:31,595 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:31,595 - INFO -    🔍 OCR: \CABRAL
+2025-11-09 20:11:31,595 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:11:32,125 - INFO - 🖼️ Imagem: 27117_ligeirao_norte_sul_local_jpg.rf.60fe17c1d1d5900e08493cf9fe80a95d.jpg
+2025-11-09 20:11:32,126 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:32,126 - INFO -    🔍 OCR: WORTE/SUL
+2025-11-09 20:11:32,126 - INFO -    🤝 Mais próximo: NORTE SUL (77.8%)
+
+2025-11-09 20:11:32,658 - INFO - 🖼️ Imagem: 27312_trabalhador_local_jpg.rf.12e98677a44587e405553e53d749fd05.jpg
+2025-11-09 20:11:32,658 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:32,658 - INFO -    🔍 OCR: TRABALHADOR:
+2025-11-09 20:11:32,658 - INFO -    🤝 Mais próximo: TRABALHADOR (100.0%)
+
+2025-11-09 20:11:33,186 - INFO - 🖼️ Imagem: 27512_barreirinha_sao_jose_local_jpg.rf.0d32e1b98465bb0d841a502d11a0f587.jpg
+2025-11-09 20:11:33,186 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:33,186 - INFO -    🔍 OCR: AO IER
+2025-11-09 20:11:33,186 - INFO -    🤝 Mais próximo: SAO BERNARDO (83.3%)
+
+2025-11-09 20:11:33,898 - INFO - 🖼️ Imagem: 27604_centenario_campo_comprido_local_jpg.rf.20146288146f2e42b0a347674a9a5921.jpg
+2025-11-09 20:11:33,898 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:33,899 - INFO -    🔍 OCR: CAI LIAT!
+2025-11-09 20:11:33,899 - INFO -    🤝 Mais próximo: CAIUA (60.0%)
+
+2025-11-09 20:11:34,099 - INFO - 🖼️ Imagem: 27607_gramados_local_jpg.rf.4b29139911ff741ec5ec256436a166a7.jpg
+2025-11-09 20:11:34,099 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:34,100 - INFO -    🔍 OCR: GRAMADOS
+2025-11-09 20:11:34,100 - INFO -    🤝 Mais próximo: GRAMADOS (100.0%)
+
+2025-11-09 20:11:34,634 - INFO - 🖼️ Imagem: 27720_maracana_capao_da_imbuia_local_jpg.rf.2edf314e4bd5aeb976a4976607d8afa9.jpg
+2025-11-09 20:11:34,634 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:34,634 - INFO -    🔍 OCR: MAHACAN?,
+2025-11-09 20:11:34,634 - INFO -    🤝 Mais próximo: MARACANA (75.0%)
+
+2025-11-09 20:11:34,986 - INFO - 🖼️ Imagem: 27805_campina_do_siqueira_batel_local_jpg.rf.0f69890e028ef55360d4fc50c6776f54.jpg
+2025-11-09 20:11:34,986 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:34,986 - INFO -    🔍 OCR: BATEL
+2025-11-09 20:11:34,986 - INFO -    🤝 Mais próximo: BATEL (100.0%)
+
+2025-11-09 20:11:35,188 - INFO - 🖼️ Imagem: 27813_interbairros_ii_jpg.rf.4b0ea86470f1c3791f129d839db97d70.jpg
+2025-11-09 20:11:35,188 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:35,188 - INFO -    🔍 OCR: BUTERA
+2025-11-09 20:11:35,189 - INFO -    🤝 Mais próximo: FUTURAMA (66.7%)
+
+2025-11-09 20:11:35,443 - INFO - 🖼️ Imagem: 27902_boqueirao_local_jpg.rf.e0ea5e21f05251e88bccd36a5102877b.jpg
+2025-11-09 20:11:35,444 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:35,444 - INFO -    🔍 OCR: ROOLLFIRAO
+2025-11-09 20:11:35,444 - INFO -    🤝 Mais próximo: BOQUEIRAO (55.6%)
+
+2025-11-09 20:11:35,809 - INFO - 🖼️ Imagem: 27913_fanny_local_jpg.rf.1cf4d5f2e8fd69ce804ebf3149ff5de5.jpg
+2025-11-09 20:11:35,809 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:35,810 - INFO -    🔍 OCR: EE
+2025-11-09 20:11:35,810 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:11:36,009 - INFO - 🖼️ Imagem: 27914_sitio_cercado_local_jpg.rf.c7cea3784494aa85aa125d677166c301.jpg
+2025-11-09 20:11:36,010 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:36,010 - INFO -    🔍 OCR: MW CERENYY
+2025-11-09 20:11:36,010 - INFO -    🤝 Mais próximo: MERCES (50.0%)
+
+2025-11-09 20:11:36,219 - INFO - 🖼️ Imagem: 27915_inter_2_jpg.rf.d97aa8f448a3abaad5113038cc5fcff0.jpg
+2025-11-09 20:11:36,219 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:36,220 - INFO -    🔍 OCR: = EA: Z.
+2025-11-09 20:11:36,220 - INFO -    🤝 Mais próximo: BARREIRINHA SAO JOSE (37.5%)
+
+2025-11-09 20:11:36,432 - INFO - 🖼️ Imagem: 28103_rio_branco_pca_jpg.rf.0fe6f2fe09fdf13ebef513d3a1f9ef1b.jpg
+2025-11-09 20:11:36,433 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:36,433 - INFO -    🔍 OCR: — | RRAWCO
+2025-11-09 20:11:36,433 - INFO -    🤝 Mais próximo: ERASTO (50.0%)
+
+2025-11-09 20:11:36,786 - INFO - 🖼️ Imagem: 28106_atuba_pinheirinho_local_jpg.rf.119f502d0e3d373b99c1485aed9d663d.jpg
+2025-11-09 20:11:36,786 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:36,786 - INFO -    🔍 OCR: _ATUBA
+2025-11-09 20:11:36,786 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:11:36,985 - INFO - 🖼️ Imagem: 28108_maracana_santa_candida_local_jpg.rf.4c967023fb5615b8a5e86f19f6b035fc.jpg
+2025-11-09 20:11:36,985 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:36,986 - INFO -    🔍 OCR: MARACANA
+2025-11-09 20:11:36,986 - INFO -    🤝 Mais próximo: MARACANA (100.0%)
+
+2025-11-09 20:11:37,181 - INFO - 🖼️ Imagem: 28110_onibus_brasil_jpg.rf.826785483935010662cd21939a6da4b1.jpg
+2025-11-09 20:11:37,181 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:37,181 - INFO -    🔍 OCR: EESEES |
+2025-11-09 20:11:37,182 - INFO -    🤝 Mais próximo: MERCES (50.0%)
+
+2025-11-09 20:11:37,538 - INFO - 🖼️ Imagem: 28210_tamandare_cabral_local_jpg.rf.41382c61b8fc5e8d68286a78b3af8328.jpg
+2025-11-09 20:11:37,539 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:37,539 - INFO -    🔍 OCR: ™
+2025-11-09 20:11:37,539 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:11:38,036 - INFO - 🖼️ Imagem: 28226_bairro_novo_local_jpg.rf.3a89495f14f717a056f716b72eac4a8a.jpg
+2025-11-09 20:11:38,037 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:38,037 - INFO -    🔍 OCR: BAIRRO |
+2025-11-09 20:11:38,037 - INFO -    🤝 Mais próximo: BAIRRO ALTO (87.5%)
+
+2025-11-09 20:11:38,242 - INFO - 🖼️ Imagem: 28230_jardim_italia_local_jpg.rf.21c169f82d6a7f9ea1b74126f3b70b7e.jpg
+2025-11-09 20:11:38,242 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:38,242 - INFO -    🔍 OCR: SARDIA TA,
+2025-11-09 20:11:38,243 - INFO -    🤝 Mais próximo: JARDIM ITALIA (60.0%)
+
+2025-11-09 20:11:38,599 - INFO - 🖼️ Imagem: 28314_boqueirao_centro_civico_local_jpg.rf.7d773d86097d1d037a5138777fa8c487.jpg
+2025-11-09 20:11:38,599 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:38,599 - INFO -    🔍 OCR: BOOUEIRAG
+2025-11-09 20:11:38,599 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (77.8%)
+
+2025-11-09 20:11:38,801 - INFO - 🖼️ Imagem: 28327_guaraituba_rui_barbosa_jpg.rf.6a6b5fa83de20c77f1d43dfac5bbf730.jpg
+2025-11-09 20:11:38,801 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:38,801 - INFO -    🔍 OCR: GUARAITUBA
+2025-11-09 20:11:38,801 - INFO -    🤝 Mais próximo: GUARAITUBA (100.0%)
+
+2025-11-09 20:11:39,005 - INFO - 🖼️ Imagem: 28332_pinheirinho_local_jpg.rf.6be2e4b3b05b5baeaabfae0668a9439e.jpg
+2025-11-09 20:11:39,005 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:39,006 - INFO -    🔍 OCR: PINHEIRO
+2025-11-09 20:11:39,006 - INFO -    🤝 Mais próximo: PINHEIROS (100.0%)
+
+2025-11-09 20:11:39,206 - INFO - 🖼️ Imagem: 28425_urbano_jpg.rf.6d8764fc8659b86edc0e1001dbc182b3.jpg
+2025-11-09 20:11:39,206 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:39,206 - INFO -    🔍 OCR: { FAZENDA
+2025-11-09 20:11:39,206 - INFO -    🤝 Mais próximo: FAZENDA (100.0%)
+
+2025-11-09 20:11:39,380 - INFO - 🖼️ Imagem: 28513_urbano_jpg.rf.72efcca35c7239748757f7112c3c0e66.jpg
+2025-11-09 20:11:39,381 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:39,381 - INFO -    🔍 OCR: ED
+2025-11-09 20:11:39,381 - INFO -    🤝 Mais próximo: SAO BENEDITO (100.0%)
+
+2025-11-09 20:11:39,754 - INFO - 🖼️ Imagem: 28533_urbano_jpg.rf.752daf1d8fcd2853dfdab44dd6d0e3f6.jpg
+2025-11-09 20:11:39,754 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:39,755 - INFO -    🔍 OCR: PINHEL RIT THO
+2025-11-09 20:11:39,755 - INFO -    🤝 Mais próximo: PINHEIRINHO (64.3%)
+
+2025-11-09 20:11:39,927 - INFO - 🖼️ Imagem: 28601_urbano_jpg.rf.9cbcc72b39568612ed738bb50906a1ae.jpg
+2025-11-09 20:11:39,927 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:39,927 - INFO -    🔍 OCR: ATU
+2025-11-09 20:11:39,928 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:11:40,159 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:11:40,159 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:40,159 - INFO -    🔍 OCR: SOMGATE CARTRO.
+2025-11-09 20:11:40,160 - INFO -    🤝 Mais próximo: CENTRO (66.7%)
+
+2025-11-09 20:11:40,322 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:11:40,323 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:40,323 - INFO -    🔍 OCR: ME
+2025-11-09 20:11:40,323 - INFO -    🤝 Mais próximo: JD MERCES (100.0%)
+
+2025-11-09 20:11:40,597 - INFO - 🖼️ Imagem: 28633_circular_sul_local_jpg.rf.47602143486500ce11e9e85c59f274a1.jpg
+2025-11-09 20:11:40,598 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:40,599 - INFO -    🔍 OCR: CRCULAR SUL
+2025-11-09 20:11:40,599 - INFO -    🤝 Mais próximo: CIRCULAR SUL (91.7%)
+
+2025-11-09 20:11:40,806 - INFO - 🖼️ Imagem: 28713_tamandare_cabral_local_jpg.rf.aa39c744c19598dfa24af9309fdc521d.jpg
+2025-11-09 20:11:40,806 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:40,806 - INFO -    🔍 OCR: AEE WEVE
+2025-11-09 20:11:40,807 - INFO -    🤝 Mais próximo: MATEUS LEME (45.5%)
+
+2025-11-09 20:11:40,999 - INFO - 🖼️ Imagem: 28720_atuba_pinheirinho_local_jpg.rf.7c29d043b0f9d6e7cfd39b371aaa220a.jpg
+2025-11-09 20:11:40,999 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:40,999 - INFO -    🔍 OCR: ATR
+2025-11-09 20:11:40,999 - INFO -    🤝 Mais próximo: QUATRO BARRAS (100.0%)
+
+2025-11-09 20:11:41,210 - INFO - 🖼️ Imagem: 28724_jd_paraiso_pca_jpg.rf.9a5a080d86185a817253de9d2b834f5e.jpg
+2025-11-09 20:11:41,210 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:41,210 - INFO -    🔍 OCR: , JEE.
+2025-11-09 20:11:41,210 - INFO -    🤝 Mais próximo: AFONSO PENA (33.3%)
+
+2025-11-09 20:11:41,409 - INFO - 🖼️ Imagem: 28726_camargo_local_jpg.rf.52f20c3951e8707ce950fd6a98edb1ca.jpg
+2025-11-09 20:11:41,409 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:41,409 - INFO -    🔍 OCR: PIA
+2025-11-09 20:11:41,409 - INFO -    🤝 Mais próximo: ARAGUAIA (66.7%)
+
+2025-11-09 20:11:41,652 - INFO - 🖼️ Imagem: 7309_parigot_de_souza_local_jpg.rf.477259b2632883e31fdf4423f8d3efab.jpg
+2025-11-09 20:11:41,653 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:41,653 - INFO -    🔍 OCR: |PARIGOT OE SOUZA
+2025-11-09 20:11:41,653 - INFO -    🤝 Mais próximo: PARIGOT DE SOUZA (93.8%)
+
+2025-11-09 20:11:41,872 - INFO - 🖼️ Imagem: IMG1005_INTERBAIRROS2_jpg.rf.5d90e13a1e6ea0cdc5b400996d2c320a.jpg
+2025-11-09 20:11:41,873 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:41,873 - INFO -    🔍 OCR: MTERGARROS. A
+2025-11-09 20:11:41,873 - INFO -    🤝 Mais próximo: INTERBAIRROS I (61.5%)
+
+2025-11-09 20:11:42,097 - INFO - 🖼️ Imagem: IMG1015_GUADALUPE_jpg.rf.77f1a9c86ec31c35008388d581df2c57.jpg
+2025-11-09 20:11:42,097 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:42,097 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:11:42,097 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:11:42,311 - INFO - 🖼️ Imagem: IMG1018_INTER2_jpg.rf.5351e097f92165c3e6efbc5634265af0.jpg
+2025-11-09 20:11:42,311 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:42,311 - INFO -    🔍 OCR: WTER 2
+2025-11-09 20:11:42,311 - INFO -    🤝 Mais próximo: INTER 2 (83.3%)
+
+2025-11-09 20:11:43,346 - INFO - 🖼️ Imagem: IMG1037_COLOMBOCIC_jpg.rf.17cee218f2e96ea5020e88accd469163.jpg
+2025-11-09 20:11:43,347 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:43,348 - INFO -    🔍 OCR: LOE EE
+2025-11-09 20:11:43,348 - INFO -    🤝 Mais próximo: PARIGOT DE SOUZA (50.0%)
+
+2025-11-09 20:11:43,686 - INFO - 🖼️ Imagem: IMG1038_COLINAVERDE_jpg.rf.1601da376488943445c7153c4b8cb236.jpg
+2025-11-09 20:11:43,686 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:43,687 - INFO -    🔍 OCR: COLINA VERDE
+2025-11-09 20:11:43,687 - INFO -    🤝 Mais próximo: COLINA VERDE (100.0%)
+
+2025-11-09 20:11:44,130 - INFO - 🖼️ Imagem: IMG1044_INTER2_jpg.rf.75f6fb06a95669447b0adff44c26e7c8.jpg
+2025-11-09 20:11:44,131 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:44,131 - INFO -    🔍 OCR: INT RRO
+2025-11-09 20:11:44,131 - INFO -    🤝 Mais próximo: INTER2 (66.7%)
+
+2025-11-09 20:11:44,403 - INFO - 🖼️ Imagem: IMG108_GUARAITUBAPRACARUIBARBOSA_jpg.rf.800d8364a428e5ea8ed6c9e5ac86506b.jpg
+2025-11-09 20:11:44,404 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:44,404 - INFO -    🔍 OCR: TTOMRECANG- ORR
+2025-11-09 20:11:44,404 - INFO -    🤝 Mais próximo: PRACA (60.0%)
+
+2025-11-09 20:11:44,637 - INFO - 🖼️ Imagem: IMG116_DALAGASSA_jpg.rf.1a482ffd6e080b7f8411e150ff23b817.jpg
+2025-11-09 20:11:44,637 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:44,637 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:11:44,637 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:11:44,919 - INFO - 🖼️ Imagem: IMG119_URBANO_jpg.rf.9fb9268272e517ad52d238add8eb927b.jpg
+2025-11-09 20:11:44,919 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:44,919 - INFO -    🔍 OCR: 0, BRERAS/ATHER
+2025-11-09 20:11:44,919 - INFO -    🤝 Mais próximo: ERASTO (66.7%)
+
+2025-11-09 20:11:45,154 - INFO - 🖼️ Imagem: IMG11_PINHEIRINHOCABRAL_jpg.rf.3089154209cac54eb3f7471609aeea35.jpg
+2025-11-09 20:11:45,155 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:45,155 - INFO -    🔍 OCR: CABR AL
+2025-11-09 20:11:45,155 - INFO -    🤝 Mais próximo: CABRAL (85.7%)
+
+2025-11-09 20:11:45,387 - INFO - 🖼️ Imagem: IMG122_URBANO_jpg.rf.74a6bac8375b1009e8c25ef3dafd9598.jpg
+2025-11-09 20:11:45,387 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:45,387 - INFO -    🔍 OCR: VILA ZUMBL
+2025-11-09 20:11:45,387 - INFO -    🤝 Mais próximo: VILA ZUMBI (90.0%)
+
+2025-11-09 20:11:45,863 - INFO - 🖼️ Imagem: IMG132_URBANO_jpg.rf.079a0aec23872ef3eb20def0aec467d8.jpg
+2025-11-09 20:11:45,863 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:45,864 - INFO -    🔍 OCR: ‘PONPE®
+2025-11-09 20:11:45,864 - INFO -    🤝 Mais próximo: AFONSO PENA (42.9%)
+
+2025-11-09 20:11:46,496 - INFO - 🖼️ Imagem: IMG147_ATUBASANTACANDIDA_jpg.rf.ae7b65d2ea9629cb2ed3952dbf73bd86.jpg
+2025-11-09 20:11:46,496 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:46,496 - INFO -    🔍 OCR: ENV 08
+2025-11-09 20:11:46,496 - INFO -    🤝 Mais próximo: CENT R BARBOSA (50.0%)
+
+2025-11-09 20:11:46,745 - INFO - 🖼️ Imagem: IMG152_ATUBAPINHEIRINHO_jpg.rf.471e72d9c6c585e66b79edd4a0164b42.jpg
+2025-11-09 20:11:46,745 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:46,745 - INFO -    🔍 OCR: ME LE
+2025-11-09 20:11:46,746 - INFO -    🤝 Mais próximo: JD MERCES (60.0%)
+
+2025-11-09 20:11:47,338 - INFO - 🖼️ Imagem: IMG176_PINHAIS_jpg.rf.d7849d2a27987dcff36d49531a0aa112.jpg
+2025-11-09 20:11:47,338 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:47,339 - INFO -    🔍 OCR: 0
+2025-11-09 20:11:47,339 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:11:47,546 - INFO - 🖼️ Imagem: IMG182_CENTENARIO_jpg.rf.42fbbdd34c8ce95b74411608faa8de59.jpg
+2025-11-09 20:11:47,546 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:47,546 - INFO -    🔍 OCR: PENTENARIO
+2025-11-09 20:11:47,547 - INFO -    🤝 Mais próximo: CENTENARIO (90.0%)
+
+2025-11-09 20:11:48,092 - INFO - 🖼️ Imagem: IMG193_JARDIMIPELOCAL_jpg.rf.e8bef4851e435b1b4546ba4ab93da496.jpg
+2025-11-09 20:11:48,092 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:48,093 - INFO -    🔍 OCR: ARROW PE
+2025-11-09 20:11:48,093 - INFO -    🤝 Mais próximo: ACROPOLE (50.0%)
+
+2025-11-09 20:11:48,326 - INFO - 🖼️ Imagem: IMG198_BAIRROALTO_jpg.rf.624a1dcb1c46da882409878575b7f9f7.jpg
+2025-11-09 20:11:48,326 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:48,326 - INFO -    🔍 OCR: BAIRRO ALTO
+2025-11-09 20:11:48,326 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:11:48,507 - INFO - 🖼️ Imagem: IMG19_PINHEIRINHOCABRAL_jpg.rf.af53c64015511248c83c4a8842f10508.jpg
+2025-11-09 20:11:48,508 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:48,508 - INFO -    🔍 OCR: BR
+2025-11-09 20:11:48,508 - INFO -    🤝 Mais próximo: ABRANCHES (100.0%)
+
+2025-11-09 20:11:48,812 - INFO - 🖼️ Imagem: IMG202_INTERBAIRROSIVLOCAL_jpg.rf.edf8df3e1071453abac76223bb0941e4.jpg
+2025-11-09 20:11:48,812 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:48,812 - INFO -    🔍 OCR: JNTERBRIRPOS WU.
+2025-11-09 20:11:48,812 - INFO -    🤝 Mais próximo: INTERBAIRROS (75.0%)
+
+2025-11-09 20:11:49,237 - INFO - 🖼️ Imagem: IMG210_INTER2_jpg.rf.d0ec201872ce34cde8fd7f70e1a4d919.jpg
+2025-11-09 20:11:49,237 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:49,238 - INFO -    🔍 OCR: UN THEIRS) "2S
+2025-11-09 20:11:49,238 - INFO -    🤝 Mais próximo: PINHEIROS (44.4%)
+
+2025-11-09 20:11:49,932 - INFO - 🖼️ Imagem: IMG22_SITIOCERCADO_jpg.rf.2ff14b058c029560ef01789fb476724b.jpg
+2025-11-09 20:11:49,932 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:49,932 - INFO -    🔍 OCR: SIIG CERCADG
+2025-11-09 20:11:49,933 - INFO -    🤝 Mais próximo: SITIO CERCADO (76.9%)
+
+2025-11-09 20:11:50,375 - INFO - 🖼️ Imagem: IMG232_PORTOBELOLOCAL_jpg.rf.fcdaaa30f7b9dcb56300f17d1110d6e8.jpg
+2025-11-09 20:11:50,375 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:50,375 - INFO -    🔍 OCR: PORTO BEL
+2025-11-09 20:11:50,376 - INFO -    🤝 Mais próximo: PORTO BELO (100.0%)
+
+2025-11-09 20:11:50,669 - INFO - 🖼️ Imagem: IMG234_INTERBAIRROS_jpg.rf.6abda0ea88c15bb07954c020391db08a.jpg
+2025-11-09 20:11:50,669 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:50,669 - INFO -    🔍 OCR: INTERBAIRROS W
+2025-11-09 20:11:50,670 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:11:50,906 - INFO - 🖼️ Imagem: IMG236_ROCAGRANDE_jpg.rf.e1259d99829a82d3e383dac2155c5bf0.jpg
+2025-11-09 20:11:50,907 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:50,907 - INFO -    🔍 OCR: ROCA GRANDE
+2025-11-09 20:11:50,907 - INFO -    🤝 Mais próximo: ROCA GRANDE (100.0%)
+
+2025-11-09 20:11:51,148 - INFO - 🖼️ Imagem: IMG237_COLOMBOCICLOCAL_jpg.rf.4015b7190f5132c1c829cc93676144e4.jpg
+2025-11-09 20:11:51,149 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:51,149 - INFO -    🔍 OCR: COLOMEOLCIS
+2025-11-09 20:11:51,149 - INFO -    🤝 Mais próximo: COLOMBO CIC (72.7%)
+
+2025-11-09 20:11:51,410 - INFO - 🖼️ Imagem: IMG241_LIGEIRAOLOCAL_jpg.rf.431a3a67b06587654808058041a3dcfb.jpg
+2025-11-09 20:11:51,411 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:51,411 - INFO -    🔍 OCR: LIGEIRA
+2025-11-09 20:11:51,411 - INFO -    🤝 Mais próximo: LIGEIRAO (100.0%)
+
+2025-11-09 20:11:51,676 - INFO - 🖼️ Imagem: IMG243_PARQUEATUBALOCAL_jpg.rf.8e752c6a7fdf8c2fefdb354876394485.jpg
+2025-11-09 20:11:51,677 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:51,677 - INFO -    🔍 OCR: PARQUE ALE
+2025-11-09 20:11:51,677 - INFO -    🤝 Mais próximo: PARQUE (100.0%)
+
+2025-11-09 20:11:52,177 - INFO - 🖼️ Imagem: IMG263_JDCHAPARRAL_jpg.rf.9d05a25809e7688492ed59659fb18e8e.jpg
+2025-11-09 20:11:52,178 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:52,178 - INFO -    🔍 OCR: <5. CHBPARRAL
+2025-11-09 20:11:52,178 - INFO -    🤝 Mais próximo: JD CHAPARRAL (75.0%)
+
+2025-11-09 20:11:52,412 - INFO - 🖼️ Imagem: IMG264_TURISMO_jpg.rf.2441f2725cb1f1136fc5fa59c7352d83.jpg
+2025-11-09 20:11:52,413 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:52,413 - INFO -    🔍 OCR: SONIC U
+2025-11-09 20:11:52,413 - INFO -    🤝 Mais próximo: CIC (66.7%)
+
+2025-11-09 20:11:52,615 - INFO - 🖼️ Imagem: IMG268_VILASUICA_jpg.rf.af2128fcacee727cb681e539508c6545.jpg
+2025-11-09 20:11:52,615 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:52,616 - INFO -    🔍 OCR: 2
+2025-11-09 20:11:52,616 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:11:53,022 - INFO - 🖼️ Imagem: IMG271_INTERBAIRROSII_jpg.rf.10eee7d9f37452e5e32149cfc17c30e2.jpg
+2025-11-09 20:11:53,023 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:53,023 - INFO -    🔍 OCR: I!
+2025-11-09 20:11:53,023 - INFO -    🤝 Mais próximo: AGRICOLA (50.0%)
+
+2025-11-09 20:11:53,241 - INFO - 🖼️ Imagem: IMG272_INTERBAIRROS_jpg.rf.c8c2f49afb103bfdc6c829175e5df1cc.jpg
+2025-11-09 20:11:53,242 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:53,242 - INFO -    🔍 OCR: _TERBPIRROS |
+2025-11-09 20:11:53,242 - INFO -    🤝 Mais próximo: INTERBAIRROS I (76.9%)
+
+2025-11-09 20:11:53,702 - INFO - 🖼️ Imagem: IMG285_ATUBASANTACANDIDALOCAL_jpg.rf.1327fa24800f49bdaba95ddadac548fc.jpg
+2025-11-09 20:11:53,702 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:53,702 - INFO -    🔍 OCR: ATIRRSTAREADOA
+2025-11-09 20:11:53,702 - INFO -    🤝 Mais próximo: SAGRADO (57.1%)
+
+2025-11-09 20:11:54,396 - INFO - 🖼️ Imagem: IMG290_NORTESULLOCAL_jpg.rf.d51a01f69a8208fcd888138131e2cb6f.jpg
+2025-11-09 20:11:54,396 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:54,396 - INFO -    🔍 OCR: NORTE/SUL
+2025-11-09 20:11:54,397 - INFO -    🤝 Mais próximo: NORTE SUL (88.9%)
+
+2025-11-09 20:11:54,885 - INFO - 🖼️ Imagem: IMG298_CABRAL_jpg.rf.b22ddc6db0a26b70343aa6bc6be7fe53.jpg
+2025-11-09 20:11:54,886 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:54,886 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:11:54,886 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:11:55,874 - INFO - 🖼️ Imagem: IMG305_CABRAL_jpg.rf.071584a5a747477169bcfe0875db4bbf.jpg
+2025-11-09 20:11:55,874 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:55,874 - INFO -    🔍 OCR: CANAL
+2025-11-09 20:11:55,874 - INFO -    🤝 Mais próximo: CANAL BELEM (100.0%)
+
+2025-11-09 20:11:56,283 - INFO - 🖼️ Imagem: IMG31_HOSPITALANGELINACARONATUBA_jpg.rf.16f595a35a5b4e7e61fd99f2ad3039bc.jpg
+2025-11-09 20:11:56,283 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:56,284 - INFO -    🔍 OCR: HL CARGH/ATURA,
+2025-11-09 20:11:56,284 - INFO -    🤝 Mais próximo: ATUBA (80.0%)
+
+2025-11-09 20:11:56,485 - INFO - 🖼️ Imagem: IMG326_ESPECIAL_jpg.rf.3f5b1ebcac9f20a3e3053a7ff40b577a.jpg
+2025-11-09 20:11:56,485 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:56,485 - INFO -    🔍 OCR: ESPECIAL
+2025-11-09 20:11:56,486 - INFO -    🤝 Mais próximo: ESPECIAL (100.0%)
+
+2025-11-09 20:11:56,725 - INFO - 🖼️ Imagem: IMG331_URBANO_jpg.rf.d23fd78c4f771bf4097a5eb93097e82c.jpg
+2025-11-09 20:11:56,725 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:56,726 - INFO -    🔍 OCR: CURITIBA
+2025-11-09 20:11:56,726 - INFO -    🤝 Mais próximo: CURITIBA (100.0%)
+
+2025-11-09 20:11:57,005 - INFO - 🖼️ Imagem: IMG33_DONAFINA_jpg.rf.ffcf3cfa85f926a04acda72ddfdbefe4.jpg
+2025-11-09 20:11:57,005 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:57,005 - INFO -    🔍 OCR: DONA FINA
+2025-11-09 20:11:57,006 - INFO -    🤝 Mais próximo: DONA FINA (100.0%)
+
+2025-11-09 20:11:57,493 - INFO - 🖼️ Imagem: IMG352_INTER2_jpg.rf.48cd9822b2b6c6cb4829ed44ad43776d.jpg
+2025-11-09 20:11:57,493 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:57,493 - INFO -    🔍 OCR: WIKE 2
+2025-11-09 20:11:57,494 - INFO -    🤝 Mais próximo: INTER 2 (42.9%)
+
+2025-11-09 20:11:57,716 - INFO - 🖼️ Imagem: IMG359_INTERBAIRROSVI_jpg.rf.f1b90a92111c94ec6ef7160c99b56e8d.jpg
+2025-11-09 20:11:57,717 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:57,717 - INFO -    🔍 OCR: NY
+2025-11-09 20:11:57,717 - INFO -    🤝 Mais próximo: FANNY (100.0%)
+
+2025-11-09 20:11:58,436 - INFO - 🖼️ Imagem: IMG379_RIONEGRO_jpg.rf.ae1319f295c47999f79af7908bbfde8f.jpg
+2025-11-09 20:11:58,436 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:58,436 - INFO -    🔍 OCR: RIO NEGRO
+2025-11-09 20:11:58,436 - INFO -    🤝 Mais próximo: RIO NEGRO (100.0%)
+
+2025-11-09 20:11:58,696 - INFO - 🖼️ Imagem: IMG382_GRAMADOS_jpg.rf.6feda49e6feaf7c92bb6b6959cf3bb13.jpg
+2025-11-09 20:11:58,696 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:58,696 - INFO -    🔍 OCR: GRAEADOS,
+2025-11-09 20:11:58,696 - INFO -    🤝 Mais próximo: GRAMADOS (87.5%)
+
+2025-11-09 20:11:58,941 - INFO - 🖼️ Imagem: IMG391_LONDRINA_jpg.rf.5270c3e170e0fe5a2c12aef449354aa5.jpg
+2025-11-09 20:11:58,942 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:58,942 - INFO -    🔍 OCR: OH DRAMA
+2025-11-09 20:11:58,942 - INFO -    🤝 Mais próximo: PRACA (60.0%)
+
+2025-11-09 20:11:59,195 - INFO - 🖼️ Imagem: IMG396_BOQUEIRAO_jpg.rf.357fade1db050d970d80ed2221f6c837.jpg
+2025-11-09 20:11:59,196 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:11:59,196 - INFO -    🔍 OCR: BOQUEIRAO
+2025-11-09 20:11:59,196 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (100.0%)
+
+2025-11-09 20:12:00,042 - INFO - 🖼️ Imagem: IMG41_VILAESPERANCA_jpg.rf.b323f71c1a7df45bf7aa608f16f0ee4c.jpg
+2025-11-09 20:12:00,042 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:00,043 - INFO -    🔍 OCR: UILA ESPERSHCA
+2025-11-09 20:12:00,043 - INFO -    🤝 Mais próximo: VILA ESPERANCA (78.6%)
+
+2025-11-09 20:12:00,334 - INFO - 🖼️ Imagem: IMG433_CAMPOCOMPRIDO_jpg.rf.aecd77c70560b67f6dccd683591cbd25.jpg
+2025-11-09 20:12:00,334 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:00,335 - INFO -    🔍 OCR: CARRO CONPRIDO
+2025-11-09 20:12:00,335 - INFO -    🤝 Mais próximo: CAMPO COMPRIDO (78.6%)
+
+2025-11-09 20:12:00,813 - INFO - 🖼️ Imagem: IMG43_PINHEIRINHOATUBA_jpg.rf.10ae685f3240f94b21f2eb6ea4d9aeef.jpg
+2025-11-09 20:12:00,813 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:00,814 - INFO -    🔍 OCR: JATUBA-PIMHEIRINHC
+2025-11-09 20:12:00,814 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:12:01,515 - INFO - 🖼️ Imagem: IMG462_PINHEIRINHO_jpg.rf.4a80e5362d731bc82cbcf31138d98dfd.jpg
+2025-11-09 20:12:01,516 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:01,516 - INFO -    🔍 OCR: /PINHEIRINHO-
+2025-11-09 20:12:01,516 - INFO -    🤝 Mais próximo: PINHEIRINHO (100.0%)
+
+2025-11-09 20:12:01,758 - INFO - 🖼️ Imagem: IMG466_PINHEIRINHO_jpg.rf.7bb6f320fbb43afd72a043f6c93557ca.jpg
+2025-11-09 20:12:01,759 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:01,759 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:12:01,759 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:12:01,979 - INFO - 🖼️ Imagem: IMG468_SANTARITA_jpg.rf.62bd404684e48e125bf637124dab4a17.jpg
+2025-11-09 20:12:01,979 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:01,979 - INFO -    🔍 OCR: “SANTA RITA.
+2025-11-09 20:12:01,979 - INFO -    🤝 Mais próximo: SANTA RITA (100.0%)
+
+2025-11-09 20:12:02,404 - INFO - 🖼️ Imagem: IMG46_PINHEIRINHOATUBA_jpg.rf.0fe08f394ed289bca3b3d588560e3746.jpg
+2025-11-09 20:12:02,404 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:02,405 - INFO -    🔍 OCR: ATUBA/PINHEIRIMHC
+2025-11-09 20:12:02,405 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:12:03,269 - INFO - 🖼️ Imagem: IMG497_RIOBONITO_jpg.rf.e845859023c9d8687db9e85bca60d18c.jpg
+2025-11-09 20:12:03,269 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:03,269 - INFO -    🔍 OCR: BID 2
+2025-11-09 20:12:03,269 - INFO -    🤝 Mais próximo: AREIA BRANCA (40.0%)
+
+2025-11-09 20:12:04,168 - INFO - 🖼️ Imagem: IMG509_CENTROC-VICO_jpg.rf.43f3bc12621375a6c1300c1238af418f.jpg
+2025-11-09 20:12:04,168 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:04,169 - INFO -    🔍 OCR: CENTRO CIVIC,
+2025-11-09 20:12:04,169 - INFO -    🤝 Mais próximo: CENTRO (100.0%)
+
+2025-11-09 20:12:04,446 - INFO - 🖼️ Imagem: IMG521_CAP-ORASO_jpg.rf.e05244faac5784ec0a385bbdcc5c9c0c.jpg
+2025-11-09 20:12:04,446 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:04,447 - INFO -    🔍 OCR: CAPAO RASO!
+2025-11-09 20:12:04,447 - INFO -    🤝 Mais próximo: CAPAO RASO (100.0%)
+
+2025-11-09 20:12:04,682 - INFO - 🖼️ Imagem: IMG526_BOQUEIR-O_jpg.rf.d3db585af755c43194d7d0b3977f9927.jpg
+2025-11-09 20:12:04,682 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:04,682 - INFO -    🔍 OCR: BOOQUEIREC.
+2025-11-09 20:12:04,682 - INFO -    🤝 Mais próximo: BOQUEIRAO (66.7%)
+
+2025-11-09 20:12:04,905 - INFO - 🖼️ Imagem: IMG528_PIRINEUS_jpg.rf.7cbb2df4ebf871c5eef8c08b932e941d.jpg
+2025-11-09 20:12:04,905 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:04,906 - INFO -    🔍 OCR: |) RINE US
+2025-11-09 20:12:04,906 - INFO -    🤝 Mais próximo: PIRINEUS (62.5%)
+
+2025-11-09 20:12:05,094 - INFO - 🖼️ Imagem: IMG528_PIRINEUS_jpg.rf.7cbb2df4ebf871c5eef8c08b932e941d.jpg
+2025-11-09 20:12:05,095 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:05,095 - INFO -    🔍 OCR: SDT
+2025-11-09 20:12:05,095 - INFO -    🤝 Mais próximo: SATURNO (66.7%)
+
+2025-11-09 20:12:05,308 - INFO - 🖼️ Imagem: IMG531_CAP-ORASO_jpg.rf.caa493cafaf571022b68acfcf4dce311.jpg
+2025-11-09 20:12:05,309 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:05,309 - INFO -    🔍 OCR: TE SAI
+2025-11-09 20:12:05,309 - INFO -    🤝 Mais próximo: INTERBAIRROS (66.7%)
+
+2025-11-09 20:12:05,518 - INFO - 🖼️ Imagem: IMG538_CABRAL_jpg.rf.7fde16bf726960efe69f25465d5775b1.jpg
+2025-11-09 20:12:05,519 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:05,519 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:12:05,519 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:12:06,095 - INFO - 🖼️ Imagem: IMG557_TRABALHADOR_jpg.rf.2747a651d3a7bbf31f3f39a83011a5b5.jpg
+2025-11-09 20:12:06,095 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:06,095 - INFO -    🔍 OCR: TRABALMADOR
+2025-11-09 20:12:06,095 - INFO -    🤝 Mais próximo: TRABALHADOR (90.9%)
+
+2025-11-09 20:12:06,671 - INFO - 🖼️ Imagem: IMG587_VILAAUTODROMO_jpg.rf.ec0e44a28bf012fb7055e9494c70b267.jpg
+2025-11-09 20:12:06,671 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:06,672 - INFO -    🔍 OCR: ALA AUTODRONG.
+2025-11-09 20:12:06,672 - INFO -    🤝 Mais próximo: VILA AUTODROMO (64.3%)
+
+2025-11-09 20:12:07,059 - INFO - 🖼️ Imagem: IMG591_BARREIRINHA_jpg.rf.5885b4ac2eb478ea911858f1d6163fee.jpg
+2025-11-09 20:12:07,059 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:07,059 - INFO -    🔍 OCR: BARRE IANA
+2025-11-09 20:12:07,059 - INFO -    🤝 Mais próximo: BARREIRINHA (63.6%)
+
+2025-11-09 20:12:07,283 - INFO - 🖼️ Imagem: IMG606_ANITAGARIBALDI_jpg.rf.ba1497fddc2c2f9131270fa33ce69152.jpg
+2025-11-09 20:12:07,283 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:07,283 - INFO -    🔍 OCR: ANITA SARIBALE:
+2025-11-09 20:12:07,283 - INFO -    🤝 Mais próximo: ANITA GARIBALDI (80.0%)
+
+2025-11-09 20:12:07,694 - INFO - 🖼️ Imagem: IMG612_FAZENDADIRETO_jpg.rf.0f9ce8347c32fd0ca357f400a6d7367b.jpg
+2025-11-09 20:12:07,695 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:07,695 - INFO -    🔍 OCR: ‘ARENES
+2025-11-09 20:12:07,695 - INFO -    🤝 Mais próximo: SANTA INES (57.1%)
+
+2025-11-09 20:12:08,095 - INFO - 🖼️ Imagem: IMG61_CENTENARIOHAUER_jpg.rf.e73b0ad4d9d75c3120411c3357f7e0fa.jpg
+2025-11-09 20:12:08,095 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:08,095 - INFO -    🔍 OCR: SAUL &
+2025-11-09 20:12:08,095 - INFO -    🤝 Mais próximo: SATURNO (42.9%)
+
+2025-11-09 20:12:08,312 - INFO - 🖼️ Imagem: IMG622_FAZENDA_jpg.rf.6cbf170f080a85b78a6d4016b74fa7c6.jpg
+2025-11-09 20:12:08,313 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:08,313 - INFO -    🔍 OCR: AE,
+2025-11-09 20:12:08,313 - INFO -    🤝 Mais próximo: AEROPORTO (66.7%)
+
+2025-11-09 20:12:08,553 - INFO - 🖼️ Imagem: IMG624_PINHAIS_jpg.rf.c293e2006d7b13b05aae7f61b50d2ad5.jpg
+2025-11-09 20:12:08,554 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:08,554 - INFO -    🔍 OCR: PINK ALS:
+2025-11-09 20:12:08,554 - INFO -    🤝 Mais próximo: PINHAIS (55.6%)
+
+2025-11-09 20:12:08,793 - INFO - 🖼️ Imagem: IMG627_CABRAL_jpg.rf.8a510a5a45c4d408adf4a91610f46490.jpg
+2025-11-09 20:12:08,793 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:08,793 - INFO -    🔍 OCR: CR ERAL
+2025-11-09 20:12:08,793 - INFO -    🤝 Mais próximo: C. GRANDE DO SUL (57.1%)
+
+2025-11-09 20:12:09,042 - INFO - 🖼️ Imagem: IMG632_INTERBAIRROSII_jpg.rf.0a941ce9e66de1738a5a6374bbcd4e60.jpg
+2025-11-09 20:12:09,042 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:09,042 - INFO -    🔍 OCR: SERPEGRR
+2025-11-09 20:12:09,042 - INFO -    🤝 Mais próximo: INTERBAIRROS (50.0%)
+
+2025-11-09 20:12:09,666 - INFO - 🖼️ Imagem: IMG634_CAPAORASO_jpg.rf.1315c6555d3e89bb857099ede301c28b.jpg
+2025-11-09 20:12:09,666 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:09,666 - INFO -    🔍 OCR: RAE.
+2025-11-09 20:12:09,667 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:12:09,904 - INFO - 🖼️ Imagem: IMG63_CABRALTAMANDARE_jpg.rf.f2af7e1e355630c8fae8b554ac64eb6a.jpg
+2025-11-09 20:12:09,904 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:09,905 - INFO -    🔍 OCR: TAMENDAR:
+2025-11-09 20:12:09,905 - INFO -    🤝 Mais próximo: TAMANDARE (77.8%)
+
+2025-11-09 20:12:10,180 - INFO - 🖼️ Imagem: IMG655_SAOJOSE_jpg.rf.f4f1610c847303df2d9c9d5217615434.jpg
+2025-11-09 20:12:10,181 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:10,181 - INFO -    🔍 OCR: SAO JOSE
+2025-11-09 20:12:10,181 - INFO -    🤝 Mais próximo: BARREIRINHA SAO JOSE (100.0%)
+
+2025-11-09 20:12:10,396 - INFO - 🖼️ Imagem: IMG657_CENTROSAOJOSE_jpg.rf.8fd3efedd7dcb9b70845c15cebfe1135.jpg
+2025-11-09 20:12:10,397 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:10,397 - INFO -    🔍 OCR: RE
+2025-11-09 20:12:10,397 - INFO -    🤝 Mais próximo: AREIA BRANCA (100.0%)
+
+2025-11-09 20:12:10,807 - INFO - 🖼️ Imagem: IMG658_CAIUAFAZCENTRO_jpg.rf.ea0e8b5268dff6ee355e5e954d509041.jpg
+2025-11-09 20:12:10,808 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:10,808 - INFO -    🔍 OCR: EE OE
+2025-11-09 20:12:10,808 - INFO -    🤝 Mais próximo: AEROPORTO (40.0%)
+
+2025-11-09 20:12:11,034 - INFO - 🖼️ Imagem: IMG659_CRISTOREI_jpg.rf.ac89988d28781078e005cc9cd8092e73.jpg
+2025-11-09 20:12:11,034 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:11,035 - INFO -    🔍 OCR: CRISTO REL
+2025-11-09 20:12:11,035 - INFO -    🤝 Mais próximo: CRISTO REI (90.0%)
+
+2025-11-09 20:12:11,282 - INFO - 🖼️ Imagem: IMG662_JANAINA_jpg.rf.5343803e62ca40f6313c8594aa0dd6b0.jpg
+2025-11-09 20:12:11,282 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:11,282 - INFO -    🔍 OCR: . JANAINA
+2025-11-09 20:12:11,283 - INFO -    🤝 Mais próximo: JANAINA (100.0%)
+
+2025-11-09 20:12:11,523 - INFO - 🖼️ Imagem: IMG663_JDLUDOVICA_jpg.rf.e74dddaa5c60002b0259e235615bc345.jpg
+2025-11-09 20:12:11,523 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:11,523 - INFO -    🔍 OCR: JD. LUDOVICA
+2025-11-09 20:12:11,523 - INFO -    🤝 Mais próximo: JD LUDOVICA (91.7%)
+
+2025-11-09 20:12:12,004 - INFO - 🖼️ Imagem: IMG670_DONAFINA_jpg.rf.3ddf7e4aa450c3a4a6acd5af10f3726b.jpg
+2025-11-09 20:12:12,004 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:12,005 - INFO -    🔍 OCR: DOAN
+2025-11-09 20:12:12,005 - INFO -    🤝 Mais próximo: SANTA JOANA (75.0%)
+
+2025-11-09 20:12:12,257 - INFO - 🖼️ Imagem: IMG674_RIOBONITOCIC_jpg.rf.a4fc1f8da394a3c7ad67ace7d8bde2b8.jpg
+2025-11-09 20:12:12,257 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:12,257 - INFO -    🔍 OCR: RIO BONITO CIC
+2025-11-09 20:12:12,257 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:12:12,483 - INFO - 🖼️ Imagem: IMG676_UBERABA_jpg.rf.092857fa7aec1c6d8af09e26c042c806.jpg
+2025-11-09 20:12:12,484 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:12,484 - INFO -    🔍 OCR: A
+2025-11-09 20:12:12,484 - INFO -    🤝 Mais próximo: ABRANCHES (100.0%)
+
+2025-11-09 20:12:12,702 - INFO - 🖼️ Imagem: IMG680_CIC_jpg.rf.7562747667901b13ca8c88eff4b6cc43.jpg
+2025-11-09 20:12:12,703 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:12,703 - INFO -    🔍 OCR: CAE
+2025-11-09 20:12:12,703 - INFO -    🤝 Mais próximo: ABRANCHES (66.7%)
+
+2025-11-09 20:12:12,907 - INFO - 🖼️ Imagem: IMG690_VILAVERDE_jpg.rf.cdb976db66e9b5d6ac140786b7a35c37.jpg
+2025-11-09 20:12:12,908 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:12,908 - INFO -    🔍 OCR: IGMIS 3
+2025-11-09 20:12:12,908 - INFO -    🤝 Mais próximo: INTERBAIRROS I (42.9%)
+
+2025-11-09 20:12:13,595 - INFO - 🖼️ Imagem: IMG717_BAIRROALTO_jpg.rf.d26e841e74dab50dd2d36ada543a7524.jpg
+2025-11-09 20:12:13,595 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:13,595 - INFO -    🔍 OCR: BAIRRO ALTON
+2025-11-09 20:12:13,595 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:12:13,835 - INFO - 🖼️ Imagem: IMG730_INTER2_jpg.rf.780ec42b90877f92e1901ed368b9abe8.jpg
+2025-11-09 20:12:13,836 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:13,836 - INFO -    🔍 OCR: INTER 2
+2025-11-09 20:12:13,836 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:12:14,066 - INFO - 🖼️ Imagem: IMG732_MGUADALUPE_jpg.rf.dd1adae749afc1f9f6c96fc13815a787.jpg
+2025-11-09 20:12:14,067 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:14,067 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:12:14,067 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:12:14,454 - INFO - 🖼️ Imagem: IMG750_PINHEIRINHO_jpg.rf.dceda3711035837dae6ee6964df3e953.jpg
+2025-11-09 20:12:14,455 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:14,455 - INFO -    🔍 OCR: RC
+2025-11-09 20:12:14,455 - INFO -    🤝 Mais próximo: ARCOPOLO (100.0%)
+
+2025-11-09 20:12:14,741 - INFO - 🖼️ Imagem: IMG751_BOQUEIRAO_jpg.rf.79449f9a1d1bc8016b499007cbed4dd3.jpg
+2025-11-09 20:12:14,741 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:14,742 - INFO -    🔍 OCR: BOQUEIRAO:
+2025-11-09 20:12:14,742 - INFO -    🤝 Mais próximo: BOQUEIRAO (100.0%)
+
+2025-11-09 20:12:14,978 - INFO - 🖼️ Imagem: IMG759_TURISMO_jpg.rf.33577e0c9ec36f0c87fe56231727f5df.jpg
+2025-11-09 20:12:14,979 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:14,979 - INFO -    🔍 OCR: TURISMO
+2025-11-09 20:12:14,979 - INFO -    🤝 Mais próximo: LINER TURISMO (100.0%)
+
+2025-11-09 20:12:15,197 - INFO - 🖼️ Imagem: IMG763_REFORCOSABARA_jpg.rf.c6741698c1ef0b97c71b315865e519df.jpg
+2025-11-09 20:12:15,198 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:15,198 - INFO -    🔍 OCR: EFORCD SABAAY
+2025-11-09 20:12:15,198 - INFO -    🤝 Mais próximo: REFORCO SABARA (76.9%)
+
+2025-11-09 20:12:15,390 - INFO - 🖼️ Imagem: IMG767_MERCURIO_jpg.rf.1b8a02ff60431d8e56476d9ce50ab68b.jpg
+2025-11-09 20:12:15,390 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:15,390 - INFO -    🔍 OCR: ETE
+2025-11-09 20:12:15,390 - INFO -    🤝 Mais próximo: BATEL (66.7%)
+
+2025-11-09 20:12:15,920 - INFO - 🖼️ Imagem: IMG774_ESPECIAL_jpg.rf.b550796b68ab9478ef0c0dad3f41d697.jpg
+2025-11-09 20:12:15,920 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:15,920 - INFO -    🔍 OCR: ESPECIAL
+2025-11-09 20:12:15,920 - INFO -    🤝 Mais próximo: ESPECIAL (100.0%)
+
+2025-11-09 20:12:16,491 - INFO - 🖼️ Imagem: IMG776_TURISMO_jpg.rf.ec07efb5a5414caff76600c5c61ab7f5.jpg
+2025-11-09 20:12:16,491 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:16,492 - INFO -    🔍 OCR: QURISNO.
+2025-11-09 20:12:16,492 - INFO -    🤝 Mais próximo: TURISMO (71.4%)
+
+2025-11-09 20:12:16,984 - INFO - 🖼️ Imagem: IMG782_INTERBAIRROSIII_jpg.rf.db4de4ab232fcb045d7e026dff3b25b7.jpg
+2025-11-09 20:12:16,985 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:16,985 - INFO -    🔍 OCR: EE
+2025-11-09 20:12:16,985 - INFO -    🤝 Mais próximo: ABRANCHES (50.0%)
+
+2025-11-09 20:12:17,213 - INFO - 🖼️ Imagem: IMG789_PASSAUNA_jpg.rf.25f3eb676141a80f06520a1c344d2262.jpg
+2025-11-09 20:12:17,214 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:17,214 - INFO -    🔍 OCR: PASSAUNA
+2025-11-09 20:12:17,214 - INFO -    🤝 Mais próximo: PASSAUNA (100.0%)
+
+2025-11-09 20:12:17,637 - INFO - 🖼️ Imagem: IMG798_TIRANDENTES_jpg.rf.92bbed31c30d9286caac8174bd7d3a79.jpg
+2025-11-09 20:12:17,637 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:17,637 - INFO -    🔍 OCR: =,
+2025-11-09 20:12:17,638 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:12:17,878 - INFO - 🖼️ Imagem: IMG799_BARREIRINHA_jpg.rf.aae21d89d7d484cd27ec0eb9f27f5a4c.jpg
+2025-11-09 20:12:17,879 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:17,879 - INFO -    🔍 OCR: ESE.
+2025-11-09 20:12:17,879 - INFO -    🤝 Mais próximo: ACESSO (50.0%)
+
+2025-11-09 20:12:18,132 - INFO - 🖼️ Imagem: IMG800_CAPAORASO_jpg.rf.2d44853916ca538a54ff61033498262e.jpg
+2025-11-09 20:12:18,133 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:18,133 - INFO -    🔍 OCR: CAPAO RASC
+2025-11-09 20:12:18,133 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:12:18,368 - INFO - 🖼️ Imagem: IMG808_JDMERCES_jpg.rf.096dfccc8d8f031b92136a9c5f6028f0.jpg
+2025-11-09 20:12:18,369 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:18,369 - INFO -    🔍 OCR: JD. MERCES
+2025-11-09 20:12:18,369 - INFO -    🤝 Mais próximo: MERCES (100.0%)
+
+2025-11-09 20:12:18,624 - INFO - 🖼️ Imagem: IMG809_BAIRROALTO_jpg.rf.9b9c2ee71f836f9a96f4b2d8e7fff1db.jpg
+2025-11-09 20:12:18,625 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:18,625 - INFO -    🔍 OCR: RAIDDA AIWM:
+2025-11-09 20:12:18,625 - INFO -    🤝 Mais próximo: GARAGEM (42.9%)
+
+2025-11-09 20:12:19,116 - INFO - 🖼️ Imagem: IMG818_DAGLASSA_jpg.rf.b0ba48376af666cc80b43472abc3ec67.jpg
+2025-11-09 20:12:19,116 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:19,116 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:12:19,117 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:12:19,378 - INFO - 🖼️ Imagem: IMG820_SANTACANDIDA_jpg.rf.e92ae21ecbf7cca33ad9b17e825f20e2.jpg
+2025-11-09 20:12:19,378 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:19,378 - INFO -    🔍 OCR: ‘SANTA CANDIDA
+2025-11-09 20:12:19,378 - INFO -    🤝 Mais próximo: SANTA CANDIDA (100.0%)
+
+2025-11-09 20:12:19,602 - INFO - 🖼️ Imagem: IMG832_COLOMBOCIC_jpg.rf.63d042bfa57fa1c846192001b126a9f6.jpg
+2025-11-09 20:12:19,602 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:19,602 - INFO -    🔍 OCR: COLOMBO/CIC.
+2025-11-09 20:12:19,603 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:12:20,075 - INFO - 🖼️ Imagem: IMG836_FAGUNDESVARELA_jpg.rf.f058a1e96f40c7578c92915b8ef6deeb.jpg
+2025-11-09 20:12:20,075 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:20,075 - INFO -    🔍 OCR: | FROUNDES. VARELA
+2025-11-09 20:12:20,075 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (73.3%)
+
+2025-11-09 20:12:20,295 - INFO - 🖼️ Imagem: IMG838_ATUBASTACANDIDA_jpg.rf.607089983e83e04a6cac277d8c439251.jpg
+2025-11-09 20:12:20,296 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:20,296 - INFO -    🔍 OCR: MIEN STROROR
+2025-11-09 20:12:20,296 - INFO -    🤝 Mais próximo: CENTRO (50.0%)
+
+2025-11-09 20:12:20,516 - INFO - 🖼️ Imagem: IMG846_CAMPOALEGRE_jpg.rf.3a94982aca018f280ba5a07449d81e3f.jpg
+2025-11-09 20:12:20,516 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:20,517 - INFO -    🔍 OCR: ANATA! FORE
+2025-11-09 20:12:20,517 - INFO -    🤝 Mais próximo: SAO JOSE (50.0%)
+
+2025-11-09 20:12:20,742 - INFO - 🖼️ Imagem: IMG849_CAMPOMAGRO_jpg.rf.621fd710a5a26f193dc1384232c1489f.jpg
+2025-11-09 20:12:20,742 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:20,743 - INFO -    🔍 OCR: CAMPO NAGRO
+2025-11-09 20:12:20,743 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:12:20,961 - INFO - 🖼️ Imagem: IMG855_GUADALUPE_jpg.rf.b1ed08c237d2c66671db05909342d4a4.jpg
+2025-11-09 20:12:20,961 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:20,961 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:12:20,961 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:12:21,346 - INFO - 🖼️ Imagem: IMG862_SANTAFELICIDADE_jpg.rf.374d819a85a2d22443aa73c6be20d95e.jpg
+2025-11-09 20:12:21,347 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:21,347 - INFO -    🔍 OCR: SATFRELCOANE
+2025-11-09 20:12:21,347 - INFO -    🤝 Mais próximo: SATURNO (57.1%)
+
+2025-11-09 20:12:21,556 - INFO - 🖼️ Imagem: IMG867_CAPAORASO_jpg.rf.cbcb5f6c2dbe75b68c1f7cdd0cb19260.jpg
+2025-11-09 20:12:21,556 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:21,556 - INFO -    🔍 OCR: CRPAD RBSO.
+2025-11-09 20:12:21,557 - INFO -    🤝 Mais próximo: CAPAO RASO (70.0%)
+
+2025-11-09 20:12:21,799 - INFO - 🖼️ Imagem: IMG86_URBANO_jpg.rf.b4001078bb4aa949af8bcfede968827a.jpg
+2025-11-09 20:12:21,799 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:21,800 - INFO -    🔍 OCR: CRISTO PEL
+2025-11-09 20:12:21,800 - INFO -    🤝 Mais próximo: CRISTO REI (80.0%)
+
+2025-11-09 20:12:22,334 - INFO - 🖼️ Imagem: IMG905_JDPIONEIRO_jpg.rf.eb1c4d15ba770782cfb6f9568534339a.jpg
+2025-11-09 20:12:22,335 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:22,335 - INFO -    🔍 OCR: EEE! AI
+2025-11-09 20:12:22,335 - INFO -    🤝 Mais próximo: FAZENDA RIO GRANDE (42.9%)
+
+2025-11-09 20:12:22,535 - INFO - 🖼️ Imagem: IMG909_INTER2_jpg.rf.f15e7c4cfdd9db1040098dffb300df2e.jpg
+2025-11-09 20:12:22,535 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:22,535 - INFO -    🔍 OCR: I © —
+2025-11-09 20:12:22,535 - INFO -    🤝 Mais próximo: ANGELICA PORTAO (40.0%)
+
+2025-11-09 20:12:23,568 - INFO - 🖼️ Imagem: IMG942_RIVIERA_jpg.rf.69e8af52b979c5e8719272d00aec07c3.jpg
+2025-11-09 20:12:23,568 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:23,569 - INFO -    🔍 OCR: RIVIER *.
+2025-11-09 20:12:23,569 - INFO -    🤝 Mais próximo: RIVIERA (85.7%)
+
+2025-11-09 20:12:23,835 - INFO - 🖼️ Imagem: IMG946_FAGUNDESVARELA_jpg.rf.705cdec9e166f9bbdddec88865a2a19e.jpg
+2025-11-09 20:12:23,835 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:23,836 - INFO -    🔍 OCR: | FAGUNDES: YARELH
+2025-11-09 20:12:23,836 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (80.0%)
+
+2025-11-09 20:12:24,217 - INFO - 🖼️ Imagem: IMG958_LINHADIRETACABRAL_jpg.rf.a5ac9bd57b1d37ff3e9b71b8d79f1e56.jpg
+2025-11-09 20:12:24,217 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:24,217 - INFO -    🔍 OCR: LAMAN, OIRETA
+2025-11-09 20:12:24,218 - INFO -    🤝 Mais próximo: TAMANDARE (46.2%)
+
+2025-11-09 20:12:24,432 - INFO - 🖼️ Imagem: IMG959_SAOBRAZ_jpg.rf.de3c3ee31a40afd2d918b1fe7c5899fb.jpg
+2025-11-09 20:12:24,432 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:24,432 - INFO -    🔍 OCR: SAO. BRA?
+2025-11-09 20:12:24,433 - INFO -    🤝 Mais próximo: SAO BRAZ (77.8%)
+
+2025-11-09 20:12:24,717 - INFO - 🖼️ Imagem: IMG95_SANTACANDIDACAPAORASO_jpg.rf.f0f08edf4c9a6a04da72768eaa546404.jpg
+2025-11-09 20:12:24,717 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:24,718 - INFO -    🔍 OCR: ‘FTA. CAIOR,
+2025-11-09 20:12:24,718 - INFO -    🤝 Mais próximo: CAIUA (60.0%)
+
+2025-11-09 20:12:24,947 - INFO - 🖼️ Imagem: IMG960_CAMPOMAGRO_jpg.rf.efe4223eda71d8dc4ed2d4caa31a788f.jpg
+2025-11-09 20:12:24,948 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:24,948 - INFO -    🔍 OCR: CAMPO NAGRO
+2025-11-09 20:12:24,948 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:12:25,159 - INFO - 🖼️ Imagem: IMG964_CAPAORASO_jpg.rf.51b648025985dac70c150469dcab2439.jpg
+2025-11-09 20:12:25,159 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:25,159 - INFO -    🔍 OCR: ICAPAO RAS
+2025-11-09 20:12:25,160 - INFO -    🤝 Mais próximo: CAPAO RASO (80.0%)
+
+2025-11-09 20:12:25,566 - INFO - 🖼️ Imagem: IMG96_RIOBONITO_jpg.rf.67a492bd12769bf19627d72c3190a77b.jpg
+2025-11-09 20:12:25,566 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:25,566 - INFO -    🔍 OCR: BRO EONID
+2025-11-09 20:12:25,567 - INFO -    🤝 Mais próximo: RONDON (66.7%)
+
+2025-11-09 20:12:25,805 - INFO - 🖼️ Imagem: IMG974_TAMANDARE_jpg.rf.c2e4856ae0110db8377bf5bdce001821.jpg
+2025-11-09 20:12:25,805 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:25,805 - INFO -    🔍 OCR: TANANDARE
+2025-11-09 20:12:25,805 - INFO -    🤝 Mais próximo: TAMANDARE (88.9%)
+
+2025-11-09 20:12:26,241 - INFO - 🖼️ Imagem: IMG98_INTERBAIRROSIV_jpg.rf.223c7ce4e9f6c3b758a9ffcf771b29eb.jpg
+2025-11-09 20:12:26,241 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:26,242 - INFO -    🔍 OCR: JRTERBRIRRGS H
+2025-11-09 20:12:26,242 - INFO -    🤝 Mais próximo: INTERBAIRROS (66.7%)
+
+2025-11-09 20:12:26,462 - INFO - 🖼️ Imagem: IMG998_CICCABRAL_jpg.rf.bfc950816985c96195e2f420d72f7b4c.jpg
+2025-11-09 20:12:26,463 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:26,463 - INFO -    🔍 OCR: SS
+2025-11-09 20:12:26,463 - INFO -    🤝 Mais próximo: ACESSO (100.0%)
+
+2025-11-09 20:12:26,679 - INFO - 🖼️ Imagem: IMG999_NORTESUL_jpg.rf.fa010ea5fc1b999eede3ee2b500f112b.jpg
+2025-11-09 20:12:26,679 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:12:26,680 - INFO -    🔍 OCR: | 1
+2025-11-09 20:12:26,680 - INFO -    🤝 Mais próximo: TOMAZ EDISON 1 (66.7%)
+
+2025-11-09 20:12:26,680 - INFO - 
+📊 ESTATÍSTICAS DE PROCESSAMENTO:
+2025-11-09 20:12:26,680 - INFO -    📷 Total de imagens processadas: 280
+2025-11-09 20:12:26,680 - INFO -    ✅ Imagens com detecções: 280 (100.0%)
+2025-11-09 20:12:26,681 - INFO -    🎯 Total de letreiros detectados: 288
+2025-11-09 20:12:26,681 - INFO -    📝 Letreiros com OCR bem-sucedido: 182 (63.2%)
+2025-11-09 20:12:26,681 - INFO -    ❌ OCR retornou vazio: 106 (36.8%)
+2025-11-09 20:12:26,681 - WARNING - 
+⚠️ ATENÇÃO: 106 letreiros tiveram OCR vazio!
+2025-11-09 20:12:26,681 - WARNING -    Possíveis causas:
+2025-11-09 20:12:26,681 - WARNING -    1. Letreiros muito pequenos após recorte
+2025-11-09 20:12:26,681 - WARNING -    2. Baixa qualidade da imagem
+2025-11-09 20:12:26,682 - WARNING -    3. Texto ilegível ou com ângulo ruim
+2025-11-09 20:12:26,682 - WARNING -    4. Configuração do Tesseract inadequada
+2025-11-09 20:12:26,682 - WARNING -    💡 Verifique exemplos em: E:\tcc\dataset_yolo\temp_crops
+2025-11-09 20:12:26,682 - INFO - 
+📊 MÉTRICAS OCR (Tesseract):
+2025-11-09 20:12:26,682 - INFO -    ➡️ Total de letreiros analisados: 182
+2025-11-09 20:12:26,682 - INFO -    ✅ Acertos exatos: 0 (0.00%)
+2025-11-09 20:12:26,683 - INFO -    🔸 Acertos aproximados (>=80% similaridade): 89
+2025-11-09 20:12:26,683 - INFO -    📈 Acurácia total (exatos + aproximados): 48.90%
+2025-11-09 20:12:26,683 - INFO - 
+================================================================================
+2025-11-09 20:12:26,683 - INFO - 📁 Análise de Erros de Detecção e OCR
+2025-11-09 20:12:26,683 - INFO - ================================================================================
+2025-11-09 20:12:26,685 - INFO - 🔍 Analisando erros de detecção e OCR...
+2025-11-09 20:13:27,159 - INFO - ✅ Análise concluída. 568 erros detectados.
+2025-11-09 20:13:27,159 - INFO -    📁 Detecções erradas: E:\tcc\misdetected
+2025-11-09 20:13:27,159 - INFO -    📁 OCRs errados: E:\tcc\misocr
+2025-11-09 20:13:27,160 - INFO -    📄 Logs CSV salvos
+2025-11-09 20:13:27,160 - INFO - 
+================================================================================
+2025-11-09 20:13:27,160 - INFO - 🧩 Etapa OCR com EasyOCR (Comparação)
+2025-11-09 20:13:27,160 - INFO - ================================================================================
+2025-11-09 20:13:27,160 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 20:13:27,161 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 20:13:27,161 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 20:13:27,161 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 20:13:27,749 - INFO - 📥 Inicializando EasyOCR (português e inglês)...
+2025-11-09 20:13:30,292 - INFO - 🔍 Iniciando OCR com EasyOCR em letreiros detectados...
+2025-11-09 20:13:30,292 - INFO - 📝 Configuração: Português + Inglês com GPU
+
+2025-11-09 20:13:30,594 - INFO - 🖼️ Imagem: 25018_craso_campina_do_siqueira_local_jpg.rf.98ae677ba9fd7edb5fcd8dca6045c828.jpg
+2025-11-09 20:13:30,594 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:30,594 - INFO -    🔍 OCR: LAPAO PASO]
+2025-11-09 20:13:30,595 - INFO -    🤝 Mais próximo: CAPAO RASO (80.0%)
+
+2025-11-09 20:13:30,725 - INFO - 🖼️ Imagem: 25104_onibus_brasil_jpg.rf.3b1f887e3de2b4fff5f4580439873d3c.jpg
+2025-11-09 20:13:30,726 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:30,726 - INFO -    🔍 OCR: [NTERBAIRROS U
+2025-11-09 20:13:30,726 - INFO -    🤝 Mais próximo: INTERBAIRROS (91.7%)
+
+2025-11-09 20:13:30,911 - INFO - 🖼️ Imagem: 25112_onibus_brasil_jpg.rf.e8e9e1047586f1b539266aa69f94079a.jpg
+2025-11-09 20:13:30,912 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:30,912 - INFO -    🔍 OCR: ITAPERUCU
+2025-11-09 20:13:30,913 - INFO -    🤝 Mais próximo: ITAPERUCU (100.0%)
+
+2025-11-09 20:13:31,286 - INFO - 🖼️ Imagem: 25132_onibus_brasil_jpg.rf.86a1c4727412bed13313fc2d5d081cfd.jpg
+2025-11-09 20:13:31,287 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,287 - INFO -    🔍 OCR: CEXTRO CIUICO
+2025-11-09 20:13:31,287 - INFO -    🤝 Mais próximo: CENTRO CIVICO (84.6%)
+
+2025-11-09 20:13:31,400 - INFO - 🖼️ Imagem: 25138_onibus_brasil_jpg.rf.fd9da43161c0d47ec7c42d03ae0f2ffc.jpg
+2025-11-09 20:13:31,400 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,401 - INFO -    🔍 OCR: [INTERBAIRROS
+2025-11-09 20:13:31,401 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 20:13:31,563 - INFO - 🖼️ Imagem: 25222_sitio_cercado_local_jpg.rf.a89e52cae7e719907146ed98ca4a96ed.jpg
+2025-11-09 20:13:31,563 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,563 - INFO -    🔍 OCR: SITIO CERCABG]
+2025-11-09 20:13:31,564 - INFO -    🤝 Mais próximo: SITIO CERCADO (84.6%)
+
+2025-11-09 20:13:31,732 - INFO - 🖼️ Imagem: 25305_jardim_centauro_local_jpg.rf.e74cbdf046815c224e2ccdc4ac467f77.jpg
+2025-11-09 20:13:31,733 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,733 - INFO -    🔍 OCR: JD CENTAURO
+2025-11-09 20:13:31,733 - INFO -    🤝 Mais próximo: JD. CENTAURO (91.7%)
+
+2025-11-09 20:13:31,825 - INFO - 🖼️ Imagem: 25323_gramados_local_jpg.rf.a463b9ed6d4a075e8c6f45d6b06a8476.jpg
+2025-11-09 20:13:31,826 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,826 - INFO -    🔍 OCR: GRAHADOS
+2025-11-09 20:13:31,826 - INFO -    🤝 Mais próximo: GRAMADOS (87.5%)
+
+2025-11-09 20:13:31,896 - INFO - 🖼️ Imagem: 25405_guaraituba_rui_barbosa_local_jpg.rf.7b5494e560792f424a2702d5dddb5cc5.jpg
+2025-11-09 20:13:31,897 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,897 - INFO -    🔍 OCR: GLARAI
+2025-11-09 20:13:31,897 - INFO -    🤝 Mais próximo: GUARAITUBA (83.3%)
+
+2025-11-09 20:13:31,994 - INFO - 🖼️ Imagem: 25406_mossungue_local_jpg.rf.5199636a32097f5aa3e23a23ce7fe085.jpg
+2025-11-09 20:13:31,995 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:31,995 - INFO -    🔍 OCR: ARUNCUE
+2025-11-09 20:13:31,995 - INFO -    🤝 Mais próximo: AHU (66.7%)
+
+2025-11-09 20:13:32,082 - INFO - 🖼️ Imagem: 25413_futurama_local_jpg.rf.6714cba59b07eafdc53b8be88c48d2b8.jpg
+2025-11-09 20:13:32,082 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,083 - INFO -    🔍 OCR: FUTURAMA
+2025-11-09 20:13:32,083 - INFO -    🤝 Mais próximo: FUTURAMA (100.0%)
+
+2025-11-09 20:13:32,246 - INFO - 🖼️ Imagem: 25531_santa_candida_capao_raso_local_jpg.rf.3a6b96f62840cad47cd65b12176fd2a9.jpg
+2025-11-09 20:13:32,246 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,246 - INFO -    🔍 OCR: CAPAQIRASQ
+2025-11-09 20:13:32,246 - INFO -    🤝 Mais próximo: CAPAO RASO (70.0%)
+
+2025-11-09 20:13:32,340 - INFO - 🖼️ Imagem: 25605_estribo_ahu_local_jpg.rf.10328816d2f66387cc5adc5b7d824e0d.jpg
+2025-11-09 20:13:32,341 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,341 - INFO -    🔍 OCR: ESIREN
+2025-11-09 20:13:32,341 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (50.0%)
+
+2025-11-09 20:13:32,599 - INFO - 🖼️ Imagem: 26103_onibus_brasil_jpg.rf.5766f5dfc44910394b6f4739aaab9f75.jpg
+2025-11-09 20:13:32,599 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,599 - INFO -    🔍 OCR: OPFBACAA
+2025-11-09 20:13:32,600 - INFO -    🤝 Mais próximo: OPERACAO (62.5%)
+
+2025-11-09 20:13:32,692 - INFO - 🖼️ Imagem: 26107_urbano_jpg.rf.c17118cde045a7c5436f74e478cf0074.jpg
+2025-11-09 20:13:32,693 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,693 - INFO -    🔍 OCR: SANTA MS4
+2025-11-09 20:13:32,693 - INFO -    🤝 Mais próximo: SANTA ROSA (70.0%)
+
+2025-11-09 20:13:32,852 - INFO - 🖼️ Imagem: 26122_centenario_campo_comprido_local_jpg.rf.6126c3c11f2f49249d68fb56f91f537f.jpg
+2025-11-09 20:13:32,852 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,852 - INFO -    🔍 OCR: CA?O CORPELHNNI
+2025-11-09 20:13:32,853 - INFO -    🤝 Mais próximo: AFONSO PENA (45.5%)
+
+2025-11-09 20:13:32,941 - INFO - 🖼️ Imagem: 26316_ligeirao_norte_sul_local_jpg.rf.91c9ea07ea3a600c4745c36424515b65.jpg
+2025-11-09 20:13:32,941 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:32,941 - INFO -    🔍 OCR: NORTE/SUL
+2025-11-09 20:13:32,942 - INFO -    🤝 Mais próximo: NORTE SUL (88.9%)
+
+2025-11-09 20:13:33,053 - INFO - 🖼️ Imagem: 26321_interbairros_iv_local_jpg.rf.d49f3c87dbcbb4ec817da8605ed97688.jpg
+2025-11-09 20:13:33,053 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,053 - INFO -    🔍 OCR: [EREAIPROS W
+2025-11-09 20:13:33,054 - INFO -    🤝 Mais próximo: INTERBAIRROS I (66.7%)
+
+2025-11-09 20:13:33,146 - INFO - 🖼️ Imagem: 26409_jardim_graziela_local_jpg.rf.ca0b2efa0146dbd061cfe33071497052.jpg
+2025-11-09 20:13:33,146 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,147 - INFO -    🔍 OCR: GRAZIELA
+2025-11-09 20:13:33,147 - INFO -    🤝 Mais próximo: JD GRAZIELA (100.0%)
+
+2025-11-09 20:13:33,243 - INFO - 🖼️ Imagem: 26411_guaraituba_rui_barbosa_jpg.rf.f4d6b1d156c3ec5c3f5890f343212b2c.jpg
+2025-11-09 20:13:33,243 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,243 - INFO -    🔍 OCR: GUARNTU?
+2025-11-09 20:13:33,244 - INFO -    🤝 Mais próximo: GUARAITUBA (62.5%)
+
+2025-11-09 20:13:33,347 - INFO - 🖼️ Imagem: 26424_linha_turismo_local_jpg.rf.f72f7b1a1d1d57803c7b63c0a1dfffce.jpg
+2025-11-09 20:13:33,348 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,348 - INFO -    🔍 OCR: 1TVEIS" 0
+2025-11-09 20:13:33,348 - INFO -    🤝 Mais próximo: TURISMO (42.9%)
+
+2025-11-09 20:13:33,492 - INFO - 🖼️ Imagem: 26510_parque_atuba_local_jpg.rf.d02c75f73542f1503b08ec194566e80e.jpg
+2025-11-09 20:13:33,492 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,493 - INFO -    🔍 OCR: 'PAROUE ATUBA
+2025-11-09 20:13:33,493 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:13:33,703 - INFO - 🖼️ Imagem: 26801_itaperuc_jpg.rf.9df2f08ad3a161cdec9b99d4b5a0d4b5.jpg
+2025-11-09 20:13:33,703 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,704 - INFO -    🔍 OCR: ITAPERUC"
+2025-11-09 20:13:33,704 - INFO -    🤝 Mais próximo: ITAPERUCU (88.9%)
+
+2025-11-09 20:13:33,823 - INFO - 🖼️ Imagem: 26905_inter_2_jpg.rf.c24fe1d74026fce9f04c26118a205f25.jpg
+2025-11-09 20:13:33,823 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,823 - INFO -    🔍 OCR: INTER 2
+2025-11-09 20:13:33,823 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:13:33,923 - INFO - 🖼️ Imagem: 26923_trabalhador_local_jpg.rf.c9c8027949aed6d3f415efc85af52ac5.jpg
+2025-11-09 20:13:33,924 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:33,924 - INFO -    🔍 OCR: TRABALHADOR
+2025-11-09 20:13:33,924 - INFO -    🤝 Mais próximo: TRABALHADOR (100.0%)
+
+2025-11-09 20:13:34,033 - INFO - 🖼️ Imagem: 27004_cabral_tamandare_local_jpg.rf.513e7c47830142a98eda73ac18c17f83.jpg
+2025-11-09 20:13:34,034 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,034 - INFO -    🔍 OCR: CABR
+2025-11-09 20:13:34,034 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:13:34,191 - INFO - 🖼️ Imagem: 27117_ligeirao_norte_sul_local_jpg.rf.60fe17c1d1d5900e08493cf9fe80a95d.jpg
+2025-11-09 20:13:34,191 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,191 - INFO -    🔍 OCR: NORTEFSUL
+2025-11-09 20:13:34,192 - INFO -    🤝 Mais próximo: NORTE SUL (88.9%)
+
+2025-11-09 20:13:34,268 - INFO - 🖼️ Imagem: 27216_urbano_jpg.rf.6750697c514aacb78bfa5b4a00157784.jpg
+2025-11-09 20:13:34,269 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,269 - INFO -    🔍 OCR: TUNN
+2025-11-09 20:13:34,269 - INFO -    🤝 Mais próximo: SATURNO (75.0%)
+
+2025-11-09 20:13:34,393 - INFO - 🖼️ Imagem: 27312_trabalhador_local_jpg.rf.12e98677a44587e405553e53d749fd05.jpg
+2025-11-09 20:13:34,393 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,394 - INFO -    🔍 OCR: TRABALHADOR
+2025-11-09 20:13:34,394 - INFO -    🤝 Mais próximo: TRABALHADOR (100.0%)
+
+2025-11-09 20:13:34,481 - INFO - 🖼️ Imagem: 27406_rio_bonito_local_jpg.rf.1a2799e384a057dc4f6f3794274c7ead.jpg
+2025-11-09 20:13:34,481 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,482 - INFO -    🔍 OCR: NONOL
+2025-11-09 20:13:34,482 - INFO -    🤝 Mais próximo: HIGIENOPOLIS (80.0%)
+
+2025-11-09 20:13:34,600 - INFO - 🖼️ Imagem: 27505_roca_grande_santa_candida_local_jpg.rf.368464d72786c11e397827054f27dffb.jpg
+2025-11-09 20:13:34,600 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,600 - INFO -    🔍 OCR: CANDIDR (SANIAC
+2025-11-09 20:13:34,601 - INFO -    🤝 Mais próximo: OLARIA (50.0%)
+
+2025-11-09 20:13:34,739 - INFO - 🖼️ Imagem: 27512_barreirinha_sao_jose_local_jpg.rf.0d32e1b98465bb0d841a502d11a0f587.jpg
+2025-11-09 20:13:34,740 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,740 - INFO -    🔍 OCR: JOSE L4O
+2025-11-09 20:13:34,740 - INFO -    🤝 Mais próximo: JOSE CULPI (62.5%)
+
+2025-11-09 20:13:34,885 - INFO - 🖼️ Imagem: 27525_cachoeira_moreira_garcez_local_jpg.rf.7a7d75fa04562bbcc659db1b37cc77f2.jpg
+2025-11-09 20:13:34,885 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:34,885 - INFO -    🔍 OCR: CHERCEIRA
+2025-11-09 20:13:34,886 - INFO -    🤝 Mais próximo: MERCES (66.7%)
+
+2025-11-09 20:13:35,043 - INFO - 🖼️ Imagem: 27607_gramados_local_jpg.rf.4b29139911ff741ec5ec256436a166a7.jpg
+2025-11-09 20:13:35,044 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,044 - INFO -    🔍 OCR: GRAMADOS
+2025-11-09 20:13:35,044 - INFO -    🤝 Mais próximo: GRAMADOS (100.0%)
+
+2025-11-09 20:13:35,125 - INFO - 🖼️ Imagem: 27624_pinheirinho_cabral_local_jpg.rf.1278bb2202fdb1b7bd17862f846d08a9.jpg
+2025-11-09 20:13:35,125 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,125 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:13:35,125 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:13:35,214 - INFO - 🖼️ Imagem: 27719_santa_candida_capao_raso_local_jpg.rf.d4f87a5a573709b919f5676e7e377caa.jpg
+2025-11-09 20:13:35,214 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,214 - INFO -    🔍 OCR: CAPAO RASO
+2025-11-09 20:13:35,215 - INFO -    🤝 Mais próximo: CAPAO RASO (100.0%)
+
+2025-11-09 20:13:35,355 - INFO - 🖼️ Imagem: 27805_campina_do_siqueira_batel_local_jpg.rf.0f69890e028ef55360d4fc50c6776f54.jpg
+2025-11-09 20:13:35,356 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,356 - INFO -    🔍 OCR: B A TE[
+2025-11-09 20:13:35,356 - INFO -    🤝 Mais próximo: BATEL (57.1%)
+
+2025-11-09 20:13:35,476 - INFO - 🖼️ Imagem: 27902_boqueirao_local_jpg.rf.e0ea5e21f05251e88bccd36a5102877b.jpg
+2025-11-09 20:13:35,477 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,477 - INFO -    🔍 OCR: IRAO] ROOIIFI
+2025-11-09 20:13:35,477 - INFO -    🤝 Mais próximo: OLARIO (50.0%)
+
+2025-11-09 20:13:35,609 - INFO - 🖼️ Imagem: 27914_sitio_cercado_local_jpg.rf.c7cea3784494aa85aa125d677166c301.jpg
+2025-11-09 20:13:35,609 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,609 - INFO -    🔍 OCR: CERCADO
+2025-11-09 20:13:35,609 - INFO -    🤝 Mais próximo: S. CERCADO (100.0%)
+
+2025-11-09 20:13:35,746 - INFO - 🖼️ Imagem: 28106_atuba_pinheirinho_local_jpg.rf.119f502d0e3d373b99c1485aed9d663d.jpg
+2025-11-09 20:13:35,750 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,750 - INFO -    🔍 OCR: ATUBA
+2025-11-09 20:13:35,750 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:13:35,821 - INFO - 🖼️ Imagem: 28108_maracana_santa_candida_local_jpg.rf.4c967023fb5615b8a5e86f19f6b035fc.jpg
+2025-11-09 20:13:35,822 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,822 - INFO -    🔍 OCR: HARACANA
+2025-11-09 20:13:35,822 - INFO -    🤝 Mais próximo: MARACANA (87.5%)
+
+2025-11-09 20:13:35,951 - INFO - 🖼️ Imagem: 28203_rio_branco_pca_jpg.rf.a8d17dd5f85d256232b3bdc4d6a97984.jpg
+2025-11-09 20:13:35,951 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:35,952 - INFO -    🔍 OCR: FL ERCO
+2025-11-09 20:13:35,952 - INFO -    🤝 Mais próximo: S. CERCADO (50.0%)
+
+2025-11-09 20:13:36,080 - INFO - 🖼️ Imagem: 28226_bairro_novo_local_jpg.rf.3a89495f14f717a056f716b72eac4a8a.jpg
+2025-11-09 20:13:36,081 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,081 - INFO -    🔍 OCR: BARRO NOVO
+2025-11-09 20:13:36,081 - INFO -    🤝 Mais próximo: BAIRRO NOVO (90.9%)
+
+2025-11-09 20:13:36,125 - INFO - 🖼️ Imagem: 28226_bairro_novo_local_jpg.rf.3a89495f14f717a056f716b72eac4a8a.jpg
+2025-11-09 20:13:36,125 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,125 - INFO -    🔍 OCR: BARRO
+2025-11-09 20:13:36,126 - INFO -    🤝 Mais próximo: BARRAS ATUBA (80.0%)
+
+2025-11-09 20:13:36,219 - INFO - 🖼️ Imagem: 28230_jardim_italia_local_jpg.rf.21c169f82d6a7f9ea1b74126f3b70b7e.jpg
+2025-11-09 20:13:36,219 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,220 - INFO -    🔍 OCR: FOHNN
+2025-11-09 20:13:36,220 - INFO -    🤝 Mais próximo: CALIFORNIA (60.0%)
+
+2025-11-09 20:13:36,325 - INFO - 🖼️ Imagem: 28314_boqueirao_centro_civico_local_jpg.rf.7d773d86097d1d037a5138777fa8c487.jpg
+2025-11-09 20:13:36,325 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,326 - INFO -    🔍 OCR: BOOUEIRAD
+2025-11-09 20:13:36,326 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (77.8%)
+
+2025-11-09 20:13:36,405 - INFO - 🖼️ Imagem: 28327_guaraituba_rui_barbosa_jpg.rf.6a6b5fa83de20c77f1d43dfac5bbf730.jpg
+2025-11-09 20:13:36,405 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,406 - INFO -    🔍 OCR: GUARAITUBA
+2025-11-09 20:13:36,406 - INFO -    🤝 Mais próximo: GUARAITUBA (100.0%)
+
+2025-11-09 20:13:36,453 - INFO - 🖼️ Imagem: 28332_pinheirinho_local_jpg.rf.6be2e4b3b05b5baeaabfae0668a9439e.jpg
+2025-11-09 20:13:36,453 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,454 - INFO -    🔍 OCR: HO
+2025-11-09 20:13:36,454 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:13:36,538 - INFO - 🖼️ Imagem: 28425_urbano_jpg.rf.6d8764fc8659b86edc0e1001dbc182b3.jpg
+2025-11-09 20:13:36,538 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,538 - INFO -    🔍 OCR: [FAZEHDA
+2025-11-09 20:13:36,538 - INFO -    🤝 Mais próximo: FAZENDA (85.7%)
+
+2025-11-09 20:13:36,634 - INFO - 🖼️ Imagem: 28532_urbano_jpg.rf.0ea26fcdc298184d44e937c80fc40cc9.jpg
+2025-11-09 20:13:36,634 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,634 - INFO -    🔍 OCR: ATUBA
+2025-11-09 20:13:36,635 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:13:36,716 - INFO - 🖼️ Imagem: 28533_urbano_jpg.rf.752daf1d8fcd2853dfdab44dd6d0e3f6.jpg
+2025-11-09 20:13:36,717 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,717 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:13:36,717 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:13:36,776 - INFO - 🖼️ Imagem: 28601_urbano_jpg.rf.9cbcc72b39568612ed738bb50906a1ae.jpg
+2025-11-09 20:13:36,776 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,777 - INFO -    🔍 OCR: ATUE
+2025-11-09 20:13:36,777 - INFO -    🤝 Mais próximo: ATUBA (75.0%)
+
+2025-11-09 20:13:36,858 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:13:36,858 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,859 - INFO -    🔍 OCR: SCIEC
+2025-11-09 20:13:36,859 - INFO -    🤝 Mais próximo: CIC (66.7%)
+
+2025-11-09 20:13:36,898 - INFO - 🖼️ Imagem: 28613_urbano_jpg.rf.f95be26ac523df786c918d0be5987a70.jpg
+2025-11-09 20:13:36,898 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,898 - INFO -    🔍 OCR: ZUM
+2025-11-09 20:13:36,899 - INFO -    🤝 Mais próximo: VILA ZUMBI (100.0%)
+
+2025-11-09 20:13:36,979 - INFO - 🖼️ Imagem: 28633_circular_sul_local_jpg.rf.47602143486500ce11e9e85c59f274a1.jpg
+2025-11-09 20:13:36,980 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:36,980 - INFO -    🔍 OCR: CRCULAR SUL
+2025-11-09 20:13:36,980 - INFO -    🤝 Mais próximo: CIRCULAR SUL (91.7%)
+
+2025-11-09 20:13:37,224 - INFO - 🖼️ Imagem: 7309_parigot_de_souza_local_jpg.rf.477259b2632883e31fdf4423f8d3efab.jpg
+2025-11-09 20:13:37,225 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,225 - INFO -    🔍 OCR: MFIGOT €E SUTA
+2025-11-09 20:13:37,225 - INFO -    🤝 Mais próximo: PARIGOT DE SOUZA (64.3%)
+
+2025-11-09 20:13:37,310 - INFO - 🖼️ Imagem: IMG1005_INTERBAIRROS2_jpg.rf.5d90e13a1e6ea0cdc5b400996d2c320a.jpg
+2025-11-09 20:13:37,311 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,311 - INFO -    🔍 OCR: TEADEH?ROS
+2025-11-09 20:13:37,311 - INFO -    🤝 Mais próximo: CENTRO (50.0%)
+
+2025-11-09 20:13:37,380 - INFO - 🖼️ Imagem: IMG1015_GUADALUPE_jpg.rf.77f1a9c86ec31c35008388d581df2c57.jpg
+2025-11-09 20:13:37,380 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,380 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:13:37,381 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:13:37,436 - INFO - 🖼️ Imagem: IMG1018_INTER2_jpg.rf.5351e097f92165c3e6efbc5634265af0.jpg
+2025-11-09 20:13:37,437 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,437 - INFO -    🔍 OCR: INFER
+2025-11-09 20:13:37,437 - INFO -    🤝 Mais próximo: INTER 2 (80.0%)
+
+2025-11-09 20:13:37,539 - INFO - 🖼️ Imagem: IMG1022_HAUER_jpg.rf.3de9ce53d462d481a22ecab8602c5a77.jpg
+2025-11-09 20:13:37,540 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,540 - INFO -    🔍 OCR: HAVE
+2025-11-09 20:13:37,540 - INFO -    🤝 Mais próximo: CENTENARIO HAUER (75.0%)
+
+2025-11-09 20:13:37,655 - INFO - 🖼️ Imagem: IMG1037_COLOMBOCIC_jpg.rf.17cee218f2e96ea5020e88accd469163.jpg
+2025-11-09 20:13:37,656 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,656 - INFO -    🔍 OCR: BOLUTU
+2025-11-09 20:13:37,656 - INFO -    🤝 Mais próximo: SOLITUDE (66.7%)
+
+2025-11-09 20:13:37,753 - INFO - 🖼️ Imagem: IMG1037_COLOMBOCIC_jpg.rf.17cee218f2e96ea5020e88accd469163.jpg
+2025-11-09 20:13:37,753 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,753 - INFO -    🔍 OCR: @UL[MAEAD / @N
+2025-11-09 20:13:37,754 - INFO -    🤝 Mais próximo: UBERABA (42.9%)
+
+2025-11-09 20:13:37,919 - INFO - 🖼️ Imagem: IMG1038_COLINAVERDE_jpg.rf.1601da376488943445c7153c4b8cb236.jpg
+2025-11-09 20:13:37,920 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:37,920 - INFO -    🔍 OCR: COLINA_VERDE
+2025-11-09 20:13:37,920 - INFO -    🤝 Mais próximo: COLINA VERDE (91.7%)
+
+2025-11-09 20:13:38,038 - INFO - 🖼️ Imagem: IMG1044_INTER2_jpg.rf.75f6fb06a95669447b0adff44c26e7c8.jpg
+2025-11-09 20:13:38,039 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,039 - INFO -    🔍 OCR: 1M TER
+2025-11-09 20:13:38,039 - INFO -    🤝 Mais próximo: STA TEREZINHA (66.7%)
+
+2025-11-09 20:13:38,164 - INFO - 🖼️ Imagem: IMG108_GUARAITUBAPRACARUIBARBOSA_jpg.rf.800d8364a428e5ea8ed6c9e5ac86506b.jpg
+2025-11-09 20:13:38,164 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,164 - INFO -    🔍 OCR: "ALR6R9R   {ROREL
+2025-11-09 20:13:38,165 - INFO -    🤝 Mais próximo: RIO NEGRO (44.4%)
+
+2025-11-09 20:13:38,240 - INFO - 🖼️ Imagem: IMG116_DALAGASSA_jpg.rf.1a482ffd6e080b7f8411e150ff23b817.jpg
+2025-11-09 20:13:38,241 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,241 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:13:38,241 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:13:38,311 - INFO - 🖼️ Imagem: IMG119_URBANO_jpg.rf.9fb9268272e517ad52d238add8eb927b.jpg
+2025-11-09 20:13:38,312 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,312 - INFO -    🔍 OCR: NUNBR
+2025-11-09 20:13:38,312 - INFO -    🤝 Mais próximo: GUANABARA (44.4%)
+
+2025-11-09 20:13:38,393 - INFO - 🖼️ Imagem: IMG11_PINHEIRINHOCABRAL_jpg.rf.3089154209cac54eb3f7471609aeea35.jpg
+2025-11-09 20:13:38,393 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,394 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:13:38,394 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:13:38,466 - INFO - 🖼️ Imagem: IMG122_URBANO_jpg.rf.74a6bac8375b1009e8c25ef3dafd9598.jpg
+2025-11-09 20:13:38,466 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,466 - INFO -    🔍 OCR: VILA ZUMBL
+2025-11-09 20:13:38,467 - INFO -    🤝 Mais próximo: VILA ZUMBI (90.0%)
+
+2025-11-09 20:13:38,552 - INFO - 🖼️ Imagem: IMG128_URBANO_jpg.rf.d2486993a05b2523c932206343e7f6f6.jpg
+2025-11-09 20:13:38,552 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,553 - INFO -    🔍 OCR: PRMFRSHATI
+2025-11-09 20:13:38,553 - INFO -    🤝 Mais próximo: PRACA (40.0%)
+
+2025-11-09 20:13:38,625 - INFO - 🖼️ Imagem: IMG132_URBANO_jpg.rf.079a0aec23872ef3eb20def0aec467d8.jpg
+2025-11-09 20:13:38,625 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,626 - INFO -    🔍 OCR: POMPEIE
+2025-11-09 20:13:38,626 - INFO -    🤝 Mais próximo: POMPEIA (85.7%)
+
+2025-11-09 20:13:38,712 - INFO - 🖼️ Imagem: IMG13_POSTOPARIS_jpg.rf.fe54d3ae525d18eb17213236312b068e.jpg
+2025-11-09 20:13:38,712 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,712 - INFO -    🔍 OCR: PARIS POSIO
+2025-11-09 20:13:38,712 - INFO -    🤝 Mais próximo: PARQUE (50.0%)
+
+2025-11-09 20:13:38,784 - INFO - 🖼️ Imagem: IMG142_ARAUCARIAPORTAO_jpg.rf.88cc78c06fb1546e1e7e7c124a540391.jpg
+2025-11-09 20:13:38,784 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,784 - INFO -    🔍 OCR: UGARA
+2025-11-09 20:13:38,785 - INFO -    🤝 Mais próximo: UMBARA (66.7%)
+
+2025-11-09 20:13:38,951 - INFO - 🖼️ Imagem: IMG147_ATUBASANTACANDIDA_jpg.rf.ae7b65d2ea9629cb2ed3952dbf73bd86.jpg
+2025-11-09 20:13:38,951 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:38,951 - INFO -    🔍 OCR: AT}O /CTOCANDIDA }
+2025-11-09 20:13:38,952 - INFO -    🤝 Mais próximo: ATUBA STACANDIDA (62.5%)
+
+2025-11-09 20:13:39,084 - INFO - 🖼️ Imagem: IMG158_CABRALPORTAO_jpg.rf.e0531ad0fa1bca9b29c5f3e82336358b.jpg
+2025-11-09 20:13:39,084 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,084 - INFO -    🔍 OCR: LABRAL
+2025-11-09 20:13:39,085 - INFO -    🤝 Mais próximo: CABRAL (83.3%)
+
+2025-11-09 20:13:39,154 - INFO - 🖼️ Imagem: IMG16_URBANO_jpg.rf.14cd4033f2f68980d8d440342f7fa4a3.jpg
+2025-11-09 20:13:39,154 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,154 - INFO -    🔍 OCR: ARCOPOLO
+2025-11-09 20:13:39,154 - INFO -    🤝 Mais próximo: ARCOPOLO (100.0%)
+
+2025-11-09 20:13:39,259 - INFO - 🖼️ Imagem: IMG182_CENTENARIO_jpg.rf.42fbbdd34c8ce95b74411608faa8de59.jpg
+2025-11-09 20:13:39,259 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,259 - INFO -    🔍 OCR: (CENTENARIO
+2025-11-09 20:13:39,259 - INFO -    🤝 Mais próximo: CENTENARIO (100.0%)
+
+2025-11-09 20:13:39,340 - INFO - 🖼️ Imagem: IMG183_INTERBAIRROSII_jpg.rf.a4e4a376e7ba06e2b28cde3ee903bd6c.jpg
+2025-11-09 20:13:39,341 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,341 - INFO -    🔍 OCR: HTERBAIRROS [
+2025-11-09 20:13:39,341 - INFO -    🤝 Mais próximo: INTERBAIRROS I (84.6%)
+
+2025-11-09 20:13:39,412 - INFO - 🖼️ Imagem: IMG186_CURITIBA_jpg.rf.aaa90b205f8a324ca0fc893dae22714b.jpg
+2025-11-09 20:13:39,413 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,413 - INFO -    🔍 OCR: QURITIB A
+2025-11-09 20:13:39,413 - INFO -    🤝 Mais próximo: CURITIBA (77.8%)
+
+2025-11-09 20:13:39,479 - INFO - 🖼️ Imagem: IMG193_JARDIMIPELOCAL_jpg.rf.e8bef4851e435b1b4546ba4ab93da496.jpg
+2025-11-09 20:13:39,480 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,480 - INFO -    🔍 OCR: JAROI
+2025-11-09 20:13:39,480 - INFO -    🤝 Mais próximo: JARDIM IPE (80.0%)
+
+2025-11-09 20:13:39,563 - INFO - 🖼️ Imagem: IMG198_BAIRROALTO_jpg.rf.624a1dcb1c46da882409878575b7f9f7.jpg
+2025-11-09 20:13:39,563 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,563 - INFO -    🔍 OCR: 'BAIRPO ALTO
+2025-11-09 20:13:39,563 - INFO -    🤝 Mais próximo: BAIRRO ALTO (90.9%)
+
+2025-11-09 20:13:39,634 - INFO - 🖼️ Imagem: IMG19_PINHEIRINHOCABRAL_jpg.rf.af53c64015511248c83c4a8842f10508.jpg
+2025-11-09 20:13:39,634 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,634 - INFO -    🔍 OCR: CAB RA
+2025-11-09 20:13:39,635 - INFO -    🤝 Mais próximo: CABRAL (66.7%)
+
+2025-11-09 20:13:39,720 - INFO - 🖼️ Imagem: IMG202_INTERBAIRROSIVLOCAL_jpg.rf.edf8df3e1071453abac76223bb0941e4.jpg
+2025-11-09 20:13:39,721 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,721 - INFO -    🔍 OCR: TERDRIRROS
+2025-11-09 20:13:39,721 - INFO -    🤝 Mais próximo: INTERBAIRROS (80.0%)
+
+2025-11-09 20:13:39,822 - INFO - 🖼️ Imagem: IMG210_INTER2_jpg.rf.d0ec201872ce34cde8fd7f70e1a4d919.jpg
+2025-11-09 20:13:39,822 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,823 - INFO -    🔍 OCR: IN TER 2
+2025-11-09 20:13:39,823 - INFO -    🤝 Mais próximo: INTER 2 (87.5%)
+
+2025-11-09 20:13:39,933 - INFO - 🖼️ Imagem: IMG221_QUATROBARRAS_jpg.rf.1f9e36c3ba1f0e0e5e6fbd41647b1021.jpg
+2025-11-09 20:13:39,933 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:39,933 - INFO -    🔍 OCR: QURRO BARPAS
+2025-11-09 20:13:39,934 - INFO -    🤝 Mais próximo: QUATRO BARRAS (76.9%)
+
+2025-11-09 20:13:40,014 - INFO - 🖼️ Imagem: IMG22_SITIOCERCADO_jpg.rf.2ff14b058c029560ef01789fb476724b.jpg
+2025-11-09 20:13:40,014 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,014 - INFO -    🔍 OCR: SHTI CERCADQ
+2025-11-09 20:13:40,015 - INFO -    🤝 Mais próximo: SITIO CERCADO (76.9%)
+
+2025-11-09 20:13:40,102 - INFO - 🖼️ Imagem: IMG231_NIVALDOBRAGALOCAL_jpg.rf.f52672f40c2dc0d81be0a2ae0e5961e2.jpg
+2025-11-09 20:13:40,102 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,103 - INFO -    🔍 OCR: HUALDO BRAGA
+2025-11-09 20:13:40,103 - INFO -    🤝 Mais próximo: NIVALDO BRAGA (83.3%)
+
+2025-11-09 20:13:40,176 - INFO - 🖼️ Imagem: IMG232_PORTOBELOLOCAL_jpg.rf.fcdaaa30f7b9dcb56300f17d1110d6e8.jpg
+2025-11-09 20:13:40,176 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,176 - INFO -    🔍 OCR: PORTO BELO
+2025-11-09 20:13:40,177 - INFO -    🤝 Mais próximo: PORTO BELO (100.0%)
+
+2025-11-09 20:13:40,251 - INFO - 🖼️ Imagem: IMG234_INTERBAIRROS_jpg.rf.6abda0ea88c15bb07954c020391db08a.jpg
+2025-11-09 20:13:40,251 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,251 - INFO -    🔍 OCR: NTERBARROS]
+2025-11-09 20:13:40,251 - INFO -    🤝 Mais próximo: INTERBAIRROS (81.8%)
+
+2025-11-09 20:13:40,350 - INFO - 🖼️ Imagem: IMG236_ROCAGRANDE_jpg.rf.e1259d99829a82d3e383dac2155c5bf0.jpg
+2025-11-09 20:13:40,351 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,351 - INFO -    🔍 OCR: ROCA GRANDE)
+2025-11-09 20:13:40,351 - INFO -    🤝 Mais próximo: ROCA GRANDE (100.0%)
+
+2025-11-09 20:13:40,427 - INFO - 🖼️ Imagem: IMG237_COLOMBOCICLOCAL_jpg.rf.4015b7190f5132c1c829cc93676144e4.jpg
+2025-11-09 20:13:40,427 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,427 - INFO -    🔍 OCR: COLOMBO/CC
+2025-11-09 20:13:40,427 - INFO -    🤝 Mais próximo: COLOMBO CIC (81.8%)
+
+2025-11-09 20:13:40,497 - INFO - 🖼️ Imagem: IMG241_LIGEIRAOLOCAL_jpg.rf.431a3a67b06587654808058041a3dcfb.jpg
+2025-11-09 20:13:40,497 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,497 - INFO -    🔍 OCR: LIGEIRAO
+2025-11-09 20:13:40,498 - INFO -    🤝 Mais próximo: LIGEIRAO (100.0%)
+
+2025-11-09 20:13:40,643 - INFO - 🖼️ Imagem: IMG263_JDCHAPARRAL_jpg.rf.9d05a25809e7688492ed59659fb18e8e.jpg
+2025-11-09 20:13:40,643 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,643 - INFO -    🔍 OCR: 70.G P8R0
+2025-11-09 20:13:40,643 - INFO -    🤝 Mais próximo: ANGELICA PORTAO (33.3%)
+
+2025-11-09 20:13:40,844 - INFO - 🖼️ Imagem: IMG272_INTERBAIRROS_jpg.rf.c8c2f49afb103bfdc6c829175e5df1cc.jpg
+2025-11-09 20:13:40,844 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,844 - INFO -    🔍 OCR: HTERBAIRROS
+2025-11-09 20:13:40,845 - INFO -    🤝 Mais próximo: INTERBAIRROS (90.9%)
+
+2025-11-09 20:13:40,970 - INFO - 🖼️ Imagem: IMG285_ATUBASANTACANDIDALOCAL_jpg.rf.1327fa24800f49bdaba95ddadac548fc.jpg
+2025-11-09 20:13:40,970 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:40,970 - INFO -    🔍 OCR: A7EA/STAOSILA
+2025-11-09 20:13:40,970 - INFO -    🤝 Mais próximo: ERASTO (50.0%)
+
+2025-11-09 20:13:41,066 - INFO - 🖼️ Imagem: IMG287_ALTOBOQUEIRAOLOCAL_jpg.rf.05731f44037c01bf6181a1865eb6a7a7.jpg
+2025-11-09 20:13:41,066 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,066 - INFO -    🔍 OCR: ALTO BOQUEIPAQ
+2025-11-09 20:13:41,066 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (85.7%)
+
+2025-11-09 20:13:41,131 - INFO - 🖼️ Imagem: IMG289_PINHAIS_jpg.rf.bee9cc388cbc6e7b5478d9a74321b7fd.jpg
+2025-11-09 20:13:41,132 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,132 - INFO -    🔍 OCR: PINHAIS
+2025-11-09 20:13:41,132 - INFO -    🤝 Mais próximo: PINHAIS (100.0%)
+
+2025-11-09 20:13:41,204 - INFO - 🖼️ Imagem: IMG290_NORTESULLOCAL_jpg.rf.d51a01f69a8208fcd888138131e2cb6f.jpg
+2025-11-09 20:13:41,205 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,205 - INFO -    🔍 OCR: NORTEISUL
+2025-11-09 20:13:41,205 - INFO -    🤝 Mais próximo: NORTE SUL (88.9%)
+
+2025-11-09 20:13:41,316 - INFO - 🖼️ Imagem: IMG298_CABRAL_jpg.rf.b22ddc6db0a26b70343aa6bc6be7fe53.jpg
+2025-11-09 20:13:41,316 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,316 - INFO -    🔍 OCR: € A B R A L
+2025-11-09 20:13:41,316 - INFO -    🤝 Mais próximo: CABRAL (45.5%)
+
+2025-11-09 20:13:41,386 - INFO - 🖼️ Imagem: IMG29_INTER2_jpg.rf.e06b775d7a4a9b87e35e17225121a88f.jpg
+2025-11-09 20:13:41,386 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,386 - INFO -    🔍 OCR: INTER
+2025-11-09 20:13:41,387 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:13:41,453 - INFO - 🖼️ Imagem: IMG2_TAMANDARECABRAL_jpg.rf.9911fb1617b040c5655073b6e77859ab.jpg
+2025-11-09 20:13:41,453 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,453 - INFO -    🔍 OCR: HANDARE
+2025-11-09 20:13:41,454 - INFO -    🤝 Mais próximo: TAMANDARE (85.7%)
+
+2025-11-09 20:13:41,520 - INFO - 🖼️ Imagem: IMG304_INTERBAIRROSIIIQUATROBARRAS_jpg.rf.c448e351f47697ef4c145607aab8fd1d.jpg
+2025-11-09 20:13:41,521 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,521 - INFO -    🔍 OCR: EAPS
+2025-11-09 20:13:41,521 - INFO -    🤝 Mais próximo: ATUBA STACANDIDA (50.0%)
+
+2025-11-09 20:13:41,577 - INFO - 🖼️ Imagem: IMG304_INTERBAIRROSIIIQUATROBARRAS_jpg.rf.c448e351f47697ef4c145607aab8fd1d.jpg
+2025-11-09 20:13:41,577 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,578 - INFO -    🔍 OCR: TFO BARRAS
+2025-11-09 20:13:41,578 - INFO -    🤝 Mais próximo: QUATRO BARRAS (90.0%)
+
+2025-11-09 20:13:41,641 - INFO - 🖼️ Imagem: IMG305_CABRAL_jpg.rf.071584a5a747477169bcfe0875db4bbf.jpg
+2025-11-09 20:13:41,641 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,641 - INFO -    🔍 OCR: CAERAY
+2025-11-09 20:13:41,641 - INFO -    🤝 Mais próximo: CABRAL (66.7%)
+
+2025-11-09 20:13:41,721 - INFO - 🖼️ Imagem: IMG30_MARACANASANTACANDIDA_jpg.rf.4db98945234f64f5c2f8264bb84949a4.jpg
+2025-11-09 20:13:41,721 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,722 - INFO -    🔍 OCR: SANTA CANDIDA
+2025-11-09 20:13:41,722 - INFO -    🤝 Mais próximo: SANTA CANDIDA (100.0%)
+
+2025-11-09 20:13:41,831 - INFO - 🖼️ Imagem: IMG31_HOSPITALANGELINACARONATUBA_jpg.rf.16f595a35a5b4e7e61fd99f2ad3039bc.jpg
+2025-11-09 20:13:41,832 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,832 - INFO -    🔍 OCR: H. @HROH/ ATUBN
+2025-11-09 20:13:41,832 - INFO -    🤝 Mais próximo: ATUBA (80.0%)
+
+2025-11-09 20:13:41,899 - INFO - 🖼️ Imagem: IMG326_ESPECIAL_jpg.rf.3f5b1ebcac9f20a3e3053a7ff40b577a.jpg
+2025-11-09 20:13:41,900 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,900 - INFO -    🔍 OCR: ESPECLAT
+2025-11-09 20:13:41,900 - INFO -    🤝 Mais próximo: ESPECIAL (75.0%)
+
+2025-11-09 20:13:41,977 - INFO - 🖼️ Imagem: IMG331_URBANO_jpg.rf.d23fd78c4f771bf4097a5eb93097e82c.jpg
+2025-11-09 20:13:41,978 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:41,978 - INFO -    🔍 OCR: CURITIB A
+2025-11-09 20:13:41,978 - INFO -    🤝 Mais próximo: CURITIBA (88.9%)
+
+2025-11-09 20:13:42,050 - INFO - 🖼️ Imagem: IMG33_DONAFINA_jpg.rf.ffcf3cfa85f926a04acda72ddfdbefe4.jpg
+2025-11-09 20:13:42,050 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,050 - INFO -    🔍 OCR: DONAFINA
+2025-11-09 20:13:42,050 - INFO -    🤝 Mais próximo: DONA FINA (88.9%)
+
+2025-11-09 20:13:42,131 - INFO - 🖼️ Imagem: IMG347_VILAMACEDO_jpg.rf.9d5c45651e386e00e6318b02f9ec8eb5.jpg
+2025-11-09 20:13:42,131 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,131 - INFO -    🔍 OCR: VLA MACE
+2025-11-09 20:13:42,132 - INFO -    🤝 Mais próximo: VILA MACEDO (87.5%)
+
+2025-11-09 20:13:42,188 - INFO - 🖼️ Imagem: IMG352_INTER2_jpg.rf.48cd9822b2b6c6cb4829ed44ad43776d.jpg
+2025-11-09 20:13:42,188 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,188 - INFO -    🔍 OCR: {
+2025-11-09 20:13:42,189 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:13:42,295 - INFO - 🖼️ Imagem: IMG365_JDLUDOVICA_jpg.rf.527a1c3de13336e03d01646f352f69f8.jpg
+2025-11-09 20:13:42,295 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,295 - INFO -    🔍 OCR: JD LDOWEL
+2025-11-09 20:13:42,295 - INFO -    🤝 Mais próximo: JD LUDOVICA (55.6%)
+
+2025-11-09 20:13:42,390 - INFO - 🖼️ Imagem: IMG379_RIONEGRO_jpg.rf.ae1319f295c47999f79af7908bbfde8f.jpg
+2025-11-09 20:13:42,390 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,391 - INFO -    🔍 OCR: RIO NEGRO
+2025-11-09 20:13:42,391 - INFO -    🤝 Mais próximo: RIO NEGRO (100.0%)
+
+2025-11-09 20:13:42,456 - INFO - 🖼️ Imagem: IMG382_GRAMADOS_jpg.rf.6feda49e6feaf7c92bb6b6959cf3bb13.jpg
+2025-11-09 20:13:42,456 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,457 - INFO -    🔍 OCR: 2LS
+2025-11-09 20:13:42,457 - INFO -    🤝 Mais próximo: ABRANCHES (33.3%)
+
+2025-11-09 20:13:42,543 - INFO - 🖼️ Imagem: IMG391_LONDRINA_jpg.rf.5270c3e170e0fe5a2c12aef449354aa5.jpg
+2025-11-09 20:13:42,544 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,544 - INFO -    🔍 OCR: QUEERIN S
+2025-11-09 20:13:42,544 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (44.4%)
+
+2025-11-09 20:13:42,621 - INFO - 🖼️ Imagem: IMG396_BOQUEIRAO_jpg.rf.357fade1db050d970d80ed2221f6c837.jpg
+2025-11-09 20:13:42,622 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,622 - INFO -    🔍 OCR: BOQUEIRAO
+2025-11-09 20:13:42,622 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (100.0%)
+
+2025-11-09 20:13:42,696 - INFO - 🖼️ Imagem: IMG399_AFONSOPENA_jpg.rf.8da62038d30082f6d43dd0729e5bad2c.jpg
+2025-11-09 20:13:42,696 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,696 - INFO -    🔍 OCR: ( AFONSOFENF
+2025-11-09 20:13:42,696 - INFO -    🤝 Mais próximo: AFONSO PENA (63.6%)
+
+2025-11-09 20:13:42,769 - INFO - 🖼️ Imagem: IMG406_CAPAORASO_jpg.rf.6d12e6851ec2b2ec9669a22f746ded2e.jpg
+2025-11-09 20:13:42,770 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,770 - INFO -    🔍 OCR: CAPAO RASI
+2025-11-09 20:13:42,770 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:13:42,831 - INFO - 🖼️ Imagem: IMG40_INTERBAIRROS_jpg.rf.20d73618d3b3e2c29cbb7a6b35a13de9.jpg
+2025-11-09 20:13:42,832 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,832 - INFO -    🔍 OCR: KRUS
+2025-11-09 20:13:42,832 - INFO -    🤝 Mais próximo: BARRAS ATUBA (50.0%)
+
+2025-11-09 20:13:42,917 - INFO - 🖼️ Imagem: IMG41_VILAESPERANCA_jpg.rf.b323f71c1a7df45bf7aa608f16f0ee4c.jpg
+2025-11-09 20:13:42,917 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:42,917 - INFO -    🔍 OCR: VLA ESFERANCA
+2025-11-09 20:13:42,918 - INFO -    🤝 Mais próximo: VILA ESPERANCA (85.7%)
+
+2025-11-09 20:13:43,039 - INFO - 🖼️ Imagem: IMG433_CAMPOCOMPRIDO_jpg.rf.aecd77c70560b67f6dccd683591cbd25.jpg
+2025-11-09 20:13:43,039 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,040 - INFO -    🔍 OCR: CALIPPO COMPRIDO
+2025-11-09 20:13:43,040 - INFO -    🤝 Mais próximo: CAMPO COMPRIDO (81.2%)
+
+2025-11-09 20:13:43,105 - INFO - 🖼️ Imagem: IMG435_JDTROPICAL_jpg.rf.d9eecdcbd74fdc3a404b42ff68917407.jpg
+2025-11-09 20:13:43,106 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,106 - INFO -    🔍 OCR: IROPIC_
+2025-11-09 20:13:43,106 - INFO -    🤝 Mais próximo: JD TROPICAL (71.4%)
+
+2025-11-09 20:13:43,267 - INFO - 🖼️ Imagem: IMG43_PINHEIRINHOATUBA_jpg.rf.10ae685f3240f94b21f2eb6ea4d9aeef.jpg
+2025-11-09 20:13:43,267 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,268 - INFO -    🔍 OCR: ATUEA PIKHEIRINHO
+2025-11-09 20:13:43,268 - INFO -    🤝 Mais próximo: PINHEIRINHO (90.9%)
+
+2025-11-09 20:13:43,346 - INFO - 🖼️ Imagem: IMG441_PINHEIRINHO_jpg.rf.8648340ae0e92a0dbaab65827a4720a2.jpg
+2025-11-09 20:13:43,346 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,346 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:13:43,346 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:13:43,424 - INFO - 🖼️ Imagem: IMG442_BOQUEIRAO_jpg.rf.20567704bbd634fc685b83f295d98d61.jpg
+2025-11-09 20:13:43,425 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,425 - INFO -    🔍 OCR: BONEBAO
+2025-11-09 20:13:43,425 - INFO -    🤝 Mais próximo: JD PIONEIRO (57.1%)
+
+2025-11-09 20:13:43,497 - INFO - 🖼️ Imagem: IMG462_PINHEIRINHO_jpg.rf.4a80e5362d731bc82cbcf31138d98dfd.jpg
+2025-11-09 20:13:43,497 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,498 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:13:43,498 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:13:43,572 - INFO - 🖼️ Imagem: IMG466_PINHEIRINHO_jpg.rf.7bb6f320fbb43afd72a043f6c93557ca.jpg
+2025-11-09 20:13:43,573 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,573 - INFO -    🔍 OCR: PINHEIRINHO
+2025-11-09 20:13:43,573 - INFO -    🤝 Mais próximo: ATUBA PINHEIRINHO (100.0%)
+
+2025-11-09 20:13:43,657 - INFO - 🖼️ Imagem: IMG468_SANTARITA_jpg.rf.62bd404684e48e125bf637124dab4a17.jpg
+2025-11-09 20:13:43,658 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,658 - INFO -    🔍 OCR: SAHIA 8UIA
+2025-11-09 20:13:43,658 - INFO -    🤝 Mais próximo: AHU (66.7%)
+
+2025-11-09 20:13:43,736 - INFO - 🖼️ Imagem: IMG469_TEQUALY_jpg.rf.0489a648cc6b1794f7119209b86f0f58.jpg
+2025-11-09 20:13:43,736 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,737 - INFO -    🔍 OCR: TCQUALY
+2025-11-09 20:13:43,737 - INFO -    🤝 Mais próximo: TEQUALY (85.7%)
+
+2025-11-09 20:13:43,855 - INFO - 🖼️ Imagem: IMG46_PINHEIRINHOATUBA_jpg.rf.0fe08f394ed289bca3b3d588560e3746.jpg
+2025-11-09 20:13:43,855 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,856 - INFO -    🔍 OCR: ATUBA PIKKEIRI}
+2025-11-09 20:13:43,856 - INFO -    🤝 Mais próximo: ATUBA (100.0%)
+
+2025-11-09 20:13:43,924 - INFO - 🖼️ Imagem: IMG483_-RICOVER-SSIMO_jpg.rf.7ce845d5bbd4c798a95c324ad78782b6.jpg
+2025-11-09 20:13:43,924 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:43,924 - INFO -    🔍 OCR: EAU
+2025-11-09 20:13:43,924 - INFO -    🤝 Mais próximo: ARAUCARIA (66.7%)
+
+2025-11-09 20:13:44,027 - INFO - 🖼️ Imagem: IMG492_MARIAANGELICA_jpg.rf.4b0a9fa7435f29590afc3e7b3f7f60c5.jpg
+2025-11-09 20:13:44,027 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,028 - INFO -    🔍 OCR: @LA
+2025-11-09 20:13:44,028 - INFO -    🤝 Mais próximo: AGRICOLA (66.7%)
+
+2025-11-09 20:13:44,185 - INFO - 🖼️ Imagem: IMG506_BARREIRINHA_jpg.rf.6c2eb82b1cda8062611149ce77abe95d.jpg
+2025-11-09 20:13:44,185 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,185 - INFO -    🔍 OCR: @AAREIRINHA
+2025-11-09 20:13:44,185 - INFO -    🤝 Mais próximo: BARREIRINHA (81.8%)
+
+2025-11-09 20:13:44,277 - INFO - 🖼️ Imagem: IMG509_CENTROC-VICO_jpg.rf.43f3bc12621375a6c1300c1238af418f.jpg
+2025-11-09 20:13:44,277 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,277 - INFO -    🔍 OCR: CEHTRO CIVICO ,
+2025-11-09 20:13:44,277 - INFO -    🤝 Mais próximo: CENTRO CIVICO (92.3%)
+
+2025-11-09 20:13:44,353 - INFO - 🖼️ Imagem: IMG521_CAP-ORASO_jpg.rf.e05244faac5784ec0a385bbdcc5c9c0c.jpg
+2025-11-09 20:13:44,353 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,354 - INFO -    🔍 OCR: CARAO RASO]
+2025-11-09 20:13:44,354 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:13:44,475 - INFO - 🖼️ Imagem: IMG526_BOQUEIR-O_jpg.rf.d3db585af755c43194d7d0b3977f9927.jpg
+2025-11-09 20:13:44,476 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,477 - INFO -    🔍 OCR: SSQUEIRAO
+2025-11-09 20:13:44,477 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (77.8%)
+
+2025-11-09 20:13:44,716 - INFO - 🖼️ Imagem: IMG538_CABRAL_jpg.rf.7fde16bf726960efe69f25465d5775b1.jpg
+2025-11-09 20:13:44,716 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,716 - INFO -    🔍 OCR: CAB RAL
+2025-11-09 20:13:44,717 - INFO -    🤝 Mais próximo: CABRAL (85.7%)
+
+2025-11-09 20:13:44,828 - INFO - 🖼️ Imagem: IMG551_SOLAR_jpg.rf.c75ac8a0b9cfe5b0a0c29d3687a65902.jpg
+2025-11-09 20:13:44,828 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,828 - INFO -    🔍 OCR: SOLAR
+2025-11-09 20:13:44,829 - INFO -    🤝 Mais próximo: SOLAR (100.0%)
+
+2025-11-09 20:13:44,959 - INFO - 🖼️ Imagem: IMG557_TRABALHADOR_jpg.rf.2747a651d3a7bbf31f3f39a83011a5b5.jpg
+2025-11-09 20:13:44,960 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:44,960 - INFO -    🔍 OCR: TTRABALHADOR?
+2025-11-09 20:13:44,960 - INFO -    🤝 Mais próximo: TRABALHADOR (100.0%)
+
+2025-11-09 20:13:45,060 - INFO - 🖼️ Imagem: IMG558_FAZENDA_jpg.rf.9c747714325a7707c145bbea3f0be0d1.jpg
+2025-11-09 20:13:45,060 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,060 - INFO -    🔍 OCR: FAZENDA
+2025-11-09 20:13:45,060 - INFO -    🤝 Mais próximo: FAZENDA (100.0%)
+
+2025-11-09 20:13:45,241 - INFO - 🖼️ Imagem: IMG587_VILAAUTODROMO_jpg.rf.ec0e44a28bf012fb7055e9494c70b267.jpg
+2025-11-09 20:13:45,242 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,242 - INFO -    🔍 OCR: VLA AUTOOONQ
+2025-11-09 20:13:45,242 - INFO -    🤝 Mais próximo: VILA AUTODROMO (64.3%)
+
+2025-11-09 20:13:45,366 - INFO - 🖼️ Imagem: IMG591_BARREIRINHA_jpg.rf.5885b4ac2eb478ea911858f1d6163fee.jpg
+2025-11-09 20:13:45,367 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,367 - INFO -    🔍 OCR: LOUEKN
+2025-11-09 20:13:45,367 - INFO -    🤝 Mais próximo: PARQUE NAUTICO (50.0%)
+
+2025-11-09 20:13:45,489 - INFO - 🖼️ Imagem: IMG606_ANITAGARIBALDI_jpg.rf.ba1497fddc2c2f9131270fa33ce69152.jpg
+2025-11-09 20:13:45,490 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,490 - INFO -    🔍 OCR: AHTA CARIEALD
+2025-11-09 20:13:45,490 - INFO -    🤝 Mais próximo: ANITA GARIBALDI (69.2%)
+
+2025-11-09 20:13:45,614 - INFO - 🖼️ Imagem: IMG60_CENTENARIOHAUER_jpg.rf.bcd8948cd78ef5a9365d31e60128eda3.jpg
+2025-11-09 20:13:45,614 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,615 - INFO -    🔍 OCR: CENIEMATIC
+2025-11-09 20:13:45,615 - INFO -    🤝 Mais próximo: CIC (66.7%)
+
+2025-11-09 20:13:45,784 - INFO - 🖼️ Imagem: IMG61_CENTENARIOHAUER_jpg.rf.e73b0ad4d9d75c3120411c3357f7e0fa.jpg
+2025-11-09 20:13:45,785 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,785 - INFO -    🔍 OCR: H A UE
+2025-11-09 20:13:45,785 - INFO -    🤝 Mais próximo: AHU (66.7%)
+
+2025-11-09 20:13:45,881 - INFO - 🖼️ Imagem: IMG624_PINHAIS_jpg.rf.c293e2006d7b13b05aae7f61b50d2ad5.jpg
+2025-11-09 20:13:45,881 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,881 - INFO -    🔍 OCR: ?
+2025-11-09 20:13:45,881 - INFO -    🤝 Mais próximo: ABRANCHES (0.0%)
+
+2025-11-09 20:13:45,946 - INFO - 🖼️ Imagem: IMG627_CABRAL_jpg.rf.8a510a5a45c4d408adf4a91610f46490.jpg
+2025-11-09 20:13:45,947 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:45,947 - INFO -    🔍 OCR: CAERAL
+2025-11-09 20:13:45,947 - INFO -    🤝 Mais próximo: CABRAL (83.3%)
+
+2025-11-09 20:13:46,096 - INFO - 🖼️ Imagem: IMG634_CAPAORASO_jpg.rf.1315c6555d3e89bb857099ede301c28b.jpg
+2025-11-09 20:13:46,096 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,096 - INFO -    🔍 OCR: CAPAOLA
+2025-11-09 20:13:46,096 - INFO -    🤝 Mais próximo: CAPAO DA IMBUIA (71.4%)
+
+2025-11-09 20:13:46,170 - INFO - 🖼️ Imagem: IMG63_CABRALTAMANDARE_jpg.rf.f2af7e1e355630c8fae8b554ac64eb6a.jpg
+2025-11-09 20:13:46,170 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,170 - INFO -    🔍 OCR: ANDAAL
+2025-11-09 20:13:46,170 - INFO -    🤝 Mais próximo: TAMANDARE (66.7%)
+
+2025-11-09 20:13:46,253 - INFO - 🖼️ Imagem: IMG655_SAOJOSE_jpg.rf.f4f1610c847303df2d9c9d5217615434.jpg
+2025-11-09 20:13:46,253 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,254 - INFO -    🔍 OCR: SAOJOSE
+2025-11-09 20:13:46,254 - INFO -    🤝 Mais próximo: SAO JOSE (87.5%)
+
+2025-11-09 20:13:46,335 - INFO - 🖼️ Imagem: IMG657_CENTROSAOJOSE_jpg.rf.8fd3efedd7dcb9b70845c15cebfe1135.jpg
+2025-11-09 20:13:46,335 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,336 - INFO -    🔍 OCR: QT 50
+2025-11-09 20:13:46,336 - INFO -    🤝 Mais próximo: CENT R BARBOSA (40.0%)
+
+2025-11-09 20:13:46,407 - INFO - 🖼️ Imagem: IMG657_CENTROSAOJOSE_jpg.rf.8fd3efedd7dcb9b70845c15cebfe1135.jpg
+2025-11-09 20:13:46,408 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,408 - INFO -    🔍 OCR: [@I 5 M
+2025-11-09 20:13:46,408 - INFO -    🤝 Mais próximo: CIC (33.3%)
+
+2025-11-09 20:13:46,519 - INFO - 🖼️ Imagem: IMG659_CRISTOREI_jpg.rf.ac89988d28781078e005cc9cd8092e73.jpg
+2025-11-09 20:13:46,520 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,520 - INFO -    🔍 OCR: CAISTO RE1
+2025-11-09 20:13:46,520 - INFO -    🤝 Mais próximo: CRISTO REI (80.0%)
+
+2025-11-09 20:13:46,593 - INFO - 🖼️ Imagem: IMG662_JANAINA_jpg.rf.5343803e62ca40f6313c8594aa0dd6b0.jpg
+2025-11-09 20:13:46,593 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,594 - INFO -    🔍 OCR: JANAINA
+2025-11-09 20:13:46,594 - INFO -    🤝 Mais próximo: JANAINA (100.0%)
+
+2025-11-09 20:13:46,681 - INFO - 🖼️ Imagem: IMG663_JDLUDOVICA_jpg.rf.e74dddaa5c60002b0259e235615bc345.jpg
+2025-11-09 20:13:46,681 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,681 - INFO -    🔍 OCR: JD,LUDOVICA
+2025-11-09 20:13:46,682 - INFO -    🤝 Mais próximo: JD LUDOVICA (90.9%)
+
+2025-11-09 20:13:46,846 - INFO - 🖼️ Imagem: IMG674_RIOBONITOCIC_jpg.rf.a4fc1f8da394a3c7ad67ace7d8bde2b8.jpg
+2025-11-09 20:13:46,846 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,847 - INFO -    🔍 OCR: RIO BOKITO/CIC
+2025-11-09 20:13:46,847 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:13:46,958 - INFO - 🖼️ Imagem: IMG680_CIC_jpg.rf.7562747667901b13ca8c88eff4b6cc43.jpg
+2025-11-09 20:13:46,958 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:46,959 - INFO -    🔍 OCR: CL€
+2025-11-09 20:13:46,959 - INFO -    🤝 Mais próximo: ABRANCHES (33.3%)
+
+2025-11-09 20:13:47,029 - INFO - 🖼️ Imagem: IMG690_VILAVERDE_jpg.rf.cdb976db66e9b5d6ac140786b7a35c37.jpg
+2025-11-09 20:13:47,029 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,029 - INFO -    🔍 OCR: ERE
+2025-11-09 20:13:47,030 - INFO -    🤝 Mais próximo: JD ITIBERE (100.0%)
+
+2025-11-09 20:13:47,117 - INFO - 🖼️ Imagem: IMG695_GUADALUPE_jpg.rf.8d4268df59f49ef2bf98fe2ab37e2152.jpg
+2025-11-09 20:13:47,117 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,118 - INFO -    🔍 OCR: GUABEL
+2025-11-09 20:13:47,118 - INFO -    🤝 Mais próximo: GUADALUPE (66.7%)
+
+2025-11-09 20:13:47,219 - INFO - 🖼️ Imagem: IMG697_JDITIBERE_jpg.rf.858f21f8f181ddf4fd86bf7b2f43e7d0.jpg
+2025-11-09 20:13:47,219 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,220 - INFO -    🔍 OCR: JD ITIBERE
+2025-11-09 20:13:47,220 - INFO -    🤝 Mais próximo: JD ITIBERE (100.0%)
+
+2025-11-09 20:13:47,306 - INFO - 🖼️ Imagem: IMG717_BAIRROALTO_jpg.rf.d26e841e74dab50dd2d36ada543a7524.jpg
+2025-11-09 20:13:47,307 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,307 - INFO -    🔍 OCR: BAIRRO ALTO
+2025-11-09 20:13:47,307 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:13:47,379 - INFO - 🖼️ Imagem: IMG730_INTER2_jpg.rf.780ec42b90877f92e1901ed368b9abe8.jpg
+2025-11-09 20:13:47,379 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,380 - INFO -    🔍 OCR: INTER
+2025-11-09 20:13:47,380 - INFO -    🤝 Mais próximo: INTER 2 (100.0%)
+
+2025-11-09 20:13:47,452 - INFO - 🖼️ Imagem: IMG732_MGUADALUPE_jpg.rf.dd1adae749afc1f9f6c96fc13815a787.jpg
+2025-11-09 20:13:47,452 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,452 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:13:47,452 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:13:47,573 - INFO - 🖼️ Imagem: IMG750_PINHEIRINHO_jpg.rf.dceda3711035837dae6ee6964df3e953.jpg
+2025-11-09 20:13:47,573 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,573 - INFO -    🔍 OCR: FINRENTU
+2025-11-09 20:13:47,573 - INFO -    🤝 Mais próximo: INTER2 (50.0%)
+
+2025-11-09 20:13:47,659 - INFO - 🖼️ Imagem: IMG751_BOQUEIRAO_jpg.rf.79449f9a1d1bc8016b499007cbed4dd3.jpg
+2025-11-09 20:13:47,659 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,659 - INFO -    🔍 OCR: POQUEIRAO
+2025-11-09 20:13:47,660 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (88.9%)
+
+2025-11-09 20:13:47,728 - INFO - 🖼️ Imagem: IMG759_TURISMO_jpg.rf.33577e0c9ec36f0c87fe56231727f5df.jpg
+2025-11-09 20:13:47,728 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,729 - INFO -    🔍 OCR: TURISMO
+2025-11-09 20:13:47,729 - INFO -    🤝 Mais próximo: LINER TURISMO (100.0%)
+
+2025-11-09 20:13:47,812 - INFO - 🖼️ Imagem: IMG763_REFORCOSABARA_jpg.rf.c6741698c1ef0b97c71b315865e519df.jpg
+2025-11-09 20:13:47,812 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,812 - INFO -    🔍 OCR: KFADO SIPAP
+2025-11-09 20:13:47,813 - INFO -    🤝 Mais próximo: C RASO C DO SIQUEIRA (45.5%)
+
+2025-11-09 20:13:47,937 - INFO - 🖼️ Imagem: IMG769_CAMPOCOMPRIDO_jpg.rf.e9474e4213601b0f626c8b932849cd8b.jpg
+2025-11-09 20:13:47,938 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:47,938 - INFO -    🔍 OCR: CALPO COFR}
+2025-11-09 20:13:47,938 - INFO -    🤝 Mais próximo: CAMPO COMPRIDO (63.6%)
+
+2025-11-09 20:13:48,009 - INFO - 🖼️ Imagem: IMG774_ESPECIAL_jpg.rf.b550796b68ab9478ef0c0dad3f41d697.jpg
+2025-11-09 20:13:48,009 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,009 - INFO -    🔍 OCR: ESPECIAL
+2025-11-09 20:13:48,010 - INFO -    🤝 Mais próximo: ESPECIAL (100.0%)
+
+2025-11-09 20:13:48,116 - INFO - 🖼️ Imagem: IMG776_TURISMO_jpg.rf.ec07efb5a5414caff76600c5c61ab7f5.jpg
+2025-11-09 20:13:48,116 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,117 - INFO -    🔍 OCR: TURISHO
+2025-11-09 20:13:48,117 - INFO -    🤝 Mais próximo: LINER TURISMO (85.7%)
+
+2025-11-09 20:13:48,246 - INFO - 🖼️ Imagem: IMG789_PASSAUNA_jpg.rf.25f3eb676141a80f06520a1c344d2262.jpg
+2025-11-09 20:13:48,246 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,246 - INFO -    🔍 OCR: PASSQUNA
+2025-11-09 20:13:48,247 - INFO -    🤝 Mais próximo: PASSAUNA (87.5%)
+
+2025-11-09 20:13:48,342 - INFO - 🖼️ Imagem: IMG798_TIRANDENTES_jpg.rf.92bbed31c30d9286caac8174bd7d3a79.jpg
+2025-11-09 20:13:48,342 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,343 - INFO -    🔍 OCR: TIRADENTES
+2025-11-09 20:13:48,343 - INFO -    🤝 Mais próximo: TIRADENTES (100.0%)
+
+2025-11-09 20:13:48,445 - INFO - 🖼️ Imagem: IMG799_BARREIRINHA_jpg.rf.aae21d89d7d484cd27ec0eb9f27f5a4c.jpg
+2025-11-09 20:13:48,445 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,445 - INFO -    🔍 OCR: @ARRERINHA
+2025-11-09 20:13:48,446 - INFO -    🤝 Mais próximo: BARREIRINHA (81.8%)
+
+2025-11-09 20:13:48,560 - INFO - 🖼️ Imagem: IMG800_CAPAORASO_jpg.rf.2d44853916ca538a54ff61033498262e.jpg
+2025-11-09 20:13:48,562 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,563 - INFO -    🔍 OCR: CAPAO RASG
+2025-11-09 20:13:48,564 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:13:48,685 - INFO - 🖼️ Imagem: IMG808_JDMERCES_jpg.rf.096dfccc8d8f031b92136a9c5f6028f0.jpg
+2025-11-09 20:13:48,685 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,685 - INFO -    🔍 OCR: JD . MERCES
+2025-11-09 20:13:48,686 - INFO -    🤝 Mais próximo: MERCES (100.0%)
+
+2025-11-09 20:13:48,777 - INFO - 🖼️ Imagem: IMG809_BAIRROALTO_jpg.rf.9b9c2ee71f836f9a96f4b2d8e7fff1db.jpg
+2025-11-09 20:13:48,777 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,778 - INFO -    🔍 OCR: BAIRRO ALTO
+2025-11-09 20:13:48,778 - INFO -    🤝 Mais próximo: BAIRRO ALTO (100.0%)
+
+2025-11-09 20:13:48,881 - INFO - 🖼️ Imagem: IMG818_DAGLASSA_jpg.rf.b0ba48376af666cc80b43472abc3ec67.jpg
+2025-11-09 20:13:48,881 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,881 - INFO -    🔍 OCR: DALAGASSA
+2025-11-09 20:13:48,882 - INFO -    🤝 Mais próximo: DALAGASSA (100.0%)
+
+2025-11-09 20:13:48,972 - INFO - 🖼️ Imagem: IMG820_SANTACANDIDA_jpg.rf.e92ae21ecbf7cca33ad9b17e825f20e2.jpg
+2025-11-09 20:13:48,972 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:48,973 - INFO -    🔍 OCR: SANTA CAKDIDA
+2025-11-09 20:13:48,973 - INFO -    🤝 Mais próximo: SANTA CANDIDA (92.3%)
+
+2025-11-09 20:13:49,061 - INFO - 🖼️ Imagem: IMG832_COLOMBOCIC_jpg.rf.63d042bfa57fa1c846192001b126a9f6.jpg
+2025-11-09 20:13:49,061 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,062 - INFO -    🔍 OCR: COLOMBOICIC
+2025-11-09 20:13:49,062 - INFO -    🤝 Mais próximo: CIC (100.0%)
+
+2025-11-09 20:13:49,150 - INFO - 🖼️ Imagem: IMG833_TRABALHADOR_jpg.rf.4b0dccdaebdb4a7cf1b57646dca4f4df.jpg
+2025-11-09 20:13:49,150 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,151 - INFO -    🔍 OCR: TRARAI HANOR
+2025-11-09 20:13:49,151 - INFO -    🤝 Mais próximo: TRABALHADOR (66.7%)
+
+2025-11-09 20:13:49,269 - INFO - 🖼️ Imagem: IMG836_FAGUNDESVARELA_jpg.rf.f058a1e96f40c7578c92915b8ef6deeb.jpg
+2025-11-09 20:13:49,269 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,270 - INFO -    🔍 OCR: FFCUHOES VARELA
+2025-11-09 20:13:49,270 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (73.3%)
+
+2025-11-09 20:13:49,359 - INFO - 🖼️ Imagem: IMG838_ATUBASTACANDIDA_jpg.rf.607089983e83e04a6cac277d8c439251.jpg
+2025-11-09 20:13:49,360 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,360 - INFO -    🔍 OCR: ATEA K7RCORA
+2025-11-09 20:13:49,360 - INFO -    🤝 Mais próximo: SANTA BARBARA (50.0%)
+
+2025-11-09 20:13:49,480 - INFO - 🖼️ Imagem: IMG849_CAMPOMAGRO_jpg.rf.621fd710a5a26f193dc1384232c1489f.jpg
+2025-11-09 20:13:49,480 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,480 - INFO -    🔍 OCR: CALPO MAGRO
+2025-11-09 20:13:49,480 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:13:49,564 - INFO - 🖼️ Imagem: IMG855_GUADALUPE_jpg.rf.b1ed08c237d2c66671db05909342d4a4.jpg
+2025-11-09 20:13:49,565 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,565 - INFO -    🔍 OCR: GUADALUPE
+2025-11-09 20:13:49,565 - INFO -    🤝 Mais próximo: GUADALUPE (100.0%)
+
+2025-11-09 20:13:49,638 - INFO - 🖼️ Imagem: IMG860_STABERNARDETHE_jpg.rf.3ca1a6eac81efb51513b231c17565fa8.jpg
+2025-11-09 20:13:49,638 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,638 - INFO -    🔍 OCR: MII
+2025-11-09 20:13:49,638 - INFO -    🤝 Mais próximo: CAMPINA DO SIQUEIRA (66.7%)
+
+2025-11-09 20:13:49,740 - INFO - 🖼️ Imagem: IMG867_CAPAORASO_jpg.rf.cbcb5f6c2dbe75b68c1f7cdd0cb19260.jpg
+2025-11-09 20:13:49,740 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,741 - INFO -    🔍 OCR: CAPAO PASO
+2025-11-09 20:13:49,741 - INFO -    🤝 Mais próximo: CAPAO RASO (90.0%)
+
+2025-11-09 20:13:49,836 - INFO - 🖼️ Imagem: IMG86_URBANO_jpg.rf.b4001078bb4aa949af8bcfede968827a.jpg
+2025-11-09 20:13:49,836 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,836 - INFO -    🔍 OCR: CRISTO REL
+2025-11-09 20:13:49,836 - INFO -    🤝 Mais próximo: CRISTO REI (90.0%)
+
+2025-11-09 20:13:49,904 - INFO - 🖼️ Imagem: IMG887_MOSSUNGUE_jpg.rf.3a17ef5e588cf07a2a5cc937d348c6f4.jpg
+2025-11-09 20:13:49,904 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,904 - INFO -    🔍 OCR: OSSUKG
+2025-11-09 20:13:49,904 - INFO -    🤝 Mais próximo: MOSSUNGUE (83.3%)
+
+2025-11-09 20:13:49,978 - INFO - 🖼️ Imagem: IMG889_CAPAORASO_jpg.rf.399d591cca073b37e63045bd94845daa.jpg
+2025-11-09 20:13:49,978 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:49,979 - INFO -    🔍 OCR: CHRAO RASO
+2025-11-09 20:13:49,979 - INFO -    🤝 Mais próximo: CAPAO RASO (80.0%)
+
+2025-11-09 20:13:50,059 - INFO - 🖼️ Imagem: IMG905_JDPIONEIRO_jpg.rf.eb1c4d15ba770782cfb6f9568534339a.jpg
+2025-11-09 20:13:50,059 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,059 - INFO -    🔍 OCR: V POHETRO
+2025-11-09 20:13:50,059 - INFO -    🤝 Mais próximo: JD PIONEIRO (55.6%)
+
+2025-11-09 20:13:50,126 - INFO - 🖼️ Imagem: IMG909_INTER2_jpg.rf.f15e7c4cfdd9db1040098dffb300df2e.jpg
+2025-11-09 20:13:50,126 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,127 - INFO -    🔍 OCR: INIER 2
+2025-11-09 20:13:50,127 - INFO -    🤝 Mais próximo: INTER 2 (85.7%)
+
+2025-11-09 20:13:50,204 - INFO - 🖼️ Imagem: IMG915_VILATORRES_jpg.rf.4b0035936303242f3c84d2effcbe3925.jpg
+2025-11-09 20:13:50,204 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,204 - INFO -    🔍 OCR: VILA TORRES
+2025-11-09 20:13:50,205 - INFO -    🤝 Mais próximo: VILA TORRES (100.0%)
+
+2025-11-09 20:13:50,276 - INFO - 🖼️ Imagem: IMG929_CACHOEIRA_jpg.rf.9c4a50122288c8485ff2273e6eb1ec03.jpg
+2025-11-09 20:13:50,276 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,276 - INFO -    🔍 OCR: CACHOEIRA
+2025-11-09 20:13:50,277 - INFO -    🤝 Mais próximo: CACHOEIRA (100.0%)
+
+2025-11-09 20:13:50,356 - INFO - 🖼️ Imagem: IMG930_BARREIRINHA_jpg.rf.7c36d241bbb437ba199c96ee9d8d4412.jpg
+2025-11-09 20:13:50,357 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,357 - INFO -    🔍 OCR: BARBETRI
+2025-11-09 20:13:50,357 - INFO -    🤝 Mais próximo: BARREIRINHA (75.0%)
+
+2025-11-09 20:13:50,448 - INFO - 🖼️ Imagem: IMG931_TIRADENTES_jpg.rf.8012ab2b384ba20f53c5cdcc519e0cf6.jpg
+2025-11-09 20:13:50,448 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,448 - INFO -    🔍 OCR: IRADENTEI
+2025-11-09 20:13:50,448 - INFO -    🤝 Mais próximo: TIRADENTES (88.9%)
+
+2025-11-09 20:13:50,539 - INFO - 🖼️ Imagem: IMG942_RIVIERA_jpg.rf.69e8af52b979c5e8719272d00aec07c3.jpg
+2025-11-09 20:13:50,539 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,539 - INFO -    🔍 OCR: RWVIER
+2025-11-09 20:13:50,539 - INFO -    🤝 Mais próximo: RIVIERA (83.3%)
+
+2025-11-09 20:13:50,664 - INFO - 🖼️ Imagem: IMG946_FAGUNDESVARELA_jpg.rf.705cdec9e166f9bbdddec88865a2a19e.jpg
+2025-11-09 20:13:50,665 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,665 - INFO -    🔍 OCR: [FRCUNDES VARELH
+2025-11-09 20:13:50,665 - INFO -    🤝 Mais próximo: FAGUNDES VARELA (80.0%)
+
+2025-11-09 20:13:50,743 - INFO - 🖼️ Imagem: IMG956_BOQUEIRAO_jpg.rf.e0e77faf3f0131412f94c9250efb0234.jpg
+2025-11-09 20:13:50,743 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,743 - INFO -    🔍 OCR: BOQUEIRAQI
+2025-11-09 20:13:50,743 - INFO -    🤝 Mais próximo: BOQUEIRAO (88.9%)
+
+2025-11-09 20:13:50,888 - INFO - 🖼️ Imagem: IMG958_LINHADIRETACABRAL_jpg.rf.a5ac9bd57b1d37ff3e9b71b8d79f1e56.jpg
+2025-11-09 20:13:50,888 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,889 - INFO -    🔍 OCR: LEYHEB PIRETA AL
+2025-11-09 20:13:50,889 - INFO -    🤝 Mais próximo: PIRATINI (50.0%)
+
+2025-11-09 20:13:50,963 - INFO - 🖼️ Imagem: IMG959_SAOBRAZ_jpg.rf.de3c3ee31a40afd2d918b1fe7c5899fb.jpg
+2025-11-09 20:13:50,963 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:50,964 - INFO -    🔍 OCR: 840 BRAZ
+2025-11-09 20:13:50,964 - INFO -    🤝 Mais próximo: SAO BRAZ (62.5%)
+
+2025-11-09 20:13:51,037 - INFO - 🖼️ Imagem: IMG95_SANTACANDIDACAPAORASO_jpg.rf.f0f08edf4c9a6a04da72768eaa546404.jpg
+2025-11-09 20:13:51,037 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,037 - INFO -    🔍 OCR: CAOIOR
+2025-11-09 20:13:51,038 - INFO -    🤝 Mais próximo: ANGELICA PORTAO (66.7%)
+
+2025-11-09 20:13:51,117 - INFO - 🖼️ Imagem: IMG960_CAMPOMAGRO_jpg.rf.efe4223eda71d8dc4ed2d4caa31a788f.jpg
+2025-11-09 20:13:51,117 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,118 - INFO -    🔍 OCR: CANPO MAGRO
+2025-11-09 20:13:51,118 - INFO -    🤝 Mais próximo: CAMPO MAGRO (90.9%)
+
+2025-11-09 20:13:51,221 - INFO - 🖼️ Imagem: IMG964_CAPAORASO_jpg.rf.51b648025985dac70c150469dcab2439.jpg
+2025-11-09 20:13:51,221 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,221 - INFO -    🔍 OCR: RASO CAPAO '
+2025-11-09 20:13:51,221 - INFO -    🤝 Mais próximo: C RASO C DO SIQUEIRA (58.3%)
+
+2025-11-09 20:13:51,303 - INFO - 🖼️ Imagem: IMG966_CABRAL_jpg.rf.25f5c41ee1d55cf1c9b067f906b5c177.jpg
+2025-11-09 20:13:51,303 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,304 - INFO -    🔍 OCR: CABRAL
+2025-11-09 20:13:51,304 - INFO -    🤝 Mais próximo: CABRAL (100.0%)
+
+2025-11-09 20:13:51,413 - INFO - 🖼️ Imagem: IMG974_TAMANDARE_jpg.rf.c2e4856ae0110db8377bf5bdce001821.jpg
+2025-11-09 20:13:51,414 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,414 - INFO -    🔍 OCR: TAHANDARE
+2025-11-09 20:13:51,414 - INFO -    🤝 Mais próximo: TAMANDARE (88.9%)
+
+2025-11-09 20:13:51,486 - INFO - 🖼️ Imagem: IMG988_BOQUEIRAO_jpg.rf.8a140fbace166a563e99414f4929b4cb.jpg
+2025-11-09 20:13:51,486 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,487 - INFO -    🔍 OCR: BOQUEIRAQ
+2025-11-09 20:13:51,487 - INFO -    🤝 Mais próximo: ALTO BOQUEIRAO (88.9%)
+
+2025-11-09 20:13:51,584 - INFO - 🖼️ Imagem: IMG98_INTERBAIRROSIV_jpg.rf.223c7ce4e9f6c3b758a9ffcf771b29eb.jpg
+2025-11-09 20:13:51,585 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,585 - INFO -    🔍 OCR: IETEREAIBROS V
+2025-11-09 20:13:51,585 - INFO -    🤝 Mais próximo: INTERBAIRROS V (78.6%)
+
+2025-11-09 20:13:51,700 - INFO - 🖼️ Imagem: IMG998_CICCABRAL_jpg.rf.bfc950816985c96195e2f420d72f7b4c.jpg
+2025-11-09 20:13:51,701 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 20:13:51,701 - INFO -    🔍 OCR: CLER7
+2025-11-09 20:13:51,701 - INFO -    🤝 Mais próximo: AGUA VERDE (40.0%)
+
+2025-11-09 20:13:51,760 - INFO - 
+📊 ESTATÍSTICAS DE PROCESSAMENTO:
+2025-11-09 20:13:51,761 - INFO -    📷 Total de imagens processadas: 280
+2025-11-09 20:13:51,761 - INFO -    ✅ Imagens com detecções: 280 (100.0%)
+2025-11-09 20:13:51,761 - INFO -    🎯 Total de letreiros detectados: 288
+2025-11-09 20:13:51,761 - INFO -    📝 Letreiros com OCR bem-sucedido: 208 (72.2%)
+2025-11-09 20:13:51,762 - INFO -    ❌ OCR retornou vazio: 80 (27.8%)
+2025-11-09 20:13:51,762 - WARNING - 
+⚠️ ATENÇÃO: 80 letreiros tiveram EasyOCR vazio!
+2025-11-09 20:13:51,762 - WARNING -    Possíveis causas:
+2025-11-09 20:13:51,762 - WARNING -    1. Letreiros muito pequenos
+2025-11-09 20:13:51,762 - WARNING -    2. Idioma/fonte não suportada adequadamente
+2025-11-09 20:13:51,763 - WARNING -    3. Baixa confiança do modelo
+2025-11-09 20:13:51,763 - WARNING -    💡 Verifique amostras em: E:\tcc\dataset_yolo\temp_crops
+2025-11-09 20:13:51,763 - INFO - 
+📊 MÉTRICAS OCR (EasyOCR):
+2025-11-09 20:13:51,763 - INFO -    ➡️ Total de letreiros analisados: 208
+2025-11-09 20:13:51,763 - INFO -    ✅ Acertos exatos: 0 (0.00%)
+2025-11-09 20:13:51,764 - INFO -    🔸 Acertos aproximados (>=80% similaridade): 127
+2025-11-09 20:13:51,764 - INFO -    📈 Acurácia total (exatos + aproximados): 61.06%
+2025-11-09 20:13:51,764 - INFO - 
+   📁 Imagens salvas em:
+2025-11-09 20:13:51,764 - INFO -       - E:\tcc\resultados_ocr\erros_ocr (OCR incorreto)
+2025-11-09 20:13:51,764 - INFO -       - E:\tcc\resultados_ocr\erros_classificacao (classe incorreta)
+2025-11-09 20:13:51,765 - INFO - 
+================================================================================
+2025-11-09 20:13:51,765 - INFO - ✅ PROCESSO COMPLETO FINALIZADO!
+2025-11-09 20:13:51,765 - INFO - ================================================================================
+2025-11-09 20:13:51,765 - INFO - 📁 Resultados salvos em: E:\tcc
+2025-11-09 20:13:51,766 - INFO -    - Modelo treinado: E:\tcc\onibus_tcc_treino_letreiros
+2025-11-09 20:13:51,766 - INFO -    - Erros de detecção: E:\tcc\misdetected
+2025-11-09 20:13:51,766 - INFO -    - Erros de OCR: E:\tcc\misocr
+2025-11-09 20:13:51,767 - INFO -    - Resultados OCR: E:\tcc\resultados_ocr
+2025-11-09 20:13:51,767 - INFO -    - Imagens com erro de leitura: E:\tcc\imagens_erro_leitura
+2025-11-09 20:13:51,767 - INFO -    - Log completo: E:\tcc\logs\execucao_20251109_201055.log

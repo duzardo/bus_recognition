@@ -1,0 +1,48 @@
+2025-11-09 17:35:19,417 - INFO - ================================================================================
+2025-11-09 17:35:19,417 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 17:35:19,417 - INFO - ================================================================================
+2025-11-09 17:35:19,417 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 17:35:19,418 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 17:35:19,418 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 17:35:19,418 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_173519.log
+2025-11-09 17:35:19,418 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 17:35:19,422 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 17:35:19,422 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 17:35:19,422 - INFO - 
+================================================================================
+2025-11-09 17:35:19,423 - INFO - 🏋️ Iniciando treinamento YOLO...
+2025-11-09 17:35:19,423 - INFO - ================================================================================
+2025-11-09 17:35:22,070 - INFO - 📥 Carregando modelo: E:\tcc\yolov8n.pt
+2025-11-09 17:35:22,112 - INFO - 
+📋 Configurações do treinamento:
+2025-11-09 17:35:22,112 - INFO -    data: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 17:35:22,112 - INFO -    epochs: 150
+2025-11-09 17:35:22,112 - INFO -    patience: 15
+2025-11-09 17:35:22,112 - INFO -    imgsz: 640
+2025-11-09 17:35:22,113 - INFO -    batch: 16
+2025-11-09 17:35:22,113 - INFO -    project: E:\tcc\onibus_tcc_treino_letreiros
+2025-11-09 17:35:22,113 - INFO -    name: letreiros_seg
+2025-11-09 17:35:22,113 - INFO -    device: 0 (GPU)
+2025-11-09 17:35:22,113 - INFO - 
+⏳ Treinamento iniciado... (isso pode levar várias horas)
+2025-11-09 17:55:37,946 - INFO - 🏁 Treinamento finalizado!
+2025-11-09 17:55:37,946 - INFO - 
+🔍 Avaliando desempenho no conjunto de teste...
+2025-11-09 17:56:06,727 - INFO - 
+📊 Resultados finais:
+2025-11-09 17:56:06,727 - INFO -    ➡️ mAP50-95 (acurácia média): 0.8011
+2025-11-09 17:56:06,728 - INFO -    ➡️ mAP50 (IoU=0.50): 0.9933
+2025-11-09 17:56:06,729 - INFO -    ➡️ mAP75 (IoU=0.75): 0.9530
+2025-11-09 17:56:06,729 - INFO -    ➡️ Precisão média: 0.9854
+2025-11-09 17:56:06,729 - INFO -    ➡️ Revocação média: 0.9866
+2025-11-09 17:56:06,729 - INFO - 
+================================================================================
+2025-11-09 17:56:06,729 - INFO - 🧩 Etapa OCR com Tesseract
+2025-11-09 17:56:06,730 - INFO - ================================================================================
+2025-11-09 17:56:06,730 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 17:56:06,730 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 17:56:06,730 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 17:56:06,730 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 17:56:06,736 - INFO - ✅ Tesseract encontrado em: C:\Program Files\Tesseract-OCR\tesseract.exe

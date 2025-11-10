@@ -1,0 +1,29 @@
+2025-11-09 18:39:46,729 - INFO - ================================================================================
+2025-11-09 18:39:46,729 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 18:39:46,729 - INFO - ================================================================================
+2025-11-09 18:39:46,729 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 18:39:46,730 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 18:39:46,730 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 18:39:46,730 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_183946.log
+2025-11-09 18:39:46,730 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 18:39:46,734 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 18:39:46,735 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 18:39:46,735 - INFO - 
+================================================================================
+2025-11-09 18:39:46,735 - INFO - 🏋️ Iniciando treinamento YOLO...
+2025-11-09 18:39:46,735 - INFO - ================================================================================
+2025-11-09 18:39:49,497 - INFO - 📥 Carregando modelo: E:\tcc\yolov8n.pt
+2025-11-09 18:39:49,597 - INFO - 
+📋 Configurações do treinamento:
+2025-11-09 18:39:49,598 - INFO -    data: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 18:39:49,598 - INFO -    epochs: 150
+2025-11-09 18:39:49,598 - INFO -    patience: 15
+2025-11-09 18:39:49,598 - INFO -    imgsz: 640
+2025-11-09 18:39:49,598 - INFO -    batch: 16
+2025-11-09 18:39:49,598 - INFO -    project: E:\tcc\onibus_tcc_treino_letreiros
+2025-11-09 18:39:49,599 - INFO -    name: letreiros_seg
+2025-11-09 18:39:49,599 - INFO -    device: 0 (GPU)
+2025-11-09 18:39:49,599 - INFO - 
+⏳ Treinamento iniciado... (isso pode levar várias horas)

@@ -1,0 +1,333 @@
+# Configuração do Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+
+# Diretórios
+paths:
+  base_dir: "E:\\tcc"
+  dataset_dir: "dataset_yolo"
+  model_path: "yolov8n.pt"
+  openocr_dir: "OpenOCR"
+
+  # Diretórios de saída
+  output:
+    training: "onibus_tcc_treino_letreiros"
+    misdetected: "misdetected"
+    misocr: "misocr"
+    results_ocr: "resultados_ocr"
+    images_error: "imagens_erro_leitura"
+    logs: "logs"
+    temp_crops: "dataset_yolo/temp_crops"
+
+# Configurações de Treinamento YOLO
+training:
+  epochs: 150
+  patience: 15
+  imgsz: 640
+  batch: 16
+  device: 0  # GPU
+  confidence: 0.4
+  single_cls: true
+  pretrained: true
+  verbose: true
+
+# Configurações de OCR
+ocr:
+  # Tesseract
+  tesseract:
+    psm: 7  # Linha única de texto
+    lang: "eng"
+    enabled: true
+
+  # EasyOCR
+  easyocr:
+    languages: ["pt", "en"]
+    gpu: true
+    enabled: true
+
+  # OpenOCR
+  openocr:
+    config_path: "configs/rec/svtrv2/svtrv2_ch.yml"
+    fallback_config: "configs/rec/svtrv2/repsvtr_ch.yml"
+    backend: "torch"
+    enabled: true
+
+# Configurações de Análise
+analysis:
+  iou_threshold: 0.5
+  similarity_threshold: 80
+  max_empty_samples: 10  # Número máximo de amostras vazias para salvar
+
+# Classes (Rotas de Ônibus)
+classes:
+  num_classes: 271
+  names:
+    - ABRANCHES
+    - ACESSO
+    - ACROPOLE
+    - AEROPORTO
+    - AFONSO PENA
+    - AGRICOLA
+    - AGUA VERDE
+    - AHU
+    - ALTO BOQUEIRAO
+    - ANGELICA PORTAO
+    - ANITA GARIBALDI
+    - ARAGUAIA
+    - ARAUCARIA
+    - ARCOPOLO
+    - AREIA BRANCA
+    - ATUBA
+    - ATUBA PINHEIRINHO
+    - ATUBA STACANDIDA
+    - B. ALTO C. IMBUIA
+    - BAIRRO ALTO
+    - BAIRRO NOVO
+    - BARRAS ATUBA
+    - BARREIRINHA
+    - BARREIRINHA SAO JOSE
+    - BATEL
+    - BOA VISTA
+    - BOQUEIRAO
+    - BOQUERAO
+    - BORDA DO CAMPO
+    - BOSCH
+    - BUSOLOGIA
+    - C RASO C DO SIQUEIRA
+    - C. COMPRIDO CIC
+    - C. GRANDE DO SUL
+    - C. IMBUIA
+    - CABRAL
+    - CABRAL C. IMBUIA
+    - CABRAL C. RASO
+    - CACHOEIRA
+    - CAIO INDUSCAR
+    - CAIUA
+    - CAIUA FAZ CENTRO
+    - CAJURU
+    - CALIFORNIA
+    - CAMARGO
+    - CAMP. SIQUEIRA
+    - CAMPINA DO SIQUEIRA
+    - CAMPO ALEGRE
+    - CAMPO COMPRIDO
+    - CAMPO LARGO
+    - CAMPO MAGRO
+    - CANAL BELEM
+    - CAPAO DA IMBUIA
+    - CAPAO RASO
+    - CARBOMAFRA
+    - CAXIMBA
+    - CENT R BARBOSA
+    - CENTENARIO
+    - CENTENARIO HAUER
+    - CENTRO
+    - CENTRO CIVICO
+    - CENTRO SAO JOSE
+    - CIC
+    - CIC CABRAL
+    - CIRCULAR SUL
+    - COLINA VERDE
+    - COLOMBO CIC
+    - COTOLENGO
+    - CRISTO REI
+    - CTBA JD IPE
+    - CTBA JD IZAURA
+    - CTBA SANTA FE
+    - CURITIBA
+    - DALAGASSA
+    - DIRETO C IMBUIA
+    - DONA FINA
+    - ERASTO
+    - ERASTO GAERTNER
+    - ERICO VERISSIMO
+    - ESPECIAL
+    - ESTACAO ATUBA
+    - ESTRIBO AHU
+    - EUGENIA MARIA
+    - F. NORONHA
+    - FAGUNDES VARELA
+    - FANNY
+    - FAZENDA
+    - FAZENDA RIO GRANDE
+    - FAZENDINHA
+    - FERNANDO
+    - FERNAO DIAS
+    - FUNCIONARIOS
+    - FUTURAMA
+    - GANCHINHO
+    - GARAGEM
+    - GRACIOSA
+    - GRAMADOS
+    - GUADALUPE
+    - GUANABARA
+    - GUARAITUBA
+    - GUARAITUBA CABRAL
+    - H. CARON ATUBA
+    - HAUER
+    - HAUER BOQUEIRAO
+    - HIGIENOPOLIS
+    - HUGO LANGE
+    - IGUAPE I
+    - IGUAPE II
+    - INDEPENDENCIA
+    - INTER 2
+    - INTER HOSPITAIS
+    - INTER2
+    - INTERBAIRROS
+    - INTERBAIRROS I
+    - INTERBAIRROS II
+    - INTERBAIRROS III
+    - INTERBAIRROS IV
+    - INTERBAIRROS V
+    - INTERBAIRROS VI
+    - ITAPERUCU
+    - JANAINA
+    - JARDIM IPE
+    - JARDIM ITALIA
+    - JD BOA VISTA
+    - JD CHAPARRAL
+    - JD DA ORDEM
+    - JD GRAZIELA
+    - JD IPE
+    - JD ITALIA
+    - JD ITIBERE
+    - JD KOSMOS
+    - JD LUDOVICA
+    - JD MERCES
+    - JD PARAISO
+    - JD PARANAENSE
+    - JD PIONEIRO
+    - JD SAO GABRIEL
+    - JD SOCIAL
+    - JD TROPICAL
+    - JD. CENTAURO
+    - JOSE CULPI
+    - LIGEIRAO
+    - LINER TURISMO
+    - LINHA VERDE
+    - LONDRINA
+    - LUIZ NICHELE
+    - MARACANA
+    - MARACANA CABRAL
+    - MARIA ANGELICA
+    - MATEUS LEME
+    - MERCES
+    - MERCURIO
+    - MOSSUNGUE
+    - NIVALDO BRAGA
+    - NORTE SUL
+    - NOVENA
+    - OLARIA
+    - OLARIO
+    - OPERACAO
+    - OSTERNACK
+    - PADRE ALEIXO
+    - PAINEIRAS
+    - PALMEIRA
+    - PALOTINOS
+    - PARIGOT DE SOUZA
+    - PARQUE
+    - PARQUE ATUBA
+    - PARQUE NAUTICO
+    - PASSAUNA
+    - PETROPOLIS
+    - PINHAIS
+    - PINHAIS B. ALTO
+    - PINHEIRINHO
+    - PINHEIROS
+    - PIRAQUARA
+    - PIRATINI
+    - PIRINEUS
+    - PL EVARISTO
+    - POMPEIA
+    - POMPEIA JANAINA
+    - PORTAO
+    - PORTAO CIC
+    - PORTO BELO
+    - POSTO PARIS
+    - PRACA
+    - QUATRO BARRAS
+    - QUISSISSANA
+    - QUITANDINHA
+    - RAPOSO TAVARES
+    - REFORCO
+    - REFORCO SABARA
+    - RIO BONITO
+    - RIO BONITO CIC
+    - RIO BRANCO
+    - RIO NEGRO
+    - RIVIERA
+    - ROCA GRANDE
+    - RONDON
+    - RUI BARBBOSA
+    - RURBANA
+    - S. CERCADO
+    - S. FELICIDADE
+    - SABARA
+    - SAGRADO
+    - SAGRADO CORACAO
+    - SANTA ANGELA
+    - SANTA BARBARA
+    - SANTA CANDIDA
+    - SANTA FELICIDADE
+    - SANTA INES
+    - SANTA JOANA
+    - SANTA QUITERIA
+    - SANTA RITA
+    - SANTA ROSA
+    - SAO BENEDITO
+    - SAO BERNARDO
+    - SAO BRAZ
+    - SAO JOAO
+    - SAO JOSE
+    - SAO JOSE DOS PINHAIS
+    - SAO ROQUE
+    - SATURNO
+    - SITIO CERCADO
+    - SOLAR
+    - SOLITUDE
+    - STA . CANDIDA
+    - STA BERNADETHE
+    - STA QUITERIA
+    - STA TEREZINHA
+    - STA. BARBARA
+    - STA. FELICIDADE
+    - STA.RITA PINHAIS
+    - STACANDIDA C.RASO
+    - T.PINHAIS
+    - TAMANDARE
+    - TARUMA
+    - TATUQUARA
+    - TBOQUEIRAO
+    - TEQUALY
+    - TERMINAL CENTRAL
+    - TINGUI
+    - TIRADENTES
+    - TOMAZ EDISON 1
+    - TOURISM LINE
+    - TRABALHADOR
+    - TRAMONTINA
+    - TREINAMENTO
+    - TRIANON
+    - TRINDADE
+    - TUPY JULIANA
+    - TURISMO
+    - UBERABA
+    - UBERLANDIA
+    - UMBARA
+    - UMBARA C. BELO
+    - URANO
+    - V.JULIANA
+    - VENEZA
+    - VILA AUTODROMO
+    - VILA CUBAS
+    - VILA ESPERANCA
+    - VILA MACEDO
+    - VILA REX
+    - VILA ROSINHA
+    - VILA SAO PEDRO
+    - VILA SUICA
+    - VILA TORRES
+    - VILA VERDE
+    - VILA ZUMBI
+    - VISTA ALEGRE
+    - VITORIA REGIA

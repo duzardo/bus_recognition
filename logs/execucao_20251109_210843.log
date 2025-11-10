@@ -1,0 +1,60 @@
+2025-11-09 21:08:43,256 - INFO - ================================================================================
+2025-11-09 21:08:43,256 - INFO - 🚀 Sistema de Detecção e Reconhecimento de Letreiros de Ônibus
+2025-11-09 21:08:43,256 - INFO - ================================================================================
+2025-11-09 21:08:43,257 - INFO - 📂 Diretório base: E:\tcc
+2025-11-09 21:08:43,257 - INFO - 📂 Dataset: E:\tcc\dataset_yolo
+2025-11-09 21:08:43,257 - INFO - 📂 Modelo: E:\tcc\yolov8n.pt
+2025-11-09 21:08:43,257 - INFO - 📝 Log salvo em: E:\tcc\logs\execucao_20251109_210843.log
+2025-11-09 21:08:43,258 - INFO - 
+✅ Dataset já existe em dataset_yolo
+2025-11-09 21:08:43,261 - INFO -    📊 Treino: 898 | Validação: 224 | Teste: 280
+2025-11-09 21:08:43,261 - INFO - 
+✅ Arquivo data.yaml já existe: E:\tcc\dataset_yolo\data.yaml
+2025-11-09 21:08:45,560 - INFO - 
+================================================================================
+2025-11-09 21:08:45,561 - INFO - ✅ MODELO JÁ TREINADO ENCONTRADO!
+2025-11-09 21:08:45,561 - INFO - ================================================================================
+2025-11-09 21:08:45,561 - INFO - 📂 Carregando modelo de: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg\weights\best.pt
+2025-11-09 21:08:45,561 - INFO - ⏩ Pulando etapa de treinamento (economizando tempo!)
+2025-11-09 21:08:45,562 - INFO - 💡 Para retreinar, delete a pasta: E:\tcc\onibus_tcc_treino_letreiros\letreiros_seg
+2025-11-09 21:08:45,601 - INFO - 
+🔍 Avaliando desempenho no conjunto de teste...
+2025-11-09 21:09:12,650 - INFO - 
+📊 Resultados finais:
+2025-11-09 21:09:12,651 - INFO -    ➡️ mAP50-95 (acurácia média): 0.8011
+2025-11-09 21:09:12,651 - INFO -    ➡️ mAP50 (IoU=0.50): 0.9933
+2025-11-09 21:09:12,651 - INFO -    ➡️ mAP75 (IoU=0.75): 0.9530
+2025-11-09 21:09:12,651 - INFO -    ➡️ Precisão média: 0.9854
+2025-11-09 21:09:12,652 - INFO -    ➡️ Revocação média: 0.9866
+2025-11-09 21:09:12,652 - INFO - 
+================================================================================
+2025-11-09 21:09:12,652 - INFO - 🧩 Etapa OCR com Tesseract
+2025-11-09 21:09:12,652 - INFO - ================================================================================
+2025-11-09 21:09:12,653 - INFO - 📊 Métricas de similaridade textual: Levenshtein Distance (Edit Distance)
+2025-11-09 21:09:12,653 - INFO -    - Algoritmo: Programação Dinâmica
+2025-11-09 21:09:12,653 - INFO -    - Operações: Inserção, Deleção, Substituição
+2025-11-09 21:09:12,653 - INFO -    - Normalização: Escala 0-100 (100 = match perfeito)
+2025-11-09 21:09:12,658 - INFO - ✅ Tesseract encontrado em: C:\Program Files\Tesseract-OCR\tesseract.exe
+2025-11-09 21:09:12,673 - INFO - 🔍 Iniciando OCR em letreiros detectados...
+2025-11-09 21:09:12,674 - INFO - 📝 Configuração Tesseract: PSM 7 (linha única de texto)
+
+2025-11-09 21:09:12,994 - INFO - 🖼️ Imagem: 25018_craso_campina_do_siqueira_local_jpg.rf.98ae677ba9fd7edb5fcd8dca6045c828.jpg
+2025-11-09 21:09:12,994 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 21:09:12,994 - INFO -    🔍 OCR: MAP AO PAS
+2025-11-09 21:09:12,995 - INFO -    🤝 Mais próximo: CAPAO RASO (60.0%)
+
+2025-11-09 21:09:13,296 - INFO - 🖼️ Imagem: 25104_onibus_brasil_jpg.rf.3b1f887e3de2b4fff5f4580439873d3c.jpg
+2025-11-09 21:09:13,297 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 21:09:13,297 - INFO -    🔍 OCR: INTERBAIRROSH
+2025-11-09 21:09:13,297 - INFO -    🤝 Mais próximo: INTERBAIRROS (100.0%)
+
+2025-11-09 21:09:13,945 - INFO - 🖼️ Imagem: 25132_onibus_brasil_jpg.rf.86a1c4727412bed13313fc2d5d081cfd.jpg
+2025-11-09 21:09:13,945 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 21:09:13,945 - INFO -    🔍 OCR: AE
+2025-11-09 21:09:13,945 - INFO -    🤝 Mais próximo: AEROPORTO (100.0%)
+
+2025-11-09 21:09:14,196 - INFO - 🖼️ Imagem: 25138_onibus_brasil_jpg.rf.fd9da43161c0d47ec7c42d03ae0f2ffc.jpg
+2025-11-09 21:09:14,196 - INFO -    🎯 Verdadeiro: ABRANCHES
+2025-11-09 21:09:14,196 - INFO -    🔍 OCR: {NTERBAIRROS |
+2025-11-09 21:09:14,197 - INFO -    🤝 Mais próximo: INTERBAIRROS (91.7%)
+
