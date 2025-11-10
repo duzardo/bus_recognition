@@ -1,14 +1,8 @@
-================================================================================
-SISTEMA DE DETECÇÃO E RECONHECIMENTO DE LETREIROS DE ÔNIBUS
-================================================================================
 
-Trabalho de Conclusão de Curso (TCC)
-Sistema completo de visão computacional para detecção e reconhecimento
-automático de letreiros de ônibus usando YOLOv8 e múltiplos engines de OCR.
+# SISTEMA DE DETECÇÃO E RECONHECIMENTO DE LETREIROS DE ÔNIBUS
 
-================================================================================
 ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
-================================================================================
+
 
 1. CÓDIGOS-FONTE PRINCIPAIS
    -------------------------
@@ -36,7 +30,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 2. MÓDULOS AUXILIARES (ARQUITETURA MODULAR)
-   -----------------------------------------
 
    dataset_manager.py
       Descrição: Gerenciador de dataset YOLO. Responsável por validar a
@@ -84,7 +77,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 3. ARQUIVOS DE CONFIGURAÇÃO
-   -------------------------
 
    config.yaml
       Descrição: Arquivo principal de configuração do sistema. Define caminhos,
@@ -110,7 +102,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 4. DOCUMENTAÇÃO
-   -------------
 
    README.md
       Descrição: Documentação completa do projeto em formato Markdown. Inclui
@@ -134,9 +125,7 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
       Execução: python exemplo_uso.py
 
 
-5. DATASET (NÃO INCLUÍDO - DEVE SER FORNECIDO)
-   --------------------------------------------
-
+5. DATASET 
    ./dataset_yolo/
       Descrição: Dataset no formato YOLO com estrutura train/valid/test.
       Estrutura esperada:
@@ -165,8 +154,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 6. DIRETÓRIOS DE SAÍDA (GERADOS AUTOMATICAMENTE)
-   ----------------------------------------------
-
    ./onibus_tcc_treino_letreiros/
       Descrição: Diretório principal de saída do treinamento YOLO.
       Conteúdo:
@@ -230,7 +217,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 7. DIRETÓRIOS ADICIONAIS
-   ---------------------
 
    ./src/
       Descrição: Módulos internos do sistema (arquitetura modular).
@@ -268,7 +254,7 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 8. MÉTRICAS E RESULTADOS
-   ----------------------
+   
 
    MÉTRICAS DE DETECÇÃO (YOLO):
       - mAP50-95: Mean Average Precision (IoU 0.5 a 0.95)
@@ -300,7 +286,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 9. FLUXO DE EXECUÇÃO DETALHADO
-   ----------------------------
 
    Etapa 1: Preparação do Dataset
       - Verifica estrutura train/valid/test
@@ -348,7 +333,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 10. PARÂMETROS DE CONFIGURAÇÃO IMPORTANTES
-   ---------------------------------------
 
    TREINAMENTO YOLO (config.yaml -> training):
       epochs: 150              (número de épocas de treinamento)
@@ -381,7 +365,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 11. DEPENDÊNCIAS E INSTALAÇÃO
-    --------------------------
 
     PYTHON: 3.8 ou superior
 
@@ -413,7 +396,6 @@ ESTRUTURA DE DIRETÓRIOS E ARTEFATOS
 
 
 12. INSTRUÇÕES DE USO
-    ------------------
 
     EXECUÇÃO BÁSICA:
        1. Ajustar config.yaml (paths.base_dir)
